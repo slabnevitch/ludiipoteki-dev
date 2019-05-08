@@ -1,0 +1,93 @@
+header.header
+	.header-top
+		.container
+			.row
+				.col-12.header-top-inner
+					.header-socials
+						ul
+							li.header-rss
+								a(href="#")
+									i.icon-rss
+							li
+								a(href="#")
+									i.icon-facebook
+							li
+								a(href="#")
+									i.icon-vkontakte
+							li.header-gplus
+								a(href="#")
+									i.icon-gplus
+							li
+								a(href="#")
+									i.icon-odnoklassniki
+
+					ul.header-top__menu
+						li.header-sitemap
+							a(href="#")
+								.sp-icon.site-map
+						li.header-home
+							a(href="#")
+								.sp-icon.home
+						li
+							a(href="#") О нас
+						li
+							a(href="#") Сотрудничество
+						li
+							a(href="#") Обратная связь
+
+					a(href="#li-enter-popup").header-enter.button.to-popup ВХОД
+	.header-middle
+		.container
+			.row
+				.col-12.header-middle__inner
+					a(href="#").header-logo
+						img(src="img/logo.jpg", alt="alt")
+
+					.header-banner
+						img(src="img/header-banner.jpg", alt="alt")
+
+	.header-bottom
+		.container
+			.row
+				.col-12
+					.header-bottom__inner
+						- var subs = ['Ипотека и строительство', 'Секьюритизация', 'Законодательство', 'Новости компаний', 'Бизнес и финансы', 'Зарубежные новости'];
+						
+						ul.header-menu.sf-menu.sf-navbar
+							li
+								a(href="#").header-menu__link
+									span.header-menu__link новости
+									span.header-menu__count 53
+
+								ul
+									each item in subs
+										li
+											a(href="#").header-menu__sublink= item
+
+							li
+								a(href="#").header-menu__link
+									span.header-menu__link Блоги
+									span.header-menu__count 53
+
+								ul
+									each item in subs
+										li
+											a(href="#").header-menu__sublink= item
+							li
+								a(href="#").header-menu__link
+									span.header-menu__link Магазин исследований
+									span.header-menu__count 700
+							li
+								a(href="#").header-menu__link
+									span.header-menu__link Эксперты
+									span.header-menu__count 911
+							li
+								a(href="#").header-menu__link
+									span.header-menu__link Компании
+									span.header-menu__count 248
+							li
+								a(href="#").header-menu__link
+									span.header-menu__link Мероприятия
+									span.header-menu__count 2
+
+						a(href="#").button.button-green.add-news добавить свою новость
