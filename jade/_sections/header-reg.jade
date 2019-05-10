@@ -1,4 +1,4 @@
-header.header
+header.header.header-reg
 	.header-top
 		.container
 			.row
@@ -23,10 +23,10 @@ header.header
 
 					ul.header-top__menu
 						li.header-sitemap
-							a(href="#")
+							a(href="#").header-menu-icon
 								.sp-icon.site-map
 						li.header-home
-							a(href="#")
+							a(href="#").header-menu-icon
 								.sp-icon.home
 						li
 							a(href="#") О нас
@@ -35,7 +35,25 @@ header.header
 						li
 							a(href="#") Обратная связь
 
-					a(href="#li-enter-popup").header-enter.button.to-popup ВХОД
+
+
+					ul.header-top__menu.header-top__menu--reg
+						li.header-mail.active
+							a(href="#").header-menu-icon
+								.sp-icon.mail
+						li.header-bell
+							a(href="#").header-menu-icon
+								.header-bell__dot
+								.sp-icon.bell
+
+					.header-enter.button
+						span ФАМИЛИЯЯЯЯЯ ИМЯЯЯЯЯЯЯ
+						span.sp-icon.chev-top
+						ul.header-enter__menu
+							li
+								a(href="#") Настройки
+							li
+								a(href="") Выход
 	.header-middle
 		.container
 			.row

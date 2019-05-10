@@ -1,0 +1,64 @@
+.day-theme{
+	margin-top: 30px;
+}
+.day-theme__text{
+	font-size: 14px;
+	color: #141414;
+}
+.day-theme__slide{
+	display: -webkit-flex !important;
+	display: -moz-flex !important;
+	display: -ms-flex !important;
+	display: -o-flex !important;
+	display: flex !important;
+	align-items: flex-start;
+	// margin-right: 30px;
+
+	.li-portrait{
+		flex-shrink: 0;
+	}
+}
+.day-theme__slide-text{
+	margin-left: 20px;
+
+	.li-person-name{
+		margin-bottom: 13px;
+	}
+}
+.day-theme__quote{
+	position: relative;
+	max-height: 111px;
+	overflow: hidden;
+	padding-left: 32px;
+	font-family: $r-m;
+	color: #34495e;
+
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		@extend .quote;
+	}
+
+}
+.day-theme__slider{
+	margin-top: 21px;
+	margin-bottom: 30px;
+	.slick-slide{
+
+		margin-right: 30px;
+	}
+	.slick-prev{
+		left: -10px;
+	}
+	.slick-next{
+		right: -10px;
+	}
+}
+.day-theme__bottom{
+	.li-red-link{
+		top: -20px;
+	}
+}

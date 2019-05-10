@@ -1,4 +1,32 @@
 /* HEADER */
+.header-reg{
+	.header-enter{
+		width: 200px;
+		padding-left: 30px;
+		padding-right: 10px;
+		
+		position: relative;
+		cursor: pointer;
+		white-space: nowrap;
+
+		span{
+			display: block;
+			max-width: 100%;
+		overflow: hidden;
+		}
+
+		.chev-top{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 7px;
+		}
+
+	}
+	.header-top__menu:not(.header-top__menu--reg){
+		margin-right: 73px;
+	}
+}
 .header-top{
 	background-color: $gray;
 }
@@ -57,16 +85,43 @@
 	display: flex;
 	margin-right: 132px;
 
+	&--reg{
+		margin-right: 0;
+	}
+
 	li{
 		
 		list-style-type: none;
 
+		&.active{
+			a{
+				text-decoration: none;
+				background-color: #E7E7E7;
+
+				&:before{
+					display: block;
+				}
+
+			}
+		}
+
 		a{
 			display: block;
 			position: relative;
-			padding: 15px;
+			height: 45px;
+			line-height: 45px;
+			padding: 0 15px;
 			font-family: $r-l;
 			color: #000;
+
+			&.header-menu-icon{
+				width: 45px;
+				position: relative;
+
+				.sp-icon{
+					@include absolute-center-old;
+				}
+			}
 
 			&:hover, &:active{
 				text-decoration: none;
@@ -93,12 +148,47 @@
 	}
 }
 .header-enter{
-	padding-top: 16px;
-	padding-bottom: 15px;
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 45px;
+	line-height: 45px;
 	padding-left: 0;
 	padding-right: 0;
 	width: 100px;
 	font-family: $r-b;
+}
+.header-enter__menu{
+	position: absolute;
+	display: none;
+	width: 100%;
+	top: 100%;
+	left: 0;
+	z-index: 100;
+
+	li{
+		list-style-type: none;
+		a{
+			display: block;
+			height: auto;
+			line-height: normal;
+			padding: 8px 15px 5px 34px;
+			background-color: #fff;
+			color: #666666;
+			text-decoration: none;
+			border: 1px solid #EBEBEB;
+			border-top:  none;
+			text-align: left;
+		}
+	}
+}
+.header-bell__dot{
+	position: absolute;
+	top: 10px;
+	left: 12px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50em;
+	background-color: #FF4D34;
 }
 .header-middle__inner{
 	display: -webkit-flex;
@@ -141,6 +231,21 @@
 	li{
 		display: inline-block;
 		list-style-type: none;
+
+		&.active{
+			.header-menu__link{
+				text-decoration: none;
+				background-color: $gray;
+
+				.header-menu__link{
+					color: $blue;
+				}
+
+				&:before{
+					display: block;
+				}
+			}
+		}
 	}
 	a{
 		font-size: 12px;
@@ -185,7 +290,8 @@
 		}
 
 
-		&:hover, &:active{
+		&:hover, &:active
+		{
 			text-decoration: none;
 			background-color: $gray;
 

@@ -3,4 +3,43 @@ extends _misc/main
 block title
 	| Главная страница
 
-block content
+block main
+	.container-fluid
+		.row.m-minus
+			.col-12
+				.day-theme
+					.title-block
+						h2 ТЕМА ДНЯ - ЭКСПЕРТНОЕ МНЕНИЕ
+
+					p.day-theme__text В Госдуму внесли законопроект об «ипотечных каникулах», который предполагает предоставление льготного периода ипотечни- кам, оказавшимся в трудной жизненной ситуации. Насколько эффективным будет такое решение проблемы?
+
+					.day-theme__slider
+						- for (var i=0; i < 6; i++)
+							.day-theme__slide
+								.li-portrait
+									img(src="img/faces/gordeiko.jpg", alt="alt")
+								.day-theme__slide-text
+									.li-person-name Сергей Гордейко
+									.day-theme__quote Отечественное ипотечное кредитование имеет особую специфику, определяе- мую его полукоммерческим и полусоци- альным характером. Решение с помощью коммерческого инструмента не только задач бизнеса, но и  социальных задач власти... привело к тому, что ипотечное кредитование поддерживалось на
+
+					.day-theme__bottom.text-right
+						a(href="#").li-red-link Архив Тем дня
+		
+		.row.m-minus
+			.col-8
+				.personal-blogs
+					.personal-blogs__banner
+						img(src="img/header-banner.jpg", alt="alt")
+					
+					.title-block.title-block--iconed
+						h2 Личные блоги
+						a(href="#").title-block__icon.title-block__icon--rss
+							i.icon-rss
+			.col-4
+				|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus et totam placeat consequatur provident beatae quod minima perspiciatis impedit amet reprehenderit, temporibus sunt ipsum laudantium alias, nemo ipsa quas nulla suscipit porro nisi tempore a. At omnis deserunt provident, cumque libero suscipit, unde maxime ex aspernatur, laborum, aliquam fuga soluta temporibus error expedita atque dolorem amet placeat reiciendis. Illum, eum accusamus officiis tempora ut aut repellendus reiciendis dicta blanditiis, dignissimos consectetur nihil ullam non facere quisquam, itaque molestiae, impedit temporibus! Quisquam nostrum ipsum nobis. Commodi odit dolorum sapiente numquam repudiandae ipsa esse delectus, quod ipsam ea itaque hic? Quod, quisquam!
+
+
+
+
+block sidebar
+	| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sit quia magnam, omnis libero quibusdam perspiciatis sed sint harum molestiae exercitationem consequatur perferendis nemo natus accusantium consectetur excepturi modi, porro. Minus quod dolorum fuga officia at exercitationem harum rerum id explicabo sint eius sequi, earum ab accusantium recusandae ex error incidunt fugit laudantium ut temporibus! Deleniti, maxime. Itaque minima consectetur eligendi nisi explicabo, repudiandae alias eaque impedit nesciunt consequuntur recusandae expedita dolores error consequatur corporis vitae eos, inventore asperiores. Inventore doloribus suscipit explicabo, cum laboriosam eligendi ratione, porro nostrum. Beatae architecto officia ratione aliquam, facere cupiditate quaerat reiciendis recusandae ducimus?
