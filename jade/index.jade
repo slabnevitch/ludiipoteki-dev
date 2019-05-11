@@ -20,25 +20,143 @@ block main
 									img(src="img/faces/gordeiko.jpg", alt="alt")
 								.day-theme__slide-text
 									.li-person-name Сергей Гордейко
-									.day-theme__quote Отечественное ипотечное кредитование имеет особую специфику, определяе- мую его полукоммерческим и полусоци- альным характером. Решение с помощью коммерческого инструмента не только задач бизнеса, но и  социальных задач власти... привело к тому, что ипотечное кредитование поддерживалось на
+									.day-theme__quote.height-covered Отечественное ипотечное кредитование имеет особую специфику, определяе- мую его полукоммерческим и полусоци- альным характером. Решение с помощью коммерческого инструмента не только задач бизнеса, но и  социальных задач власти... привело к тому, что ипотечное кредитование поддерживалось на
+									
+										.height-cover
+
 
 					.day-theme__bottom.text-right
 						a(href="#").li-red-link Архив Тем дня
 		
 		.row.m-minus
 			.col-8
-				.personal-blogs
-					.personal-blogs__banner
+				.blogs-previews
+					.blogs-previews__banner
 						img(src="img/header-banner.jpg", alt="alt")
 					
 					.title-block.title-block--iconed
 						h2 Личные блоги
-						a(href="#").title-block__icon.title-block__icon--rss
-							i.icon-rss
+						.title-block__icons
+							a(href="#").title-block__icon.title-block__icon--rss
+								i.icon-rss
+
+					.li-tabs
+						ul.tabs__list
+							li.tabs__item.tabs__item--active
+								a.tabs__link(href='#item1') Актуальные
+							li.tabs__item
+								a.tabs__link(href='#item2') Новые
+							li.tabs__item
+								a.tabs__link(href='#item3') Читаемые
+							li.tabs__item
+								a.tabs__link(href='#item4') Обсуждаемые
+
+						ul.tabs__content
+							li#item1.tabs__item
+								.personal-blogs__content
+									include _includes/personal-blogs-items
+							
+							li#item2.tabs__item.hidden
+								.personal-blogs__content
+									include _includes/personal-blogs-items
+							li#item3.tabs__item.hidden
+								.personal-blogs__content
+									include _includes/personal-blogs-items
+							li#item4.tabs__item.hidden
+								.personal-blogs__content
+									include _includes/personal-blogs-items
+
+					.personal-blogs__bottom.more-container.text-right
+						a(href="#").li-red-link Все блоги
+
+
+				.blogs-previews
+					.title-block.title-block--iconed
+						h2 корпоративные блоги
+						.title-block__icons
+							a(href="#").title-block__icon.title-block__icon--rss
+								i.icon-rss
+
+					.li-tabs
+						ul.tabs__list
+							li.tabs__item.tabs__item--active
+								a.tabs__link(href='#item1') Актуальные
+							li.tabs__item
+								a.tabs__link(href='#item2') Новые
+							li.tabs__item
+								a.tabs__link(href='#item3') Читаемые
+							li.tabs__item
+								a.tabs__link(href='#item4') Обсуждаемые
+
+						ul.tabs__content
+							li#item1.tabs__item
+								.personal-blogs__content
+									include _includes/corporative-blogs-items
+							
+							li#item2.tabs__item.hidden
+								.personal-blogs__content
+									include _includes/corporative-blogs-items
+							li#item3.tabs__item.hidden
+								.personal-blogs__content
+									include _includes/corporative-blogs-items
+							li#item4.tabs__item.hidden
+								.personal-blogs__content
+									include _includes/corporative-blogs-items
+
+					.personal-blogs__bottom.more-container.text-right
+						a(href="#").li-red-link Все блоги
+				
+				.li-banners-wrapper.li-banners-wrapper--double
+					.li-banner-wrap
+						img(src="img/banners/double-1.jpg", alt="alt")
+					.li-banner-wrap
+						img(src="img/banners/double-2.jpg", alt="alt")
+				
+				.announcements
+					.title-block.title-block--iconed
+						h2 Личные блоги
+						.title-block__icons
+							a(href="#").title-block__icon.title-block__icon--rss
+								i.icon-rss
+
+					.announcements-items
+						.announcements-item
+							.announcements-item__header
+								.announcements-item__date
+									.ico-calendar.sp-icon
+									.announcements-item_date-val 08 апреля 2019
+
+							.announcements-item__title Сочинский Всероссийский жилищный конгресс
+							
+							p.announcements-item__text Место: Сочи, отель «Pullman Sochi Centre»
+							p.announcements-item__text Организатор: Бюллетень недвижимости
+
+						.announcements-item
+							.announcements-item__header
+								.announcements-item__date
+									.ico-calendar.sp-icon
+									.announcements-item_date-val 06 июня 2019
+
+							.announcements-item__title Премия Рекорды рынка недвижимости - 2019
+							
+							p.announcements-item__text Место: Москва, Triumph Event Hall
+							p.announcements-item__text Организатор: Московский Бизнес Клуб
+
+						.announcements-item
+							.announcements-item__header
+								.announcements-item__date
+									.ico-calendar.sp-icon
+									.announcements-item_date-val 08 апреля 2019
+
+							.announcements-item__title Сочинский Всероссийский жилищный конгресс
+							
+							p.announcements-item__text Место: Сочи, отель «Pullman Sochi Centre»
+							p.announcements-item__text Организатор: Бюллетень недвижимости
+					.personal-blogs__bottom.more-container.text-right
+						a(href="#").li-red-link Все анонсы
+
 			.col-4
-				|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus et totam placeat consequatur provident beatae quod minima perspiciatis impedit amet reprehenderit, temporibus sunt ipsum laudantium alias, nemo ipsa quas nulla suscipit porro nisi tempore a. At omnis deserunt provident, cumque libero suscipit, unde maxime ex aspernatur, laborum, aliquam fuga soluta temporibus error expedita atque dolorem amet placeat reiciendis. Illum, eum accusamus officiis tempora ut aut repellendus reiciendis dicta blanditiis, dignissimos consectetur nihil ullam non facere quisquam, itaque molestiae, impedit temporibus! Quisquam nostrum ipsum nobis. Commodi odit dolorum sapiente numquam repudiandae ipsa esse delectus, quod ipsam ea itaque hic? Quod, quisquam!
-
-
+				include _sections/news-block
 
 
 block sidebar

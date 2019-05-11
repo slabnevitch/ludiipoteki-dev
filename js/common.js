@@ -81,6 +81,25 @@ $(function() {
 				// ]
 			});
 	//end slick
+
+	// tabs
+		var $tabs = $('.tabs__link');
+
+		$tabs.on('click', function(e) {
+			e.preventDefault();
+			var $th = $(this),
+				$href = $th.attr('href'),
+				$parent = $th.parent();
+			$parent.addClass('tabs__item--active')
+					.siblings()
+					.removeClass('tabs__item--active');
+							
+			$($href).removeClass('hidden')
+					.siblings()
+					.addClass('hidden');
+		});
+	// end tabs
+	
 	//Chrome Smooth Scroll
 	try {
 		$.browserSelector();
