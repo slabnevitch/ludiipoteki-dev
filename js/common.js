@@ -99,6 +99,13 @@ $(function() {
 					.addClass('hidden');
 		});
 	// end tabs
+
+	// jsscrollpane
+		$('.scroll-pane').jScrollPane({
+			verticalDragMaxHeight : 100,
+			animateScroll : true
+		});
+	// end jsscrollpane
 	
 	//Chrome Smooth Scroll
 	try {

@@ -1,0 +1,30 @@
+.sidebar-search{
+	padding: 7px;
+	margin-bottom: 22px;
+	background-color: $f4;
+	.li-form{
+		position: relative;
+
+		.li-form-input{
+			padding-right: 45px;
+		}
+
+		.sidebar-search__submit{
+			width: 31px;
+			height: 31px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-color: $blue;
+			border: none;
+
+			&:after{
+				content: '';
+				display: block;
+				@extend .magnifier;
+				@include absolute-center-old;
+			}
+		}
+	}
+	
+}
