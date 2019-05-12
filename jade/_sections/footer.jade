@@ -1,8 +1,13 @@
 footer.footer
 	.footer-top
-		.container
-			.row
-				.col.footer-column
+		.container.footer-top__wrapper
+			.footer-cookies
+				.sp-icon.ico-close-wt
+				span Мы используем «куки»
+				a(href="#") Что это?
+			
+			.row.m-minus.justify-content-between
+				.footer-column
 					.footer-column__title ЛюдиИпотеки.рф
 					ul.footer-column__menu
 						- var fmenu1 = ['О нас', 'Карта сайта', 'Аудитория', 'Сотрудничество', 'Обратная связь'];
@@ -10,7 +15,7 @@ footer.footer
 							li
 								a(href="#")= item
 
-				.col.footer-column
+				.footer-column
 					.footer-column__title магазин исследований
 					ul.footer-column__menu
 						- var fmenu2 = ['Банковский сектор', 'Экономика и финансы', 'Строительство и недвижимость', 'Авторы исследований'];
@@ -18,7 +23,7 @@ footer.footer
 							li
 								a(href="#")= item
 
-				.col.footer-column
+				.footer-column
 					.footer-column__title новости
 					ul.footer-column__menu
 						- var fmenu3 = ['Ипотека', 'Секьюритизация', 'Банки и компании', 'Бизнес и финансы', 'Зарубежные новости'];
@@ -26,7 +31,7 @@ footer.footer
 							li
 								a(href="#")= item
 
-				.col.footer-column
+				.footer-column
 					.footer-column__title навигация
 					ul.footer-column__menu
 						- var fmenu4 = ['Эксперты', 'Компании', 'Блоги', 'Мероприятия'];
@@ -34,9 +39,42 @@ footer.footer
 							li
 								a(href="#")= item
 
-				.col.footer-column.footer-column--vk
+				.footer-column.footer-column--vk
 					img(src="img/vkontakte.jpg", alt="alt")
 
-				.col.footer-column.footer-column--vk
+				.footer-column.footer-column--vk
 					img(src="img/vkontakte.jpg", alt="alt")
 
+	.footer-middle
+		.container
+			.row
+				.col-12
+					p Редакция портала ЛюдиИпотеки.рф не несет ответственности за мнения размещенные в коммента- риях и информацию, размещенную в новостях. Мнения участников может не совпадать с мнением редакции. При перепечатке материалов портала ЛюдиИпотеки.рф необходимо указывать сайт в качестве источника с активной гиперссылкой.
+
+	.footer-bottom
+		.container
+			.row
+				.col-5
+					.footer-copyright
+						div © 2011-2019 ЛюдиИпотеки.рф — сообщество участников ипотечного рынка
+						div Все права защищены
+				
+				.footer-bottom__column
+					ul.footer-bottom__menu
+						li
+							a(href="#") Политика конфиденциальности
+						li
+							a(href="#") Пользовательское соглашение
+						li
+							a(href="#") Правила размещения
+				
+				.footer-bottom__column
+					ul.footer-bottom__menu
+						li
+							a(href="#") Реклама на сайте
+						li
+							a(href="#") Аудитория и статистика
+						li
+							a(href="#") Контакты
+
+				.col-3

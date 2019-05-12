@@ -140,6 +140,12 @@ $(function() {
 			return false;
 		});
 	// end sidebar-company toggle
+
+	// footer cookies close
+		$('.footer-cookies .sp-icon').click(function() {
+			$(this).parent().addClass('hidden');
+		});
+	// end footer cookies close
 	
 	//Chrome Smooth Scroll
 	try {
