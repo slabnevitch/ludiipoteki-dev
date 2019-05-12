@@ -80,6 +80,33 @@ $(function() {
 				// }
 				// ]
 			});
+
+			$('.sidebar-analitcs__slider').slick({
+				slidesToScroll: 1,
+				slidesToShow: 1,
+				rows: 3,
+				dots: true
+				// responsive: [
+
+				// {
+				// 	breakpoint: 560,
+				// 	settings: {
+
+				// 		slidesPerRow: 2
+
+				// 	}	
+				// },
+				// {
+				// 	breakpoint: 400,
+				// 	settings: {
+
+				// 		rows: 1,
+				// 		slidesPerRow: 1
+
+				// 	}	
+				// }
+				// ]
+			});
 	//end slick
 
 	// tabs
@@ -98,7 +125,7 @@ $(function() {
 					.siblings()
 					.addClass('hidden');
 		});
-	// end tabs
+	// end tabs	
 
 	// jsscrollpane
 		$('.scroll-pane').jScrollPane({
@@ -106,6 +133,13 @@ $(function() {
 			animateScroll : true
 		});
 	// end jsscrollpane
+
+	// sidebar-company toggle
+		$('.sidebar-iconed-title--companies').click(function() {
+			$(this).next().toggleClass('hidden');
+			return false;
+		});
+	// end sidebar-company toggle
 	
 	//Chrome Smooth Scroll
 	try {

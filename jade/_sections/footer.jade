@@ -1,0 +1,42 @@
+footer.footer
+	.footer-top
+		.container
+			.row
+				.col.footer-column
+					.footer-column__title ЛюдиИпотеки.рф
+					ul.footer-column__menu
+						- var fmenu1 = ['О нас', 'Карта сайта', 'Аудитория', 'Сотрудничество', 'Обратная связь'];
+						each item in fmenu1
+							li
+								a(href="#")= item
+
+				.col.footer-column
+					.footer-column__title магазин исследований
+					ul.footer-column__menu
+						- var fmenu2 = ['Банковский сектор', 'Экономика и финансы', 'Строительство и недвижимость', 'Авторы исследований'];
+						each item in fmenu2
+							li
+								a(href="#")= item
+
+				.col.footer-column
+					.footer-column__title новости
+					ul.footer-column__menu
+						- var fmenu3 = ['Ипотека', 'Секьюритизация', 'Банки и компании', 'Бизнес и финансы', 'Зарубежные новости'];
+						each item in fmenu3
+							li
+								a(href="#")= item
+
+				.col.footer-column
+					.footer-column__title навигация
+					ul.footer-column__menu
+						- var fmenu4 = ['Эксперты', 'Компании', 'Блоги', 'Мероприятия'];
+						each item in fmenu4
+							li
+								a(href="#")= item
+
+				.col.footer-column.footer-column--vk
+					img(src="img/vkontakte.jpg", alt="alt")
+
+				.col.footer-column.footer-column--vk
+					img(src="img/vkontakte.jpg", alt="alt")
+
