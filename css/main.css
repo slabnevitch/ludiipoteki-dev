@@ -4670,11 +4670,42 @@ h1, h2 {
 
 .li-popup-subject {
   max-width: 617px; }
+  .li-popup-subject .li-popup__body {
+    padding: 10px 10px 12px 15px; }
 
-.subjects-slider .slick-active .tabs__link {
-  font-family: "RobotoBold", sans-serif;
-  color: #000;
-  opacity: 1; }
+.subjects-slider {
+  margin-top: 10px;
+  margin-bottom: 20px; }
+  .subjects-slider .slick-prev {
+    left: 0;
+    z-index: 2; }
+  .subjects-slider .slick-next {
+    right: 0;
+    z-index: 2; }
+  .subjects-slider .slick-active .tabs__link {
+    font-family: "RobotoBold", sans-serif;
+    color: #000;
+    opacity: 1; }
+  .subjects-slider:before, .subjects-slider:after {
+    content: '';
+    display: block;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1; }
+  .subjects-slider:before {
+    left: 0;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(#F4F4F4));
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), #F4F4F4);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #F4F4F4); }
+  .subjects-slider:after {
+    content: '';
+    right: 0;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#F4F4F4));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #F4F4F4);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #F4F4F4); }
 
 .subjects-slide {
   text-align: center; }
@@ -4682,6 +4713,29 @@ h1, h2 {
     font-size: 14px;
     text-transform: uppercase;
     opacity: .3; }
+
+.subject-range {
+  margin-bottom: 16px; }
+
+.noUi-horizontal {
+  height: 3px;
+  border: none;
+  background-color: #C1C1C1; }
+
+.noUi-horizontal .noUi-handle {
+  width: 91px;
+  height: 5px;
+  background-color: #597DA2;
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  top: -1px;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  .noUi-horizontal .noUi-handle:before, .noUi-horizontal .noUi-handle:after {
+    display: none; }
+  .noUi-horizontal .noUi-handle:focus {
+    outline: none; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
