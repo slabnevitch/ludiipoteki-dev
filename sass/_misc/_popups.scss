@@ -49,4 +49,27 @@
 	font-size: 16px;
 	line-height: 15px;
 	background-color: $blue;
+	text-transform: uppercase;
+}
+
+.li-popup-subject{
+	max-width: 617px;
+}
+.subjects-slider{
+	.slick-active{
+			.tabs__link{
+				font-family: $r-b;
+				color: #000;
+				opacity: 1;
+			}
+	}
+}
+.subjects-slide{
+	text-align: center;
+
+	.tabs__link{
+		font-size: 14px;
+		text-transform: uppercase;
+		opacity: .3;
+	}
 }

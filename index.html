@@ -193,7 +193,7 @@
                       <h2>Личные блоги</h2>
                       <div class="title-block__icons"><a href="#" class="title-block__icon title-block__icon--rss"><i class="icon-rss"></i></a></div>
                     </div>
-                    <div class="li-tabs">
+                    <div class="li-tabs tabs-wrapper">
                       <ul class="tabs__list">
                         <li class="tabs__item tabs__item--active"><a href="#item1" class="tabs__link">Актуальные</a></li>
                         <li class="tabs__item"><a href="#item2" class="tabs__link">Новые</a></li>
@@ -394,7 +394,7 @@
                       <h2>корпоративные блоги</h2>
                       <div class="title-block__icons"><a href="#" class="title-block__icon title-block__icon--rss"><i class="icon-rss"></i></a></div>
                     </div>
-                    <div class="li-tabs">
+                    <div class="li-tabs tabs-wrapper">
                       <ul class="tabs__list">
                         <li class="tabs__item tabs__item--active"><a href="#item1" class="tabs__link">Актуальные</a></li>
                         <li class="tabs__item"><a href="#item2" class="tabs__link">Новые</a></li>
@@ -928,7 +928,58 @@
         </form>
       </div>
     </div>
-    <div id="li-subject-popup" class="li-popup li-popup-subject"></div>
+    <div id="li-subject-popup" class="li-popup li-popup-subject">
+      <header class="li-popup__header">Выбор новостей по сюжету</header>
+      <div class="li-popup__body tabs-wrapper">
+        <ul class="subjects-slider tabs__list">
+          <li class="tabs__item tabs__item--active subjects-slide"><a href="#item1" class="tabs__link">новости рынка кредитования</a></li>
+          <li class="tabs__item subjects-slide"><a href="#item2" class="tabs__link">новости рынка банков</a></li>
+          <li class="tabs__item subjects-slide"><a href="#item3" class="tabs__link">новости законодательства</a></li>
+          <li class="tabs__item subjects-slide"><a href="#item4" class="tabs__link">Оценочная компания</a></li>
+          <li class="tabs__item subjects-slide"><a href="#item5" class="tabs__link">Кредитный брокер</a></li>
+          <li class="tabs__item subjects-slide"><a href="#item6" class="tabs__link">Корпоративные новости</a></li>
+        </ul>
+        <ul class="tabs__content subject-content">
+          <li id="item1" class="tabs__item">
+            <label>
+              <input type="checkbox"><span>Новости БайкалБанк</span>
+            </label>
+            <label>
+              <input type="checkbox"><span>Новости Абсолют Банк</span>
+            </label>
+            <label>
+              <input type="checkbox"><span>Новости Абсолют Банк</span>
+            </label>
+            <label>
+              <input type="checkbox"><span>Новости АК БАРС Банк</span>
+            </label>
+            <label>
+              <input type="checkbox"><span>Новости БайкалБанк</span>
+            </label>
+            <label>
+              <input type="checkbox"><span>Новости БайкалБанк</span>
+            </label>
+            <label>
+              <input type="checkbox"><span>Новости Балтинвестбанк</span>
+            </label>
+            <label>
+              <input type="checkbox"><span>Новости Банк &quot;Русь&quot;</span>
+            </label>
+            <label>
+              <input type="checkbox"><span>Новости Банк &quot;Аверс&quot;</span>
+            </label>
+            <label>
+              <input type="checkbox"><span>Корпоративные новости</span>
+            </label>
+          </li>
+          <li id="item2" class="tabs__item hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi nostrum modi debitis, neque, fugit dignissimos magni perferendis fugiat fuga, rerum, mollitia quia harum ducimus! Dolores, quidem natus voluptatem quos.</li>
+          <li id="item3" class="tabs__item hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem delectus expedita laudantium aut error accusamus eveniet nostrum repudiandae, similique facilis, adipisci accusantium nesciunt, modi perferendis labore veniam dolor, assumenda cupiditate.</li>
+          <li id="item4" class="tabs__item hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias veniam quam itaque, sequi, possimus ab odio at rem. Nisi provident pariatur fuga sed ea perspiciatis illum ipsum, beatae similique rerum!</li>
+          <li id="item5" class="tabs__item hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolorum illo obcaecati a, ratione debitis magnam eveniet repellendus provident odio sed in ea, quidem iste necessitatibus! Ducimus autem dolorem, fugit.</li>
+          <li id="item6" class="tabs__item hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolorum illo obcaecati a, ratione debitis magnam eveniet repellendus provident odio sed in ea, quidem iste necessitatibus! Ducimus autem dolorem, fugit.</li>
+        </ul>
+      </div>
+    </div>
     <script src="js/libs/jquery/jquery-1.11.2.min.js"></script>
     <script src="js/libs/superfish/dist/js/hoverIntent.js"></script>
     <script src="js/libs/superfish/dist/js/superfish.min.js"></script>
