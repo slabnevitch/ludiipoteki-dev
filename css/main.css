@@ -4737,6 +4737,36 @@ h1, h2 {
   .noUi-horizontal .noUi-handle:focus {
     outline: none; }
 
+.subject-content-item {
+  position: relative;
+  padding-left: 15px;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  -webkit-column-rule: 1px solid #748A9F;
+  -moz-column-rule: 1px solid #748A9F;
+  column-rule: 1px solid #748A9F;
+  list-style-type: none; }
+  .subject-content-item label input, .subject-content-item label span {
+    display: inline-block;
+    vertical-align: middle; }
+  .subject-content-item label input {
+    margin-right: 7px; }
+  .subject-content-item label span {
+    color: #34495e; }
+  .subject-content-item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #748A9F; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {

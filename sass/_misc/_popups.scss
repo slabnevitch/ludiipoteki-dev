@@ -135,3 +135,38 @@
 	}
 
 }
+.subject-content-item{
+	position: relative;
+	padding-left: 15px;
+	 column-count: 3;
+	 column-gap: 30px;
+	 column-rule: 1px solid #748A9F;
+	 list-style-type: none;
+
+	label{
+	 input, span{
+		display: inline-block;
+		vertical-align: middle;
+	 }
+	
+		input{
+			margin-right: 7px;
+		}	
+		span{
+			color: #34495e;
+		}
+	}
+
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		left: 5px;
+		top: 0;
+		width: 1px;
+		height: 100%;
+		background-color: #748A9F;
+	}
+
+
+}
