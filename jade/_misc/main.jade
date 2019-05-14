@@ -17,27 +17,19 @@ html(lang='ru')
 		include _mixins
 		include ../_sections/header
 
-		//- main.main-content
-		//- 	.container
-		//- 		.row
-		//- 			.col-9.main-content
-		//- 				block main
+		main.main-content
+			.container
+				.row
+					.col-9.main-content
+						block main
 					
-		//- 			aside.right-sidebar.col-3
-		//- 				block sidebar
+					aside.right-sidebar.col-3
+						block sidebar
 
 
 		//- include ../_sections/footer
 		//- include popups
 		
-		script(src='js/libs/jquery/jquery-1.11.2.min.js')
-		script(src='js/libs/superfish/dist/js/hoverIntent.js')
-		script(src='js/libs/superfish/dist/js/superfish.min.js')
-		script(src='js/libs/magnific-popup/dist/jquery.magnific-popup.min.js')
-		script(src='js/libs/slick-master/slick.js')
-		script(src='js/libs/jsscrollpane/js/jquery.mousewheel.js')
-		script(src='js/libs/jsscrollpane/js/jquery.jscrollpane.min.js')
-		script(src='js/libs/wnumb/wNumb.js')
-		script(src='js/libs/noUiSlider/nouislider.min.js')
+		include ../_includes/scripts
 		block page-scripts
 		script(src='js/common.js')

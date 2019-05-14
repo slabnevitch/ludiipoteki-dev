@@ -1,34 +1,32 @@
 /* HEADER */
 .header-reg{
 	.header-enter{
-		width: 200px;
-		padding-left: 30px;
-		padding-right: 10px;
-		
-		position: relative;
-		cursor: pointer;
-		white-space: nowrap;
-
-		span{
-			display: block;
-			max-width: 100%;
-		overflow: hidden;
-		}
-
-		.chev-top{
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			left: 7px;
-		}
+		display: none;
+	}
+	.header-enter--reg{
+		display: block;
 
 	}
 	.header-top__menu:not(.header-top__menu--reg){
 		margin-right: 73px;
 	}
+	.header-top__menu--reg{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
 }
 .header-top{
 	background-color: $gray;
+}
+.header-authorized{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
 }
 .header-top-inner{
 	display: -webkit-flex;
@@ -90,6 +88,7 @@
 	}
 
 	&--reg{
+		display: none;
 		margin-right: 0;
 	}
 
@@ -160,6 +159,30 @@
 	padding-right: 0;
 	width: 100px;
 	font-family: $r-b;
+
+	&--reg{
+		display: none;
+		width: 200px;
+		padding-left: 30px;
+		padding-right: 10px;
+		
+		position: relative;
+		cursor: pointer;
+		white-space: nowrap;
+
+		span{
+			display: block;
+			max-width: 100%;
+		overflow: hidden;
+		}
+
+		.chev-top{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 7px;
+		}
+	}
 }
 .header-enter__menu{
 	position: absolute;

@@ -29,7 +29,7 @@ header.header
 							a(href="#")
 								.sp-icon.home
 					
-					ul.header-top__menu.header-top__menu--text
+					ul.header-top__menu.header-top__menu--text.header-top__menu--not-autor
 						li
 							a(href="#") О нас
 						li
@@ -37,7 +37,25 @@ header.header
 						li
 							a(href="#") Обратная связь
 
+					ul.header-top__menu.header-top__menu--reg
+						li.header-mail.active
+							a(href="#").header-menu-icon
+								.sp-icon.mail
+						li.header-bell
+							a(href="#").header-menu-icon
+								.header-bell__dot
+								.sp-icon.bell
+
 					a(href="#li-enter-popup").header-enter.button.to-popup ВХОД
+
+					.header-enter.header-enter--reg.button
+						span ФАМИЛИЯЯЯЯЯ ИМЯЯЯЯЯЯЯ
+						span.sp-icon.chev-top
+						ul.header-enter__menu
+							li
+								a(href="#") Настройки
+							li
+								a(href="") Выход
 
 					a(href="#").toggle-mnu
 						span

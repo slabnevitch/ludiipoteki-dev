@@ -498,6 +498,7 @@ h1, h2{
   height: 12px;
   // margin-top: 14px;
   margin-left: 5px;
+  flex-shrink: 0;
 
   span:after, span:before{
 
@@ -544,5 +545,9 @@ h1, h2{
     transform: rotate(-45deg) translate(4px, -7px);
   } 
 } 
-
+.header-top{
+  .toggle-mnu{
+    display: none;
+  }
+}
 /* end main styles */
