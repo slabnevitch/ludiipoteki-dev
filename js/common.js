@@ -1,10 +1,19 @@
 $(function() {
 	$(document).ready(function(){
+
+	// header-top__menu toggle
+		$(".toggle-mnu").click(function() {
+			$(this).toggleClass("on");
+			$(".header-top__menu--text").stop(true, true).slideToggle(150);
+			return false;
+		});
+	// end header-top__menu toggle
+
 	// superfish
 
 			var headerSF = $('.sf-menu').superfish({
 				pathClass:	'current',
-				speed: 1,
+				// speed: 1,
 				speedOut: 1,
 				onInit:  function() {
 					// console.log($(this.context).children('li:first').find('a').text());
@@ -195,7 +204,7 @@ $(function() {
 
 			$('.subjects-slider').slick(opts);
 			$('.subjects-slider').slick('unslick');
-			range.noUiSlider.destroy();
+			// range.noUiSlider.destroy();
 
 			$('#subjects-open').magnificPopup({
 				type: 'inline',

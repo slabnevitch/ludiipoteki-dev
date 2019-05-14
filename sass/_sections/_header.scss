@@ -83,7 +83,11 @@
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	margin-right: 132px;
+
+	&--text{
+		margin-right: 132px;
+		
+	}
 
 	&--reg{
 		margin-right: 0;
@@ -237,7 +241,7 @@
 				text-decoration: none;
 				background-color: $gray;
 
-				.header-menu__link{
+				.header-menu__val{
 					color: $blue;
 				}
 
@@ -267,7 +271,7 @@
 			position: static;
 			line-height: auto;
 		}
-		.header-menu__link{
+		.header-menu__val{
 			font-size: 12px;
 			color: #b8c9da;
 			line-height: 12px;
@@ -356,6 +360,15 @@
 }
 .sf-navbar ul li:hover, .sf-navbar ul li.sfHover, .sf-navbar ul ul li{
 	background: transparent;
+}
+.header-right-mob{
+	display: none;
+	
+
+	.li-search{
+		width: 270px;	
+		margin-bottom: 15px;
+	}
 }
 
 /*END OF HEADER */
