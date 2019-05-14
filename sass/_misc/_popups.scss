@@ -170,3 +170,24 @@
 
 
 }
+.li-popup-subject__footer{
+	background-color: $f4;
+
+	a:not(.button){
+		margin-right: 21px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #34495e;
+		border-bottom: 1px dashed #34495e;
+		}
+}
+.li-popup-email{
+	max-width: 538px;
+
+	.li-popup__header{
+		
+		padding-left: 19px;
+		padding-right: 19px;
+	}
+
+}

@@ -44,7 +44,21 @@ $(function() {
 			}
 		}
 	});
+
 	// end magnific-popup
+
+	// subscribe form submit
+		$('.news-subscribe__body').submit(function() {
+			$.magnificPopup.open({
+				items: {
+					src: $('#li-popup-email')
+				},
+				type: 'inline'
+			});
+
+			return false;
+		});
+	// end subscribe form submit
 
 	// registered button toggle
 		$('.header-reg .header-enter').click(function() {
@@ -163,6 +177,7 @@ $(function() {
 		   			if(handlePosition == '100.0'){
 		   				handle.setAttribute('style', 'right:' + handleWidth + 'px;' + 'left: auto;');
 		   			}
+		   			subjectsTabsHandling(this.get() - 1);
 				});
 
 				dragger.on('end', function(){
@@ -173,38 +188,47 @@ $(function() {
 			});
 
 			$('.subjects-slider').on('afterChange',function(e,slick,currentSlide){
-			  console.log(currentSlide);
+			  // console.log('current skide ' + currentSlide);
 			  range.noUiSlider.set(currentSlide+1);
+			  subjectsTabsHandling(currentSlide);
 			});
 
 			$('.subjects-slider').slick(opts);
-			// $('.subjects-slider').slick('unslick');
-			// range.noUiSlider.destroy();
+			$('.subjects-slider').slick('unslick');
+			range.noUiSlider.destroy();
 
-			// $('.popup-open').magnificPopup({
-			// 	type: 'inline',
-			// 	preloader: false,
-			// 	focus: '#name',
+			$('#subjects-open').magnificPopup({
+				type: 'inline',
+				preloader: false,
+				focus: '#name',
 
-			// 	// When elemened is focused, some mobile browsers in some cases zoom in
-			// 	// It looks not nice, so we disable it:
-			// 	callbacks: {
-			// 		beforeOpen: function() {
-			// 			if($(window).width() < 700) {
-			// 				this.st.focus = false;
-			// 			} else {
-			// 				this.st.focus = '#name';
-			// 			}
-			// 		},
-		 //      open: function() {
-		 //        $('.slider').slick(opts);
-		 //      },
-		 //      close:function(){
-		 //         $('.slider').slick('unslick');
-		 //         range.noUiSlider.destroy();
-		 //      }
-			// 	}
-			// });
+				// When elemened is focused, some mobile browsers in some cases zoom in
+				// It looks not nice, so we disable it:
+				callbacks: {
+					beforeOpen: function() {
+						if($(window).width() < 700) {
+							this.st.focus = false;
+						} else {
+							this.st.focus = '#name';
+						}
+					},
+		      open: function() {
+		        $('.subjects-slider').slick(opts);
+		      },
+		      close:function(){
+		         $('.subjects-slider').slick('unslick');
+		         range.noUiSlider.destroy();
+		      }
+				}
+			});
+
+		function subjectsTabsHandling(tabNumber) {
+			$('.subject-content-item').eq(tabNumber)
+				.removeClass('hidden')
+				.siblings()
+				.addClass('hidden');
+
+		}
 	// end subjects popup
 
 	// tabs

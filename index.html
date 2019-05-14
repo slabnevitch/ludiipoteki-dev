@@ -769,7 +769,7 @@
               <div class="sidebar-informer__body">
                 <iframe width="240" height="400" src="http://rusipoteka.ru/informer/show/" frameborder="0" scrolling="no"></iframe>
               </div>
-            </div><a href="#" class="sidebar-iconed-title sidebar-block">
+            </div><a href="#li-subject-popup" id="subjects-open" class="sidebar-iconed-title sidebar-block">
               <div class="sidebar-title-icon">
                 <div class="sp-icon ico-checklist"></div>
               </div><span>Выбрать новости по сюжету</span></a>
@@ -928,7 +928,7 @@
         </form>
       </div>
     </div>
-    <div id="li-subject-popup" class="li-popup li-popup-subject">
+    <div id="li-subject-popup" class="li-popup li-popup-subject mfp-hide">
       <header class="li-popup__header">Выбор новостей по сюжету</header>
       <div class="li-popup__body tabs-wrapper">
         <ul class="subjects-slider tabs__list">
@@ -940,7 +940,7 @@
           <li class="tabs__item subjects-slide"><a href="#item6" class="tabs__link">Корпоративные новости</a></li>
         </ul>
         <div id="subject-range" class="subject-range"></div>
-        <ul class="tabs__content subject-content">
+        <ul id="subject-content" class="tabs__content subject-content">
           <li id="item1" class="tabs__item subject-content-item">
             <label>
               <input type="checkbox"><span>Новости БайкалБанк</span>
@@ -1494,6 +1494,24 @@
             </label>
           </li>
         </ul>
+      </div>
+      <div class="li-popup-subject__footer text-right"><a href="#">сбросить выбор</a><a href="#" class="button button-mini button-l-blue">применить</a></div>
+    </div>
+    <div id="li-popup-email" class="li-popup li-popup-email mfp-hide">
+      <header class="li-popup__header">Данный email уже подписан на новостную рассылку</header>
+    </div>
+    <div id="li-popup-blog-sbscr" class="li-popup li-popup-blog-sbscr mfp-hide">
+      <header class="li-popup__header">АВТОРИЗАЦИЯ</header>
+      <div class="li-popup__body">
+        <form action="#" class="li-form">
+          <label class="li-form-label"><span class="li-form-label-name">E-mail:</span>
+            <input type="text" name="name" class="li-form-input">
+          </label>
+          <div class="li-form__buttons text-right">
+            <button class="button button-mini button-l-blue">OK</button>
+            <button class="button button-mini button-l-blue">ОТМЕНА</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="js/libs/jquery/jquery-1.11.2.min.js"></script>

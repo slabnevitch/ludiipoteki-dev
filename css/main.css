@@ -4767,6 +4767,21 @@ h1, h2 {
     height: 100%;
     background-color: #748A9F; }
 
+.li-popup-subject__footer {
+  background-color: #F4F4F4; }
+  .li-popup-subject__footer a:not(.button) {
+    margin-right: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #34495e;
+    border-bottom: 1px dashed #34495e; }
+
+.li-popup-email {
+  max-width: 538px; }
+  .li-popup-email .li-popup__header {
+    padding-left: 19px;
+    padding-right: 19px; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
