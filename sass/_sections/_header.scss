@@ -361,6 +361,18 @@
 }
 .sf-arrows .sf-with-ul:after{
 	display: none;
+	width: 5px;
+	height: 5px;
+	right: auto;
+	left: 11px;
+	border: 0 none;
+	border: 1px solid #7A8F9C;
+	border-bottom: none;
+	border-left: none;
+	border-top-color: transparent;
+	border-top-color: #7A8F9C !important;
+	transform: rotate(135deg);
+
 }
 .sf-navbar:before{
 	// display: none;
@@ -391,6 +403,9 @@
 	.li-search{
 		width: 270px;	
 		margin-bottom: 15px;
+	}
+	.news-subscribe{
+		display: none;
 	}
 }
 

@@ -6,6 +6,8 @@ block title
 block main
 	.container-fluid
 		.row.m-minus
+			.col-xl-4.order-sm-3
+				include _sections/news-block
 			.col-12
 				.day-theme
 					.title-block
@@ -27,9 +29,7 @@ block main
 
 					.day-theme__bottom.text-right
 						a(href="#").li-red-link Архив Тем дня
-		
-		.row.m-minus
-			.col-8
+			.col-xl-8
 				.blogs-previews
 					.blogs-previews__banner
 						img(src="img/header-banner.jpg", alt="alt")
@@ -154,10 +154,6 @@ block main
 							p.announcements-item__text Организатор: Бюллетень недвижимости
 					.personal-blogs__bottom.more-container.text-right
 						a(href="#").li-red-link Все анонсы
-
-			.col-4
-				include _sections/news-block
-
 
 block sidebar
 	include _sections/sidebar-permanent

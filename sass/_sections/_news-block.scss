@@ -42,10 +42,15 @@
 	}
 }
 .scroll-pane{
-	width: 100%;
+	width: 100% !important;
 	height: 1180px;
 
 	overflow: auto;
+}
+.jspContainer,
+.jspPane{
+	width: 100% !important;
+
 }
 .news-items{
 }

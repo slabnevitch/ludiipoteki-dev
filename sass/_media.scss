@@ -12,6 +12,16 @@
 	.header-reg .header-top__menu:not(.header-top__menu--reg){
 		margin-right: 0;
 	}
+	.news-subscribe{
+		margin-top: 33px;
+	}
+	.news-subscribe__body input{
+		flex: 1 1 auto;
+		margin-right: 26px;
+	}
+	.news-subscribe__body .button{
+		margin-left: 0;
+	}
 }
 	
 /* Medium Devices, Desktops */
@@ -88,8 +98,19 @@
 		
 	}
 	.header-menu .header-menu__sublink{
+		padding-top: 5px;
+		padding-bottom: 5px;
 		white-space: pre-line;
 		text-align: center;
+	}
+
+	.right-sidebar{
+		.li-search{
+			display: none;	
+		}
+	}
+	.news-items{
+		height: 417px;
 	}
 }
 	
@@ -98,6 +119,7 @@
 @media only screen and (max-width : 768px){
 	.header-bottom__inner{
 		display: block;	
+		margin-bottom: 0;
 	}
 	.header-bottom{
 		.sf-navbar:before{
@@ -154,8 +176,15 @@
 		padding-bottom: 5px;
 	}
 	.header-menu .header-menu__link{
+		padding-left: 25px;
 		border: 1px solid #DCDCDC;
 		border-top: none;
+
+		&.opened{
+			&:after{
+				transform: rotate(-45deg);
+			}
+		}
 	}
 	.header-menu li.active .header-menu__link{
 		border-right-color: transparent;
@@ -177,6 +206,14 @@
 		.add-news{
 			display: block;
 		}
+		.news-subscribe{
+			display: block;
+			margin-top: 15px;
+			text-align: left;
+		}
+	}
+	.news-subscribe__body input{
+		margin-right: 8px;
 	}
 	.header-top-inner{
 		position: relative;
@@ -228,6 +265,16 @@
 			font-size: 10px;
 		}
 	}
+	.news-block{
+		margin-top: 30px;
+		.news-subscribe{
+			display: none;
+		}
+	}
+	.sf-arrows .sf-with-ul:after{
+		display: block;
+	}
+
 	// .header-enter{
 	// 	display: none;
 	// }
@@ -263,6 +310,56 @@
 
 
 	
+@media only screen and (max-width : 576px){
+	
+	.news-block{
+		margin-bottom: 30px;
+	}
+	.news-items{
+		height: 300px;
+	}
+	.blogs-previews__banner,
+	.li-banners-wrapper{
+		display: none;
+	}
+	.day-theme{
+		margin-top: 0;
+	}
+	.day-theme__slider .slick-slide{
+		margin-right: 0;
+	}
+	.day-theme__slide{
+		display: block !important;
+
+		.li-portrait{
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+		}
+		.day-theme__slide-text{
+			margin-left: 0;
+
+			.li-person-name{
+				text-align: center;
+			}
+		}
+	}
+	.day-theme__bottom .li-red-link{
+		top: 0;
+	}
+	.blogs-previews__item{
+		.li-portrait{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.li-person-name{
+			text-align: center;
+		}
+	}
+	.blogs-previews__item-info{
+		text-align: center;
+	}
+}
 	
 
 /* Extra Small Devices, Phones */
@@ -270,6 +367,9 @@
 /**/
 	.header-enter{
 		display: none;
+	}
+	.day-theme__bottom{
+		margin-top: 40px;
 	}
 }
 		
@@ -326,6 +426,7 @@
 @media only screen and (min-width : 1200px){
 	/**/
 }
+
 
 
 

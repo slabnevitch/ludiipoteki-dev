@@ -19,7 +19,14 @@ $(function() {
 					// console.log($(this.context).children('li:first').find('a').text());
 					// console.log($(this));
 					$(this).children('li.active').superfish('show');
-				}
+				},
+				onBeforeShow: function() {
+				 	this.context.querySelector('.sf-with-ul').classList.add('opened');
+				 },
+				 onBeforeHide: function() {
+				 	
+				 	$('.sf-with-ul').removeClass('opened');
+				 }
 			});
 
 			$('.header-menu__link').mouseover(function() {
@@ -81,54 +88,49 @@ $(function() {
 			$('.day-theme__slider').slick({
 				slidesToScroll: 1,
 				slidesToShow: 2,
-				dots: true
-				// responsive: [
+				dots: true,
+				responsive: [
 				
-				// {
-				// 	breakpoint: 560,
-				// 	settings: {
+				{
+					breakpoint: 961,
+					settings: {
 						
-				// 		slidesPerRow: 2
+						slidesToShow: 1
 
-				// 	}	
-				// },
-				// {
-				// 	breakpoint: 400,
-				// 	settings: {
-						
-				// 		rows: 1,
-				// 		slidesPerRow: 1
+					}	
+				}
 
-				// 	}	
-				// }
-				// ]
+				]
 			});
 
 			$('.sidebar-analitcs__slider').slick({
 				slidesToScroll: 1,
-				slidesToShow: 1,
+				// slidesToShow: 1,
+				slidesPerRow: 1,
 				rows: 3,
-				dots: true
-				// responsive: [
+				dots: true,
+				responsive: [
 
-				// {
-				// 	breakpoint: 560,
-				// 	settings: {
+				{
+					breakpoint: 960,
+					settings: {
 
-				// 		slidesPerRow: 2
+						rows: 1,
+						slidesToShow: 1,
+							slidesPerRow: 3
 
-				// 	}	
-				// },
-				// {
-				// 	breakpoint: 400,
-				// 	settings: {
+					}	
+				},
+				{
+					breakpoint: 400,
+					settings: {
 
-				// 		rows: 1,
-				// 		slidesPerRow: 1
+						rows: 1,
+						slidesPerRow: 1
 
-				// 	}	
-				// }
-				// ]
+					}	
+				}
+				]
 			});
 
 	//end slick
@@ -260,9 +262,16 @@ $(function() {
 	// end tabs	
 
 	// jsscrollpane
-		$('.scroll-pane').jScrollPane({
+		var scrollPane = $('.scroll-pane').jScrollPane({
 			verticalDragMaxHeight : 100,
 			animateScroll : true
+		});
+
+		var scrollPaneApi = scrollPane.data('jsp');
+		console.log(scrollPaneApi);
+
+		$(window).resize(function() {
+			scrollPaneApi.reinitialise();
 		});
 	// end jsscrollpane
 

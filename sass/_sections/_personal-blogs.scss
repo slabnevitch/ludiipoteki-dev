@@ -14,6 +14,7 @@
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
+		flex-wrap: wrap;
 
 	}
 	.tabs__item{
@@ -44,6 +45,7 @@
 .blogs-previews{
 	margin-bottom: 26px;
 }
+
 .personal-blogs__content{
 	padding-top: 30px;
 	display: -webkit-flex;
@@ -56,6 +58,7 @@
 	margin-right: -15px;
 }
 .blogs-previews__item{
+	margin-bottom: 20px;
 	.li-portrait,
 	.li-person-name{
 		margin-bottom: 16px;
@@ -133,5 +136,8 @@
 }
 .announcements-item__text{
 	margin: 0;
+}
+.personal-blogs__bottom{
+	margin-top: 0;
 }
 /* end personal-blogs */
