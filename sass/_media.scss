@@ -112,6 +112,31 @@
 	.news-items{
 		height: 417px;
 	}
+	.sidebar-multi-wrap{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+		
+		&--for-buttons{
+			// display: block;
+
+			.sidebar-iconed-title{
+				width: 270px;
+				padding-right: 15px;
+
+
+			}
+			.sidebar-company{
+				margin-left: 15px;
+				width: 270px;
+			}
+
+		}
+	}
 }
 	
 	
@@ -358,6 +383,25 @@
 	}
 	.blogs-previews__item-info{
 		text-align: center;
+	}
+	.sidebar-multi-wrap{
+		display: block;
+
+		&--for-buttons{
+			// display: block;
+
+			.sidebar-iconed-title{
+				width: auto;
+				padding-right: 0;
+
+
+			}
+			.sidebar-company{
+				margin-left: 0;
+				width: auto;
+			}
+
+		}
 	}
 }
 	

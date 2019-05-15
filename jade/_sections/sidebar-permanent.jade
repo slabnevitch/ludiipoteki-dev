@@ -26,32 +26,34 @@
 		.more-container.text-right
 			a(href="#").li-red-link Все исследования
 
-.sidebar-banner
-	img(src="img/sidebar-banner.jpg", alt="alt")
+.sidebar-multi-wrap
+	.sidebar-banner
+		img(src="img/sidebar-banner.jpg", alt="alt")
 
-.sidebar-informer
-	.sidebar-informer__title Ипотечный информер
-	.sidebar-informer__body
-		iframe(width="240" height="400" src="http://rusipoteka.ru/informer/show/" frameborder="0" scrolling="no")
+	.sidebar-informer
+		.sidebar-informer__title Ипотечный информер
+		.sidebar-informer__body
+			iframe(width="240" height="400" src="http://rusipoteka.ru/informer/show/" frameborder="0" scrolling="no")
 
-a(href="#li-subject-popup").sidebar-iconed-title.sidebar-block#subjects-open
-		.sidebar-title-icon
-			.sp-icon.ico-checklist
+.sidebar-multi-wrap.sidebar-multi-wrap--for-buttons
+	a(href="#li-subject-popup").sidebar-iconed-title.sidebar-block#subjects-open
+			.sidebar-title-icon
+				.sp-icon.ico-checklist
 
-		span Выбрать новости по сюжету
+			span Выбрать новости по сюжету
 
-.sidebar-company.sidebar-block
-	a(href="#").sidebar-iconed-title.sidebar-iconed-title--companies
-		.sidebar-title-icon
-			.sp-icon.ico-case-wt
+	.sidebar-company.sidebar-block
+		a(href="#").sidebar-iconed-title.sidebar-iconed-title--companies
+			.sidebar-title-icon
+				.sp-icon.ico-case-wt
 
-		span деятельность компаний
-		.sp-icon.chev-top
+			span деятельность компаний
+			.sp-icon.chev-top
 
-	.sidebar-company__content
-		- var companyes = ['Банк иностранный', 'Банк российский', 'Госструктура, законотворчество', 'Инвестиционная компания', 'Ипотечная компания, агентство, фонд', 'Ипотечный брокер специализированный', 'Коллекторская деятельность', 'Консалтинговая или исследовательская компания', 'Кредитный брокер', 'Общественная или профессиональная организация', 'Организатор конференций, форумов', 'Оценочная компания', 'Паевой инвестиционный фонд', 'Преподаватель, аспирант, студент', 'Про- ведение обучающих курсов и семинаров', 'Разработчик IT систем', 'Рейтинговое агентство', 'Рефинансирующая организация иностранная' , 'Рефинансирующая организация российская', 'Риэлторская компания', 'СМИ печатное или электронное', 'Страховая компания', 'Строительная организация', 'Юридическая компания иностранная', 'Юридическая компания российская'];
-		
-		ul
-			each item in companyes
-				li
-					a(href="#")= item
+		.sidebar-company__content
+			- var companyes = ['Банк иностранный', 'Банк российский', 'Госструктура, законотворчество', 'Инвестиционная компания', 'Ипотечная компания, агентство, фонд', 'Ипотечный брокер специализированный', 'Коллекторская деятельность', 'Консалтинговая или исследовательская компания', 'Кредитный брокер', 'Общественная или профессиональная организация', 'Организатор конференций, форумов', 'Оценочная компания', 'Паевой инвестиционный фонд', 'Преподаватель, аспирант, студент', 'Про- ведение обучающих курсов и семинаров', 'Разработчик IT систем', 'Рейтинговое агентство', 'Рефинансирующая организация иностранная' , 'Рефинансирующая организация российская', 'Риэлторская компания', 'СМИ печатное или электронное', 'Страховая компания', 'Строительная организация', 'Юридическая компания иностранная', 'Юридическая компания российская'];
+			
+			ul
+				each item in companyes
+					li
+						a(href="#")= item

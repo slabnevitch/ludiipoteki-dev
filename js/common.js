@@ -116,17 +116,26 @@ $(function() {
 					settings: {
 
 						rows: 1,
-						slidesToShow: 1,
-							slidesPerRow: 3
+						slidesToShow: 3
+							// slidesPerRow: 3
 
 					}	
 				},
 				{
-					breakpoint: 400,
+					breakpoint: 768,
 					settings: {
 
 						rows: 1,
-						slidesPerRow: 1
+						slidesToShow: 2
+
+					}	
+				},
+				{
+					breakpoint: 576,
+					settings: {
+
+						rows: 1,
+						slidesToShow: 1
 
 					}	
 				}

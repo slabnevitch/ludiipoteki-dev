@@ -321,7 +321,7 @@ h1, h2{
   color: $blue;
   font-size: 19px;
   text-transform: uppercase;
-  flex-shrink: 0;
+  // flex-shrink: 0;
 }
 .li-portrait{
   position: relative;
@@ -330,8 +330,8 @@ h1, h2{
   height: 130px;
   img{
     @include absolute-center;
-    left: 0;
-    transform: translate(0, -50%);
+    // left: 0;
+    // transform: translate(0, -50%);
   }
 }
 .li-person-name{

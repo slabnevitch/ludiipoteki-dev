@@ -3623,10 +3623,7 @@ h1, h2 {
   font-family: "RobotoBlack", sans-serif;
   color: #23485F;
   font-size: 19px;
-  text-transform: uppercase;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0; }
+  text-transform: uppercase; }
 
 .li-portrait {
   position: relative;
@@ -3642,11 +3639,7 @@ h1, h2 {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    left: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%); }
+    transform: translate(-50%, -50%); }
 
 .li-person-name {
   font-family: "RobotoBold", sans-serif;
@@ -4334,15 +4327,10 @@ h1, h2 {
   display: flex;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px; }
+  flex-wrap: wrap; }
 
 .announcements-item {
-  width: -webkit-calc(33.33333% - 30px);
-  width: calc(33.33333% - 30px);
-  margin-left: 15px;
-  margin-right: 15px; }
+  margin-bottom: 20px; }
 
 .announcements-item__title {
   margin-bottom: 11px;
@@ -4947,7 +4935,28 @@ h1, h2 {
   .right-sidebar .li-search {
     display: none; }
   .news-items {
-    height: 417px; } }
+    height: 417px; }
+  .sidebar-multi-wrap {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .sidebar-multi-wrap--for-buttons .sidebar-iconed-title {
+      width: 270px;
+      padding-right: 15px; }
+    .sidebar-multi-wrap--for-buttons .sidebar-company {
+      margin-left: 15px;
+      width: 270px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -5093,7 +5102,15 @@ h1, h2 {
   .blogs-previews__item .li-person-name {
     text-align: center; }
   .blogs-previews__item-info {
-    text-align: center; } }
+    text-align: center; }
+  .sidebar-multi-wrap {
+    display: block; }
+    .sidebar-multi-wrap--for-buttons .sidebar-iconed-title {
+      width: auto;
+      padding-right: 0; }
+    .sidebar-multi-wrap--for-buttons .sidebar-company {
+      margin-left: 0;
+      width: auto; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
