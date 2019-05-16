@@ -292,17 +292,20 @@ $(function() {
 	// end tabs	
 
 	// jsscrollpane
-		var scrollPane = $('.scroll-pane').jScrollPane({
-			verticalDragMaxHeight : 100,
-			animateScroll : true
-		});
+		if(document.querySelector('.scroll-pane')){
+			var scrollPane = $('.scroll-pane').jScrollPane({
+				verticalDragMaxHeight : 100,
+				animateScroll : true
+			});
 
-		var scrollPaneApi = scrollPane.data('jsp');
-		console.log(scrollPaneApi);
+			var scrollPaneApi = scrollPane.data('jsp');
+			console.log(scrollPaneApi);
 
-		$(window).resize(function() {
-			scrollPaneApi.reinitialise();
-		});
+			$(window).resize(function() {
+				scrollPaneApi.reinitialise();
+			});
+			
+		}
 	// end jsscrollpane
 
 	// sidebar-company toggle

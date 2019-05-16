@@ -17,8 +17,9 @@ html(lang='ru')
 		include _mixins
 		include ../_sections/header
 
-		main.main-content
-			.container
+		main.content
+			block breadcrumbs
+			.container.main-content-contents
 				.row
 					.col-xl-9.col-lg-8.main-content
 						block main

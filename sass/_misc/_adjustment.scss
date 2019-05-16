@@ -16,7 +16,10 @@ body{
 .sp-icon{
 	display: inline-block;
 }
-.right-sidebar{
+// .right-sidebar{
+//   margin-top: 30px;
+// }
+.main-content-contents{
   margin-top: 30px;
 }
 .button{
@@ -552,9 +555,10 @@ h1, h2{
 }
 
 .breadcrumbs{
-  margin-top: 20px;
-  margin-bottom: 17px;
-  
+  margin-top: 5px;
+  padding-bottom: 7px;
+  border-bottom: 1px dashed $line;
+
   li{
     position: relative;
     list-style-type: none;
@@ -587,5 +591,59 @@ h1, h2{
 
 
   }
+}
+.li-pagination{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+}
+.li-pagination__list{
+  li{
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+
+    a{
+      display: block;
+      width: 28px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 13px;
+      text-align: center;
+      color: #fff;
+      background-color: $f4;
+      text-decoration: none;
+
+      &:hover, &:active{
+        background-color: $accent;
+      }
+      
+    }
+
+    &.active{
+      a{
+        background-color: $accent;
+      }
+    }
+  }
+}
+.li-pagination__prev,
+.li-pagination__next{
+  span{
+    margin: 0 7px;
+    text-transform: uppercase;
+    color: $accent;
+    vertical-align: middle;
+
+  }
+  &:hover, &:active{
+    text-decoration: none;
+  }
+  
 }
 /* end main styles */

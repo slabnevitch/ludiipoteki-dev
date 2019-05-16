@@ -1,0 +1,46 @@
+- var names = [{name: 'gordeiko', num: '135'}, {name: 'vasheluk', num: '4256'}];
+each item in names
+	.blog-card
+		.li-portrait
+			img(src="img/faces/"+ item.name +".jpg", alt="alt")
+
+		.blog-card__text
+			header.blog-card__header
+				.blog-card__header-left
+					h2 НДВ-супермаркет недвижимости
+					p.blog-card__descr Корпоративный блог "НДВ-Супермаркет недвижимости"
+				
+				.blog-card__header-right
+					.blogs-previews__item-info
+						.blogs-previews__views
+							.ico-eye
+							.blogs-previews__views-count 135
+
+						.blogs-previews__comments
+							.ico-quote-mini
+							a(href="#").blogs-previews__comments-conunt 0
+
+					a(href="#").button.button-micro.button-dark-blue подписаться на блог
+
+					a(href="#").blog-card__header-icon.header-rss
+						i.icon-rss
+
+			.blog-card__body
+				.block-card__stats
+					.block-card__stat
+						div Сообщения
+						div.block-card__stat-count 120
+
+					.block-card__stat
+						div Подписчиков
+						div.block-card__stat-count 5
+
+
+				.blog-card__content
+					| #[span.blog-new-icon new] Ипотечная телеграмма № 60. Специальный вклад для первоначального взноса на ипотечный кредит. Цель благородная. А перспективы?
+				
+				.blog-card__rating
+					span Рейтинг блога
+					span.blog-rating-count= item.num
+
+
