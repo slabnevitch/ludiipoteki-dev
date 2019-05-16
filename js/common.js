@@ -235,8 +235,8 @@ $(function() {
 			});
 
 			$('.subjects-slider').slick(opts);
-			// $('.subjects-slider').slick('unslick');
-			// range.noUiSlider.destroy();
+			$('.subjects-slider').slick('unslick');
+			range.noUiSlider.destroy();
 
 			$('#subjects-open').magnificPopup({
 				type: 'inline',

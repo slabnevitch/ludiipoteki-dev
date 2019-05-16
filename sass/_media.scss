@@ -568,6 +568,14 @@
 	/**/
 }
 
-
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.li-search .li-form .li-form-input{
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
+	.sidebar-analitcs__header{
+		letter-spacing: -.15px;
+	}
+}
 
 

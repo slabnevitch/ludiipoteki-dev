@@ -1,0 +1,31 @@
+extends _misc/main
+
+block title
+	| Блоги
+
+block main
+	.container-fluid
+		.row.m-minus
+			.col-12
+				ul.breadcrumbs
+					li
+						a(href="#") Главная
+					li.active
+						a(href="#") Блоги
+
+				include _sections/blogs-top
+					block blogs-tabs
+						ul.tabs__content
+							li#item1.tabs__item 1
+								include _sections/blog-card
+							li#item2.tabs__item.hidden 2
+								
+							li#item3.tabs__item.hidden 3
+								
+							li#item4.tabs__item.hidden 4
+							li#item5.tabs__item.hidden 5
+								
+
+			
+block sidebar
+	include _sections/sidebar-permanent

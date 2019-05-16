@@ -550,4 +550,42 @@ h1, h2{
     display: none;
   }
 }
+
+.breadcrumbs{
+  margin-top: 20px;
+  margin-bottom: 17px;
+  
+  li{
+    position: relative;
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+
+
+    &:after{
+      content: '';
+      @extend .ico-breadcrumbs-after;
+      display: inline-block;
+      margin: 0 8px;
+      vertical-align: middle;
+    }
+
+    a{
+      color: $blue;
+      font-family: $r-m;
+      text-decoration: none;
+    }
+
+    &.active{
+      a{
+        color: #7b7b7b;
+      }
+      &:after{
+        display: none;
+      }
+    }
+
+
+  }
+}
 /* end main styles */
