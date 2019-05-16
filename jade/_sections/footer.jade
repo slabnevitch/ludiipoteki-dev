@@ -6,7 +6,7 @@ footer.footer
 				span Мы используем «куки»
 				a(href="#") Что это?
 			
-			.row.m-minus.justify-content-between
+			.row.m-minus.footer-top__columns
 				.footer-column
 					.footer-column__title ЛюдиИпотеки.рф
 					ul.footer-column__menu
@@ -44,6 +44,18 @@ footer.footer
 
 				.footer-column.footer-column--vk
 					img(src="img/vkontakte.jpg", alt="alt")
+			
+			.row.m-minus.footer-socials-links
+				.col-6.col-sm-4.col-xs-6
+					a(href="").footer-social-link
+						.sp-icon.ico-vk-footer
+						span Подписаться 
+
+				.col-6.col-sm-4.col-xs-6
+					a(href="#").footer-social-link
+						.sp-icon.ico-fb-footer
+						span Подписаться 
+	
 
 	.footer-middle
 		.container
@@ -54,10 +66,9 @@ footer.footer
 	.footer-bottom
 		.container
 			.row
-				.col-5
-					.footer-copyright
-						div © 2011-2019 ЛюдиИпотеки.рф — сообщество участников ипотечного рынка
-						div Все права защищены
+				.col-xl-5.col-lg-6.col-md-6.footer-copyright
+					div © 2011-2019 ЛюдиИпотеки.рф — сообщество участников ипотечного рынка
+					div Все права защищены
 				
 				.footer-bottom__column
 					ul.footer-bottom__menu
@@ -77,4 +88,6 @@ footer.footer
 						li
 							a(href="#") Контакты
 
-				.col-3
+				.col-xl-3.footer-statistic
+					img(src="img/footer-stats.jpg", alt="alt")
+					

@@ -18,9 +18,13 @@ $(function() {
 				onInit:  function() {
 					// console.log($(this.context).children('li:first').find('a').text());
 					// console.log($(this));
-					$(this).children('li.active').superfish('show');
+					// if(screen.width > 768){
+						$(this).children('li.active').superfish('show');
+						
+					// }
 				},
-				onBeforeShow: function() {
+				onShow: function() {
+					console.log(this.context.querySelector('.sf-with-ul'));
 				 	this.context.querySelector('.sf-with-ul').classList.add('opened');
 				 },
 				 onBeforeHide: function() {
@@ -30,14 +34,20 @@ $(function() {
 			});
 
 			$('.header-menu__link').mouseover(function() {
-					if($(this).closest('li').find('ul').length == 0){
+					// if(screen.width > 768){
+						if($(this).closest('li').find('ul').length == 0){
+							
+							headerSF.children('li.active').superfish('hide');
+						}
 						
-						headerSF.children('li.active').superfish('hide');
-					}
+					// }
 			});
 
 			$('.header-menu__link').mouseout(function() {
+					// if(screen.width > 768){
 						headerSF.children('li.active').superfish('show');
+						
+					// }
 
 			});
 	// end superfish
@@ -92,7 +102,7 @@ $(function() {
 				responsive: [
 				
 				{
-					breakpoint: 961,
+					breakpoint: 960,
 					settings: {
 						
 						slidesToShow: 1
@@ -112,7 +122,7 @@ $(function() {
 				responsive: [
 
 				{
-					breakpoint: 960,
+					breakpoint: 992,
 					settings: {
 
 						rows: 1,
@@ -151,7 +161,18 @@ $(function() {
 				slidesToShow: 1,
 				centerMode: true,
 	  			focusOnSelect: true,
-	  			centerPadding: '150px'
+	  			centerPadding: '150px',
+	  			responsive: [
+
+	  			{
+	  				breakpoint: 600,
+	  				settings: {
+
+	  					centerPadding: 0,
+
+						}	
+					}
+					]
 			};
 
 			$('.subjects-slider').on('init reInit',function(event,slick){
@@ -214,7 +235,7 @@ $(function() {
 			});
 
 			$('.subjects-slider').slick(opts);
-			$('.subjects-slider').slick('unslick');
+			// $('.subjects-slider').slick('unslick');
 			// range.noUiSlider.destroy();
 
 			$('#subjects-open').magnificPopup({

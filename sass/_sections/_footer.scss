@@ -6,6 +6,9 @@
 	position: relative;
 	border-top: 2px solid $line;
 }
+.footer-top__columns{
+	justify-content: space-between;
+}
 .footer-cookies{
 	width: 190px;
 	position: absolute;
@@ -105,4 +108,23 @@
 		}
 
 	}
+}
+.footer-socials-links{
+	display: none;
+	margin-bottom: 17px;
+}
+.footer-social-link{
+	span, .sp-icon{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.sp-icon{
+		margin-right: 7px;
+	}
+	span{
+		color: $blue;
+	}
+}
+.footer-statistic{
+	text-align: right;
 }

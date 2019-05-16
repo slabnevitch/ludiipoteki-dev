@@ -137,6 +137,23 @@
 
 		}
 	}
+	.footer-top__columns{
+		justify-content: flex-start;
+	}
+	.footer-column--vk{
+		display: none;
+	}
+	.footer-cookies{
+		top: auto;
+		bottom: -12px;
+	}
+	.footer-socials-links{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
 }
 	
 	
@@ -247,6 +264,7 @@
 		display: none;
 		padding-top: 15px;
 		position: absolute;
+		flex-direction: column;
 		top: 100%;
 		right: 0;
 		z-index: 100;
@@ -299,7 +317,22 @@
 	.sf-arrows .sf-with-ul:after{
 		display: block;
 	}
+	.announcements-item{
+		width: calc(50% - 30px);
+	}
+	.footer-copyright{
+		order: 2;
+	}
+	.footer-statistic{
+		order:3;
+	}
+	.footer-bottom__column{
+		width: calc(50% - 30px);
 
+	}
+	.footer-copyright{
+		margin-bottom: 30px;
+	}
 	// .header-enter{
 	// 	display: none;
 	// }
@@ -335,6 +368,12 @@
 
 
 	
+@media only screen and (max-width : 600px){
+	.subject-content-item{
+		column-count: 2;
+	}
+}
+
 @media only screen and (max-width : 576px){
 	
 	.news-block{
@@ -403,6 +442,46 @@
 
 		}
 	}
+	.footer-top__wrapper{
+		.m-minus{
+			margin-left: 0;
+			margin-right: 0;
+			
+		}
+	}
+	.footer-socials-links{
+		margin-bottom: 75px;
+	}
+	.footer-cookies{
+		bottom: -75px;
+		right: 20px;
+	}
+	.footer-column{
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+
+		&:first-child,
+		&:nth-child(3),
+		&:nth-child(4){
+			.footer-column__menu{
+				column-count: 2;
+				column-gap: 30px;
+
+			}
+		}
+
+	}
+	.footer-column__menu li{
+		margin-bottom: 5px;
+	}
+	.footer-column__title {
+		margin-bottom: 7px;
+	}
+
+	.announcements-item{
+		width: 100%;
+	}
 }
 	
 
@@ -414,6 +493,23 @@
 	}
 	.day-theme__bottom{
 		margin-top: 40px;
+	}
+	.subjects-slider:before,
+	.subjects-slider:after{
+		display: none;
+	}
+	.subject-content-item{
+		column-count: auto;
+	}
+	.subject-content-item{
+		label{
+			display: block;
+		}
+	}
+	.add-news{
+		line-height: normal;
+		padding-top: 10px;
+		padding-bottom: 8px;
 	}
 }
 		
@@ -448,6 +544,7 @@
 		display: -ms-flex !important;
 		display: -o-flex !important;
 		display: flex !important;
+		// flex-direction: column;
 	}
 
 }
