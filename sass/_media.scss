@@ -22,6 +22,14 @@
 	.news-subscribe__body .button{
 		margin-left: 0;
 	}
+	.blog-card__rating{
+		position: absolute;
+		right: 0;
+		top: 61px;
+	}
+	.block-card__stat{
+		margin-right: 15px;
+	}
 }
 	
 /* Medium Devices, Desktops */
@@ -154,11 +162,27 @@
 		display: -o-flex;
 		display: flex;
 	}
+	.blog-card__rating span.blog-rating-count{
+		padding: 3px 7px;
+
+	}
+	.blog-card__header{
+		margin-bottom: 10px;
+	}
+	.blog-card__header h2{
+		margin-bottom: 4px;
+	}
+	.breadcrumbs{
+		margin-top: 30px;
+	}
 }
 	
 	
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px){
+	.breadcrumbs{
+		margin-top: 7px;
+	}
 	.header-bottom__inner{
 		display: block;	
 		margin-bottom: 0;
@@ -333,6 +357,43 @@
 	.footer-copyright{
 		margin-bottom: 30px;
 	}
+	.blogs-steps{
+		display: block;
+		margin-bottom: 10px;
+	}
+	.blogs-step{
+		margin-bottom: 10px;
+	}
+
+	.blog-card__header{
+		position: static;
+		padding-bottom: 10px;
+		padding-top: 30px;
+		
+		.blog-card__header-right{
+			display: none;
+		}
+	}
+	.blog-card{
+		.li-portrait{
+			margin-bottom: 20px;
+		}
+	}
+	.blog-card__info-hidden{
+		display: flex;
+		clear:left;
+		margin-bottom: 15px;
+	}
+	.blog-card__body{
+		clear:left;
+		}
+	.blog-card__rating{
+		bottom: auto;
+		top: 20px;
+	}
+	.li-pagination__prev span, .li-pagination__next span{
+		display: none;
+	}
 	// .header-enter{
 	// 	display: none;
 	// }
@@ -482,6 +543,14 @@
 	.announcements-item{
 		width: 100%;
 	}
+	.li-pagination{
+		justify-content: center;
+	}
+	.li-pagination__prev,
+	.li-pagination__next{
+		display: none;
+	}
+
 }
 	
 
@@ -510,6 +579,21 @@
 		line-height: normal;
 		padding-top: 10px;
 		padding-bottom: 8px;
+	}
+	
+	
+	.blog-card__header{
+		padding-bottom: 15px;
+	}
+	.blog-card__body{
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
+	.blog-card__content{
+		margin-bottom: 11px;
+	}
+	.blog-card__header-right{
+		bottom: 142px;
 	}
 }
 		
@@ -575,6 +659,9 @@
 	}
 	.sidebar-analitcs__header{
 		letter-spacing: -.15px;
+	}
+	.blog-card__text{
+		width: 100%;
 	}
 }
 

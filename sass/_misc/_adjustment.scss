@@ -646,4 +646,13 @@ h1, h2{
   }
   
 }
+.li-link{
+  color: $blue;
+  text-decoration: none;
+
+  &:hover, &:active{
+    color: $accent-hover;
+    text-decoration: none;
+  }
+}
 /* end main styles */
