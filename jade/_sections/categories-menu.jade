@@ -1,0 +1,20 @@
+.categories-menu-block
+	.sidebar-standart-title Категории
+	ul.sf-menu.sf-vertical.categories-menu
+		- var cats = ['Весь каталог', 'Экономика и финансы', 'Банковский сектор', 'строительство и недвижимость', 'обзоры законодательства', 'потребительские товары и услуги', 'авторы исследований'];
+
+		- var subcats = ['Корпоративные новости', 'Финансовые и банковские новости', 'Рынок жилья и кредитных ставок'];
+
+		each cat in cats
+			li
+				a(href="#").categories-menu__link= cat
+
+				ul.categories-menu__sub
+					each cat in cats
+						li.categories-menu__item-sub
+							a(href="#").categories-menu__sublink= cat
+
+							ul
+								each item in subcats
+									li
+										a(href="#")= item

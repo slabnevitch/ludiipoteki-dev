@@ -11,7 +11,7 @@ $(function() {
 
 	// superfish
 
-			var headerSF = $('.sf-menu').superfish({
+			var headerSF = $('.header-menu').superfish({
 				pathClass:	'current',
 				// speed: 1,
 				speedOut: 1,
@@ -24,7 +24,7 @@ $(function() {
 					// }
 				},
 				onShow: function() {
-					console.log(this.context.querySelector('.sf-with-ul'));
+					// console.log(this.context.querySelector('.sf-with-ul'));
 				 	this.context.querySelector('.sf-with-ul').classList.add('opened');
 				 },
 				 onBeforeHide: function() {
@@ -49,6 +49,22 @@ $(function() {
 						
 					// }
 
+			});
+
+			$('.categories-menu').superfish({
+				pathClass:	'current',
+				onShow: function() {
+					console.log(this.context.classList);
+					if(this.context.classList.contains('categories-menu__item-sub')){
+				 		this.context.querySelector('.categories-menu__sub li .sf-with-ul').classList.add('opened');
+					}
+					// console.log(this.context.querySelector('.categories-menu__sub li .sf-with-ul').classList);
+				 },
+				 onBeforeHide: function() {
+				 	
+					console.log("before hide");
+				 	$('.sf-with-ul').removeClass('opened');
+				 }
 			});
 	// end superfish
 

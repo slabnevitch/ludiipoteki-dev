@@ -3,6 +3,12 @@ extends _misc/main
 block title
 	| Блоги
 
+block menu-categories
+	.container
+		.row
+			.col-12
+				include _sections/categories-menu-mob
+
 block breadcrumbs
 	.container
 		.row
@@ -12,6 +18,8 @@ block breadcrumbs
 						a(href="#") Главная
 					li.active
 						a(href="#") Блоги
+
+
 block main
 	.container-fluid
 		.row.m-minus
@@ -55,4 +63,5 @@ block main
 						.sp-icon.ico-pager-next
 			
 block sidebar
+	include _sections/categories-menu-mini
 	include _sections/sidebar-permanent

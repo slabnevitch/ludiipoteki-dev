@@ -31,7 +31,8 @@
 .sidebar-analitcs{
 		margin-bottom: 30px;
 }
-.sidebar-analitcs__header{
+
+.sidebar-standart-title{
 	padding: 10px;
 	background-color: $blue;
 	font-family: $r-bl;
@@ -39,6 +40,7 @@
 	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: -.1px;
+
 }
 .sidebar-analitcs__body{
 	padding-top: 10px;

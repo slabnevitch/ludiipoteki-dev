@@ -18,13 +18,16 @@ html(lang='ru')
 		include ../_sections/header
 
 		main.content
+			block menu-categories
 			block breadcrumbs
+				
 			.container.main-content-contents
 				.row
 					.col-xl-9.col-lg-8.main-content
 						block main
 					
 					aside.right-sidebar.col-xl-3.col-lg-4
+						include ../_sections/sidebar-search
 						block sidebar
 
 

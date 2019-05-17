@@ -3301,6 +3301,8 @@ body {
       background-color: #23485F; }
   .button-dark-blue {
     background-color: #23485F; }
+    .button-dark-blue:hover, .button-dark-blue:active {
+      background-color: #163040; }
 
 .li-form .li-form-label {
   display: block; }
@@ -4604,7 +4606,7 @@ h1, h2 {
 .sidebar-analitcs {
   margin-bottom: 30px; }
 
-.sidebar-analitcs__header {
+.sidebar-standart-title {
   padding: 10px;
   background-color: #23485F;
   font-family: "RobotoBlack", sans-serif;
@@ -4943,6 +4945,94 @@ h1, h2 {
   background-color: #C71015; }
 
 /* ----end BLOGS----*/
+.categories-menu {
+  float: none;
+  margin-bottom: 30px; }
+  .categories-menu > li {
+    float: none; }
+  .categories-menu ul {
+    left: auto;
+    top: 0;
+    right: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .categories-menu li {
+    background: #F4F4F4; }
+  .categories-menu li:hover, .categories-menu li.sfHover {
+    background: #557799; }
+    .categories-menu li:hover a, .categories-menu li.sfHover a {
+      color: #fff; }
+  .categories-menu.sf-arrows li:hover .sf-with-ul:after,
+  .categories-menu.sf-arrows li.sfHover .sf-with-ul:after {
+    border-color: #fff;
+    border-top-color: #fff !important; }
+  .categories-menu a {
+    padding-left: 28px;
+    border-top: none;
+    font-size: 11px;
+    font-family: "RobotoMedium", sans-serif;
+    text-transform: uppercase;
+    color: #23485F; }
+  .categories-menu.sf-arrows .sf-with-ul:after {
+    display: block;
+    border-color: #23485F;
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    border-top-color: transparent;
+    border-top-color: #23485F !important; }
+  .categories-menu .categories-menu__sub {
+    background-color: #557799;
+    padding: 15px 0; }
+  .categories-menu ul li {
+    position: relative;
+    background: #557799; }
+    .categories-menu ul li a {
+      border-left: none;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      color: #fff; }
+    .categories-menu ul li:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 14px;
+      top: 14px;
+      width: 5px;
+      height: 5px;
+      -webkit-border-radius: 50em;
+      border-radius: 50em;
+      background-color: #B5CBE1; }
+  .categories-menu.sf-arrows .categories-menu__sub li a {
+    display: inline-block;
+    padding-right: 10px; }
+    .categories-menu.sf-arrows .categories-menu__sub li a.sf-with-ul.opened:after {
+      -webkit-transform: rotate(-47deg);
+      -ms-transform: rotate(-47deg);
+      transform: rotate(-47deg);
+      top: 20px; }
+  .categories-menu.sf-arrows .categories-menu__sub li .sf-with-ul:after {
+    left: auto;
+    right: 0;
+    border-color: #fff;
+    border-top-color: #fff !important;
+    -webkit-transform: rotate(-227deg);
+    -ms-transform: rotate(-227deg);
+    transform: rotate(-227deg); }
+  .categories-menu .categories-menu__sub li ul {
+    position: static;
+    padding-left: 20px;
+    background-color: #557799; }
+    .categories-menu .categories-menu__sub li ul li {
+      background: #557799; }
+      .categories-menu .categories-menu__sub li ul li a {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        text-transform: none;
+        color: #b2c9df; }
+      .categories-menu .categories-menu__sub li ul li:before {
+        display: none; }
+
 .footer {
   margin-top: 40px; }
 
