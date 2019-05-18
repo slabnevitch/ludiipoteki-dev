@@ -173,6 +173,7 @@ $(function() {
 					settings: {
 
 						rows: 1,
+						rows: 3,
 						slidesToShow: 1
 
 					}	

@@ -3334,11 +3334,21 @@ body {
   margin-bottom: 5px;
   color: #696969; }
 
+.li-form .li-form-required {
+  color: #f34e38; }
+
 .li-form .li-form-input {
   display: block;
   width: 100%;
   padding: 5px 10px;
   border: solid 1px #b6b6b6; }
+
+.li-form .li-form-area {
+  width: 100%;
+  height: 87px;
+  padding: 5px 10px; }
+  .li-form .li-form-area:focus {
+    outline: none; }
 
 .li-form .li-form-custom {
   position: relative;
@@ -3377,6 +3387,21 @@ body {
   display: inline-block;
   margin-right: 4px;
   list-style-type: none; }
+
+.discussion-form {
+  margin-top: 25px;
+  padding: 20px 23px 16px 23px;
+  background-color: #F4F4F4; }
+  .discussion-form .li-form__buttons {
+    text-align: center; }
+
+.discussion-form__top .li-form-label {
+  display: inline-block;
+  width: 100%;
+  max-width: 234px;
+  margin-right: 35px; }
+  .discussion-form__top .li-form-label:last-child {
+    margin-right: 0; }
 
 input {
   outline: none; }
@@ -4998,6 +5023,8 @@ h1, h2, .h1-no-title {
 
 .blog-row__date {
   color: #9F9F9F; }
+  .blog-row__date .blog-post-time {
+    margin-left: 14px; }
 
 .blog-rating, .blog-rating__handler {
   display: inline-block;
@@ -5101,6 +5128,76 @@ h1, h2, .h1-no-title {
   border-bottom: 1px solid #E7E7E7; }
   .blog-post__body .blog-row__tags {
     margin-top: 25px; }
+
+.blog-post-discussion {
+  padding-top: 18px; }
+
+.blog-post-discussion__header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 11px; }
+
+.blog-post-discussion__title {
+  font-size: 19px;
+  font-family: "RobotoBlack", sans-serif;
+  text-transform: uppercase; }
+
+.blog-post-discussion__row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 20px; }
+  .blog-post-discussion__row:last-child {
+    margin-bottom: 0; }
+
+.blog-post-discussion__avatar {
+  width: 54px;
+  height: 54px;
+  position: relative;
+  margin-right: 28px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
+  .blog-post-discussion__avatar img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.blog-post-discussion__content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
+
+.blog-post-discussion__info {
+  margin-bottom: 15px; }
 
 /* ----end BLOGS----*/
 .categories-menu {
@@ -5244,6 +5341,59 @@ h1, h2, .h1-no-title {
         background: transparent; }
         .categories-menu-block--mob .categories-menu .categories-menu__sub li ul li a {
           color: #c1d5e9; }
+
+.news-row {
+  position: relative;
+  padding-top: 20px;
+  padding-right: 19px;
+  padding-bottom: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E7E7E7;
+  display: table; }
+  .news-row .ico-telegram-mini {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    opacity: .5; }
+  .news-row.active .news-row__text {
+    color: #de1921; }
+
+.news-row__pict,
+.news-row__text,
+.news-row__info {
+  display: table-cell; }
+
+.news-row__pict {
+  width: 45px;
+  height: 45px;
+  position: relative; }
+  .news-row__pict img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 0;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
+
+.news-row__text {
+  padding-left: 14px;
+  color: #23485F; }
+
+.news-row__info {
+  padding-left: 15px;
+  text-align: right; }
+  .news-row__info .blogs-previews__views {
+    margin-right: 0; }
+  .news-row__info .blogs-previews__views-count {
+    color: #9f9f9f; }
 
 .footer {
   margin-top: 40px; }
@@ -5624,7 +5774,13 @@ h1, h2, .h1-no-title {
     display: block;
     padding-top: 40px; }
   .right-sidebar .categories-menu-block {
-    display: none; } }
+    display: none; }
+  .discussion-form {
+    margin-bottom: 30px; } }
+
+@media only screen and (max-width: 991px) {
+  .blog-post-discussion {
+    margin-bottom: 25px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -5792,6 +5948,44 @@ h1, h2, .h1-no-title {
     display: none; }
   .categories-menu-block--mob {
     padding-top: 20px; }
+  .blog-post-header {
+    position: relative;
+    padding-bottom: 82px; }
+    .blog-post-header .blog-share {
+      display: inline-block;
+      width: 100%;
+      position: absolute;
+      bottom: 60px;
+      text-align: center; }
+      .blog-post-header .blog-share .blog-share__title {
+        display: block;
+        margin: 0 auto; }
+  .blog-post-header__bottom .button {
+    position: absolute;
+    bottom: 19px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .news-row {
+    padding-top: 35px; }
+    .news-row .news-row__info {
+      position: absolute;
+      top: 7px;
+      right: 28px;
+      padding-left: 0; }
+    .news-row .ico-telegram-mini {
+      top: 10px; }
+    .news-row .blog-row__date,
+    .news-row .blogs-previews__views {
+      display: inline-block;
+      vertical-align: middle; }
+    .news-row .blogs-previews__views {
+      margin-right: 10px; }
+  .discussion-form__top .li-form-label {
+    display: block;
+    margin-right: 0;
+    max-width: initial; }
   /*Disable Animation on Mobile Devices*/ }
 
 @media only screen and (max-width: 600px) {
@@ -5917,7 +6111,9 @@ h1, h2, .h1-no-title {
   .blog-card__content {
     margin-bottom: 11px; }
   .blog-card__header-right {
-    bottom: 142px; } }
+    bottom: 142px; }
+  .blog-post-header__bottom .button {
+    display: inline-table; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {

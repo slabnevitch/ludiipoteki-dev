@@ -213,6 +213,10 @@
 }
 .blog-row__date{
 	color: #9F9F9F;
+
+	.blog-post-time{
+		margin-left: 14px;
+	}
 }
 .blog-rating, .blog-rating__handler{
 	display: inline-block;
@@ -308,5 +312,65 @@
 	.blog-row__tags{
 		margin-top: 25px;
 	}
+}
+.blog-post-discussion{
+	padding-top: 18px;
+}
+.blog-post-discussion__header{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 11px;
+}
+.blog-post-discussion__title{
+	font-size: 19px;
+	font-family: $r-bl;
+	text-transform: uppercase;
+}
+.blog-post-discussion__row{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 20px;
+
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	
+}
+.blog-post-discussion__avatar{
+	width: 54px;
+	height: 54px;
+	position: relative;
+	margin-right: 28px;
+	flex-shrink: 0;
+
+	img{
+		@include absolute-center;
+	}
+}
+.blog-post-discussion__content{
+	flex: 1 1 auto;
+}
+// .blog-post-discussion__text{
+// 	p{
+
+// 		&:last-child{
+// 			margin-bottom: 0;
+// 		}
+
+// 	}
+// }
+.blog-post-discussion__info{
+	margin-bottom: 15px;
 }
 /* ----end BLOGS----*/

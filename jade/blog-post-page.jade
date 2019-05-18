@@ -107,7 +107,44 @@ block main
 											span Теги:
 											.blog-row__tags-content
 												a(href="#") мысли про ипотеку
-							
+									
+									.blog-post-discussion
+										.blog-post-discussion__header
+											.blog-post-discussion__title Обсуждения
+											a(href="#").button.button-micro.button-dark-blue.discussion-form-toggle комментировать
+										
+										.blog-post-discussion__body
+											- for (var i=0; i < 2; i++)
+												.blog-post-discussion__row
+													.blog-post-discussion__avatar
+														img(src="img/mister-x.jpg", alt="alt")
+													
+													.blog-post-discussion__content
+														.blog-post-discussion__info
+															.blog-row__date 29 января 2019
+																span.blog-post-time 13:30
+														
+														.blog-post-discussion__text
+															p Меня модульбанк радует и полностью устраивает пока как клиента. Мобильное приложение работает хорошо, в личном кабинете работать удобно, с переводами нет проблем. А недочеты и косяки есть везде, и в модуле они не такие значительные. 
+
+															p Прошел месяц. Ответа не последовало. Напомнил, спросив, подтвердили ли вы наличие проблемы и будет ли она решаться. Прошло несколько месяцев. Ответа по-прежнему нет.
+									
+									form(action="#").discussion-form.li-form
+										.discussion-form__top
+											label.li-form-label
+												span.li-form-label-name #[span.li-form-required *] Имя и Фамилия:
+												input.li-form-input(type="text", name="name")
+											label.li-form-label
+												span.li-form-label-name #[span.li-form-required *] E-mail:
+												input.li-form-input(type="text", name="pass")
+										label.li-form-label
+											span.li-form-label-name #[span.li-form-required *] Ваш вопрос
+											textarea(name="name", cols="30", rows="10").li-form-area
+
+										.li-form__buttons
+											button.button.button-mini.button-l-blue ОТПРАВИТЬ
+
+
 							li#item2.tabs__item.hidden 2
 								
 									
@@ -118,28 +155,7 @@ block main
 								
 									
 							li#item5.tabs__item.hidden 5
-								
-									
 
-		.row.m-minus
-			.col-12
-				.li-pagination
-					a(href="#").li-pagination__prev
-						.sp-icon.ico-pager-prev
-						span предыдущая страница
-
-					ul.li-pagination__list
-							li.active
-								a(href="") 1
-							
-							- for (var i=2; i < 6; i++)
-								li
-									a(href="")= i
-						
-					a(href="#").li-pagination__prev
-						span следующая страница
-						.sp-icon.ico-pager-next
-			
 block sidebar
 	include _sections/categories-menu-mini
 	include _sections/sidebar-permanent

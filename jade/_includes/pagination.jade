@@ -1,0 +1,16 @@
+.li-pagination
+	a(href="#").li-pagination__prev
+		.sp-icon.ico-pager-prev
+		span предыдущая страница
+
+	ul.li-pagination__list
+			li.active
+				a(href="") 1
+			
+			- for (var i=2; i < 6; i++)
+				li
+					a(href="")= i
+		
+	a(href="#").li-pagination__prev
+		span следующая страница
+		.sp-icon.ico-pager-next

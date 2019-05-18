@@ -1,0 +1,126 @@
+extends _misc/main
+
+block title
+	| Новости
+
+block main
+	.container-fluid
+		.row.m-minus
+			.col-12
+				.news-content
+					.title-block.title-block--iconed
+						h1 Новости
+						.title-block__icons
+							a(href="#").title-block__icon.title-block__icon--telegram.ico-telegram-mini
+							a(href="#").title-block__icon.title-block__icon--rss
+								i.icon-rss
+					.news-rows
+						.news-row.active
+							a(href="#").news-item__icon.sp-icon.ico-telegram-mini
+							.news-row__pict
+								img(src="img/news-picts/1.jpg", alt="alt")
+
+							.news-row__text Аналитический центр компании ООО «РУСИПОТЕКА» предлагает вашему вниманию обзор ипотечных ставок ТОП-20 банков Высшей ипотечной лиги на 13 марта 2019 года
+
+							.news-row__info
+								.blog-row__date 15.03.2019
+								.blogs-previews__views
+									.ico-eye
+									.blogs-previews__views-count 135
+
+						.news-row.active
+							a(href="#").news-item__icon.sp-icon.ico-telegram-mini
+							.news-row__pict
+								img(src="img/news-picts/2.jpg", alt="alt")
+
+							.news-row__text Начата регистрация на конференцию «Цифровая ипотека 2.0 - экосистемы, маркетплейсы, далее везде», которая состоится 23 мая в Москве
+
+							.news-row__info
+								.blog-row__date 15.03.2019
+								.blogs-previews__views
+									.ico-eye
+									.blogs-previews__views-count 135
+
+						.news-row
+							a(href="#").news-item__icon.sp-icon.ico-telegram-mini
+							.news-row__pict
+								img(src="img/news-picts/3.jpg", alt="alt")
+
+							.news-row__text Вице-президент Гильдии риэлторов России Константин Апрелев: Застройщик просто так поднять цены на рынке не может. Данные «Авито» противоречат ситуации на жилищном рынке
+
+							.news-row__info
+								.blog-row__date 15.03.2019
+								.blogs-previews__views
+									.ico-eye
+									.blogs-previews__views-count 135
+
+						- for (var i=0; i < 6; i++)
+							.news-row
+								a(href="#").news-item__icon.sp-icon.ico-telegram-mini
+								.news-row__pict
+									img(src="img/news-picts/1.jpg", alt="alt")
+
+								.news-row__text Аналитический центр компании ООО «РУСИПОТЕКА» предлагает вашему вниманию обзор ипотечных ставок ТОП-20 банков Высшей ипотечной лиги на 13 марта 2019 года
+
+								.news-row__info
+									.blog-row__date 15.03.2019
+									.blogs-previews__views
+										.ico-eye
+										.blogs-previews__views-count 135
+
+							.news-row
+								a(href="#").news-item__icon.sp-icon.ico-telegram-mini
+								.news-row__pict
+									img(src="img/news-picts/2.jpg", alt="alt")
+
+								.news-row__text Начата регистрация на конференцию «Цифровая ипотека 2.0 - экосистемы, маркетплейсы, далее везде», которая состоится 23 мая в Москве
+
+								.news-row__info
+									.blog-row__date 15.03.2019
+									.blogs-previews__views
+										.ico-eye
+										.blogs-previews__views-count 135
+
+							.news-row
+								a(href="#").news-item__icon.sp-icon.ico-telegram-mini
+								.news-row__pict
+									img(src="img/news-picts/3.jpg", alt="alt")
+
+								.news-row__text Вице-президент Гильдии риэлторов России Константин Апрелев: Застройщик просто так поднять цены на рынке не может. Данные «Авито» противоречат ситуации на жилищном рынке
+
+								.news-row__info
+									.blog-row__date 15.03.2019
+									.blogs-previews__views
+										.ico-eye
+										.blogs-previews__views-count 135
+
+						.news-row
+							a(href="#").news-item__icon.sp-icon.ico-telegram-mini
+							.news-row__pict
+								img(src="img/news-picts/1.jpg", alt="alt")
+
+							.news-row__text Аналитический центр компании ООО «РУСИПОТЕКА» предлагает вашему вниманию обзор ипотечных ставок ТОП-20 банков Высшей ипотечной лиги на 13 марта 2019 года
+
+							.news-row__info
+								.blog-row__date 15.03.2019
+								.blogs-previews__views
+									.ico-eye
+									.blogs-previews__views-count 135
+
+						.news-row
+							a(href="#").news-item__icon.sp-icon.ico-telegram-mini
+							.news-row__pict
+								img(src="img/news-picts/2.jpg", alt="alt")
+
+							.news-row__text Начата регистрация на конференцию «Цифровая ипотека 2.0 - экосистемы, маркетплейсы, далее везде», которая состоится 23 мая в Москве
+
+							.news-row__info
+								.blog-row__date 15.03.2019
+								.blogs-previews__views
+									.ico-eye
+									.blogs-previews__views-count 135
+			.col-12
+				include _includes/pagination
+block sidebar
+	include _sections/categories-menu
+	include _sections/sidebar-permanent
