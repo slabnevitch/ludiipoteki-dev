@@ -171,4 +171,142 @@
 	text-transform: uppercase;
 	background-color: $accent;
 }
+.blog-page-container{
+	.blog-card{
+		margin-bottom: 30px;
+	}
+}
+.blog-row{
+	padding-bottom: 20px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid $line;
+	h2{
+		margin-bottom: 12px;
+		font-size: 14px;
+		text-transform: none;
+	}
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+}
+.blog-row__content{
+	p{
+		line-height: 15px;
+	}
+}
+.blog-row__stat{
+	position: relative;
+	margin-bottom: 7px;
+	.blogs-previews__item-info{
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom: 0;
+	}
+	.blog-row__date{
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+	}
+}
+.blog-row__date{
+	color: #9F9F9F;
+}
+.blog-rating, .blog-rating__handler{
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+.blog-rating{
+	margin-right: 50px;
+	span{
+		color: #9F9F9F;
+	}
+}
+
+ .blog-rating__handler{
+ 	margin-left: 10px;
+ }
+.blog-rating__likes-count{
+	margin-left: 7px;
+	margin-right: 7px;
+}
+.blog-row__tags{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: flex-start;
+
+	span{
+		flex-shrink: 0;
+		margin-right: 5px;
+	}
+}
+.blog-row__tags-content{
+	a{
+		display: inline-block;
+		padding: 0 3px;
+		margin: 0 4px 4px 0;
+		border: 1px solid $line;
+		color: $blue;
+		text-decoration: none;
+	}
+}
+.blog-post-header{
+	margin-bottom: 26px;
+	border-bottom: 1px solid $line;
+	h1{
+		margin-bottom: 18px;
+		color: #141414;
+	}
+	
+}
+.blog-post-header__top{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 15px;
+
+}
+.blog-post-header__bottom{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 23px;
+}
+.blog-share{
+	.blog-share__title{
+		color: #ABABAB;
+		text-transform: uppercase;
+	}
+	.pluso{
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 13px;
+
+		.pluso-more,
+		.pluso-counter{
+			display: none;
+		}
+	}
+}
+.blog-post__body{
+	padding-bottom: 17px;
+	border-bottom: 1px solid $line;
+	.blog-row__tags{
+		margin-top: 25px;
+	}
+}
 /* ----end BLOGS----*/

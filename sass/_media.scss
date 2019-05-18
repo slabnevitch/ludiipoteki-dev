@@ -564,7 +564,18 @@
 	.li-pagination__next{
 		display: none;
 	}
-
+	
+	.blog-row__footer{
+		.blog-row__stat{
+			margin-top: 30px;
+			.blog-row__date{
+				left: 0;
+				right: auto;
+				top: -20px;
+				transform: none;
+			}
+		}
+	}
 }
 	
 

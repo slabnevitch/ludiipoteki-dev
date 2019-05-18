@@ -15,7 +15,7 @@ block cat-menu
 block main
 	.container-fluid
 		.row.m-minus
-			.col-12
+			.col-12.blog-page-container
 				include _sections/blogs-top-without-h1
 					block blogs-tabs
 						ul.tabs__content
@@ -31,35 +31,39 @@ block main
 										img(src="img/banners/double-3.jpg", alt="alt")
 
 								.blog-rows
-									.blog-row
-										h2 Ипотека в России - все только начинается
-										.blog-row__content
-											p На прошлой неделе прошла конференция "Ипотечное кредитование в России", организованная информационным агентством АК&М. Любое профильное мероприятие - это обмен мнениями, прогнозами, общение в кулуарах. В совокупности это дает понимание общей картины происходящего на рынке.
+									- for (var i=0; i < 6; i++)
+										.blog-row
+											h2 Ипотека в России - все только начинается
+											.blog-row__content
+												p На прошлой неделе прошла конференция "Ипотечное кредитование в России", организованная информационным агентством АК&М. Любое профильное мероприятие - это обмен мнениями, прогнозами, общение в кулуарах. В совокупности это дает понимание общей картины происходящего на рынке.
 
-											p Для себя отметил тезис, который высказал главный аналитик Сбербанка Михаил Матовников - настоящая ипотека начинается только сейчас. Как это понимать? Давайте пройдемся по фактам. Сейчас в России по приблизительным оценкам каждая пятая семья имеет ипотечный кредит. Каждая вторая семья мечтаем улучшить жилищные условия. Доля в ВВП чуть более 6%, что говорит об огромном потенциале.
+												p Для себя отметил тезис, который высказал главный аналитик Сбербанка Михаил Матовников - настоящая ипотека начинается только сейчас. Как это понимать? Давайте пройдемся по фактам. Сейчас в России по приблизительным оценкам каждая пятая семья имеет ипотечный кредит. Каждая вторая семья мечтаем улучшить жилищные условия. Доля в ВВП чуть более 6%, что говорит об огромном потенциале.
 
-										footer.blog-row__footer
-											.blog-row__stat
-												.blog-rating
-													span Рейтинг читателей
-													.blog-rating__handler
-														a(href="#").sp-icon.ico-blog-like
-														span.blog-rating__likes-count 3
-														a(href="#").sp-icon.ico-blog-dislike
+											footer.blog-row__footer
+												.blog-row__stat
+													.blog-rating
+														span Рейтинг читателей
+														.blog-rating__handler
+															a(href="#").sp-icon.ico-blog-like
+															span.blog-rating__likes-count 3
+															a(href="#").sp-icon.ico-blog-dislike
 
-												.blogs-previews__item-info
-													.blogs-previews__views
-														.ico-eye
-														.blogs-previews__views-count 135
+													.blogs-previews__item-info
+														.blogs-previews__views
+															.ico-eye
+															.blogs-previews__views-count 135
 
-													.blogs-previews__comments
-														.ico-quote-mini
-														a(href="#").blogs-previews__comments-conunt 0
-											
-											.blog-row__tags
-												span Теги
-												.blog-row__tags-content
-													a(href="#") мысли про ипотеку
+														.blogs-previews__comments
+															.ico-quote-mini
+															a(href="#").blogs-previews__comments-conunt 0
+
+													.blog-row__date 29 января 2019
+												
+												.blog-row__tags
+													span Теги:
+													.blog-row__tags-content
+														// - for (var i=0; i < 30; i++)
+														a(href="#") мысли про ипотеку
 
 									
 							li#item2.tabs__item.hidden 2

@@ -3804,7 +3804,7 @@ h1, h2, .h1-no-title {
       width: 100%;
       max-width: 240px; }
   .li-banners-wrapper--padded {
-    padding-top: 30px; }
+    margin-bottom: 0; }
     .li-banners-wrapper--padded .li-banner-wrap {
       margin-bottom: 25px; }
 
@@ -4964,6 +4964,144 @@ h1, h2, .h1-no-title {
   text-transform: uppercase;
   background-color: #C71015; }
 
+.blog-page-container .blog-card {
+  margin-bottom: 30px; }
+
+.blog-row {
+  padding-bottom: 20px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #E7E7E7; }
+  .blog-row h2 {
+    margin-bottom: 12px;
+    font-size: 14px;
+    text-transform: none; }
+  .blog-row:last-child {
+    margin-bottom: 0; }
+
+.blog-row__content p {
+  line-height: 15px; }
+
+.blog-row__stat {
+  position: relative;
+  margin-bottom: 7px; }
+  .blog-row__stat .blogs-previews__item-info {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0; }
+  .blog-row__stat .blog-row__date {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.blog-row__date {
+  color: #9F9F9F; }
+
+.blog-rating, .blog-rating__handler {
+  display: inline-block;
+  vertical-align: middle; }
+
+.blog-rating {
+  margin-right: 50px; }
+  .blog-rating span {
+    color: #9F9F9F; }
+
+.blog-rating__handler {
+  margin-left: 10px; }
+
+.blog-rating__likes-count {
+  margin-left: 7px;
+  margin-right: 7px; }
+
+.blog-row__tags {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  .blog-row__tags span {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right: 5px; }
+
+.blog-row__tags-content a {
+  display: inline-block;
+  padding: 0 3px;
+  margin: 0 4px 4px 0;
+  border: 1px solid #E7E7E7;
+  color: #23485F;
+  text-decoration: none; }
+
+.blog-post-header {
+  margin-bottom: 26px;
+  border-bottom: 1px solid #E7E7E7; }
+  .blog-post-header h1 {
+    margin-bottom: 18px;
+    color: #141414; }
+
+.blog-post-header__top {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 15px; }
+
+.blog-post-header__bottom {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 23px; }
+
+.blog-share .blog-share__title {
+  color: #ABABAB;
+  text-transform: uppercase; }
+
+.blog-share .pluso {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 13px; }
+  .blog-share .pluso .pluso-more,
+  .blog-share .pluso .pluso-counter {
+    display: none; }
+
+.blog-post__body {
+  padding-bottom: 17px;
+  border-bottom: 1px solid #E7E7E7; }
+  .blog-post__body .blog-row__tags {
+    margin-top: 25px; }
+
 /* ----end BLOGS----*/
 .categories-menu {
   float: none;
@@ -5733,7 +5871,16 @@ h1, h2, .h1-no-title {
     justify-content: center; }
   .li-pagination__prev,
   .li-pagination__next {
-    display: none; } }
+    display: none; }
+  .blog-row__footer .blog-row__stat {
+    margin-top: 30px; }
+    .blog-row__footer .blog-row__stat .blog-row__date {
+      left: 0;
+      right: auto;
+      top: -20px;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
