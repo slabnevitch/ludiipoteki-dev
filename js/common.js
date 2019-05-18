@@ -3,8 +3,20 @@ $(function() {
 
 	// header-top__menu toggle
 		$(".toggle-mnu").click(function() {
-			$(this).toggleClass("on");
-			$(".header-top__menu--text").stop(true, true).slideToggle(150);
+			var $th = $(this);
+			$th.toggleClass("on");
+			
+			if($th.closest('.header-top').length > 0){
+				console.log('header-topo');
+				$(".header-top__menu--text").stop(true, true).slideToggle(150);
+				
+			}
+
+			if($th.closest('.categories-menu-block--mob').length > 0){
+				console.log('cat-menu');
+				$(".categories-menu-block--mob .categories-menu").stop(true, true).fadeToggle(150);
+				
+			}
 			return false;
 		});
 	// end header-top__menu toggle
