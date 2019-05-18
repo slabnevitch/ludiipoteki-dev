@@ -3423,7 +3423,7 @@ ul, li {
 
 .chev-top {
   background-image: url(../img/sprite.png);
-  background-position: 0px -131px;
+  background-position: -51px -131px;
   width: 14px;
   height: 9px; }
 
@@ -3453,7 +3453,7 @@ ul, li {
 
 .enter-twi {
   background-image: url(../img/sprite.png);
-  background-position: 0px -74px;
+  background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 
@@ -3465,7 +3465,7 @@ ul, li {
 
 .eye {
   background-image: url(../img/sprite.png);
-  background-position: -19px -131px;
+  background-position: -88px -131px;
   width: 13px;
   height: 9px; }
 
@@ -3474,6 +3474,18 @@ ul, li {
   background-position: -65px -111px;
   width: 14px;
   height: 13px; }
+
+.ico-blog-dislike {
+  background-image: url(../img/sprite.png);
+  background-position: -102px -111px;
+  width: 13px;
+  height: 12px; }
+
+.ico-blog-like {
+  background-image: url(../img/sprite.png);
+  background-position: -84px -111px;
+  width: 13px;
+  height: 12px; }
 
 .ico-breadcrumbs-after, .breadcrumbs li:after {
   background-image: url(../img/sprite.png);
@@ -3501,13 +3513,13 @@ ul, li {
 
 .ico-close-wt {
   background-image: url(../img/sprite.png);
-  background-position: -118px -111px;
+  background-position: -17px -131px;
   width: 12px;
   height: 12px; }
 
 .ico-eye {
   background-image: url(../img/sprite.png);
-  background-position: -37px -131px;
+  background-position: -70px -131px;
   width: 13px;
   height: 9px; }
 
@@ -3519,19 +3531,19 @@ ul, li {
 
 .ico-pager-next {
   background-image: url(../img/sprite.png);
-  background-position: -74px -99px;
+  background-position: -106px -131px;
   width: 14px;
   height: 6px; }
 
 .ico-pager-prev {
   background-image: url(../img/sprite.png);
-  background-position: -55px -131px;
+  background-position: -74px -99px;
   width: 14px;
   height: 6px; }
 
 .ico-quote-mini {
   background-image: url(../img/sprite.png);
-  background-position: -84px -111px;
+  background-position: -34px -131px;
   width: 12px;
   height: 12px; }
 
@@ -3543,13 +3555,13 @@ ul, li {
 
 .ico-vk-footer {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -74px;
   width: 32px;
   height: 32px; }
 
 .magnifier, .li-search .li-form .li-search__submit:after {
   background-image: url(../img/sprite.png);
-  background-position: -26px -111px;
+  background-position: -111px -90px;
   width: 15px;
   height: 15px; }
 
@@ -3561,7 +3573,7 @@ ul, li {
 
 .quote-mini {
   background-image: url(../img/sprite.png);
-  background-position: -101px -111px;
+  background-position: 0px -131px;
   width: 12px;
   height: 12px; }
 
@@ -3573,7 +3585,7 @@ ul, li {
 
 .site-map {
   background-image: url(../img/sprite.png);
-  background-position: -111px -90px;
+  background-position: -26px -111px;
   width: 15px;
   height: 15px; }
 
@@ -3649,7 +3661,7 @@ ul, li {
     width: 16px;
     height: 16px; }
 
-h1, h2 {
+h1, h2, .h1-no-title {
   margin: 0;
   margin-right: 14px;
   font-family: "RobotoBlack", sans-serif;
@@ -3784,10 +3796,17 @@ h1, h2 {
   .li-banners-wrapper--double {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
-    justify-content: space-around; }
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     .li-banners-wrapper--double .li-banner-wrap {
       width: 100%;
       max-width: 240px; }
+  .li-banners-wrapper--padded {
+    padding-top: 30px; }
+    .li-banners-wrapper--padded .li-banner-wrap {
+      margin-bottom: 25px; }
 
 .height-covered {
   position: relative; }
@@ -4824,7 +4843,7 @@ h1, h2 {
   -ms-flex-align: start;
   align-items: flex-start;
   margin-bottom: 24px; }
-  .blog-card__header h2 {
+  .blog-card__header h2, .blog-card__header h1 {
     margin-bottom: 8px;
     font-size: 14px;
     text-transform: none; }

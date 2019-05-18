@@ -1,24 +1,15 @@
-extends _misc/main
+extends _misc/main-with-categories
 
 block title
 	| Блоги
 
-block menu-categories
-	.container
-		.row
-			.col-12.cat-mob-wrap
-				include _sections/categories-menu-mob
 
-block breadcrumbs
-	.container
-		.row
-			.col-lg-8.col-xl-9
-				ul.breadcrumbs
-					li
-						a(href="#") Главная
-					li.active
-						a(href="#") Блоги
+block breadcrumb-current
+	li.active
+		a(href="#") Блоги
 
+block cat-menu
+	include _sections/categories-menu-mini
 
 block main
 	.container-fluid

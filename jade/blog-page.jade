@@ -1,47 +1,79 @@
-extends _misc/main
+extends _misc/main-with-categories
 
 block title
-	| Блоги
+	| Страница Блога
 
-block menu-categories
-	.container
-		.row
-			.col-12.cat-mob-wrap
-				include _sections/categories-menu-mob
 
-block breadcrumbs
-	.container
-		.row
-			.col-lg-8.col-xl-9
-				ul.breadcrumbs
-					li
-						a(href="#") Главная
-					li.active
-						a(href="#") Блоги
+block breadcrumb-current
+	li.active
+		a(href="#") Блоги
+
+block cat-menu
+	include _sections/categories-menu-mini
 
 
 block main
 	.container-fluid
 		.row.m-minus
 			.col-12
-				include _sections/blogs-top
+				include _sections/blogs-top-without-h1
 					block blogs-tabs
 						ul.tabs__content
 							li#item1.tabs__item
-								- for (var i=0; i < 5; i++)
-									include _sections/blog-cards
-							li#item2.tabs__item.hidden
-								- for (var i=0; i < 2; i++)
-									include _sections/blog-cards
-							li#item3.tabs__item.hidden
-								- for (var i=0; i < 1; i++)
-									include _sections/blog-cards
-							li#item4.tabs__item.hidden
-								- for (var i=0; i < 3; i++)
-									include _sections/blog-cards
-							li#item5.tabs__item.hidden
-								- for (var i=0; i < 4; i++)
-									include _sections/blog-cards
+								include _sections/blog-card-whith-h1
+
+								.li-banners-wrapper.li-banners-wrapper--double.li-banners-wrapper--padded
+									.li-banner-wrap
+										img(src="img/banners/double-1.jpg", alt="alt")
+									.li-banner-wrap
+										img(src="img/banners/double-2.jpg", alt="alt")
+									.li-banner-wrap
+										img(src="img/banners/double-3.jpg", alt="alt")
+
+								.blog-rows
+									.blog-row
+										h2 Ипотека в России - все только начинается
+										.blog-row__content
+											p На прошлой неделе прошла конференция "Ипотечное кредитование в России", организованная информационным агентством АК&М. Любое профильное мероприятие - это обмен мнениями, прогнозами, общение в кулуарах. В совокупности это дает понимание общей картины происходящего на рынке.
+
+											p Для себя отметил тезис, который высказал главный аналитик Сбербанка Михаил Матовников - настоящая ипотека начинается только сейчас. Как это понимать? Давайте пройдемся по фактам. Сейчас в России по приблизительным оценкам каждая пятая семья имеет ипотечный кредит. Каждая вторая семья мечтаем улучшить жилищные условия. Доля в ВВП чуть более 6%, что говорит об огромном потенциале.
+
+										footer.blog-row__footer
+											.blog-row__stat
+												.blog-rating
+													span Рейтинг читателей
+													.blog-rating__handler
+														a(href="#").sp-icon.ico-blog-like
+														span.blog-rating__likes-count 3
+														a(href="#").sp-icon.ico-blog-dislike
+
+												.blogs-previews__item-info
+													.blogs-previews__views
+														.ico-eye
+														.blogs-previews__views-count 135
+
+													.blogs-previews__comments
+														.ico-quote-mini
+														a(href="#").blogs-previews__comments-conunt 0
+											
+											.blog-row__tags
+												span Теги
+												.blog-row__tags-content
+													a(href="#") мысли про ипотеку
+
+									
+							li#item2.tabs__item.hidden 2
+								
+									
+							li#item3.tabs__item.hidden 3
+								
+									
+							li#item4.tabs__item.hidden 4
+								
+									
+							li#item5.tabs__item.hidden 5
+								
+									
 
 		.row.m-minus
 			.col-12

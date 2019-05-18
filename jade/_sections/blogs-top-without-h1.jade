@@ -1,0 +1,34 @@
+.blogs-top
+	.title-block.title-block--iconed
+			div.h1-no-title Личные блоги
+			.title-block__icons
+				a(href="#").title-block__icon.title-block__icon--rss
+					i.icon-rss
+
+	.li-tabs.tabs-wrapper
+		ul.tabs__list
+			li.tabs__item.tabs__item--active
+				a.tabs__link(href='#item1') Актуальные
+			li.tabs__item
+				a.tabs__link(href='#item2') Новые
+			li.tabs__item
+				a.tabs__link(href='#item3') Читаемые
+			li.tabs__item
+				a.tabs__link(href='#item4') Обсуждаемые
+			li.tabs__item
+				a.tabs__link(href='#item5') Рейтинг читателей
+
+		.blogs-steps
+			.blogs-step
+				span.blogs-step__number 1
+				span.blogs-step__val Читайте блоги специалистов
+
+			.blogs-step
+				span.blogs-step__number 2
+				span.blogs-step__val Пишите в собственный блог
+
+			.blogs-step
+				span.blogs-step__number 3
+				span.blogs-step__val Комментируйте интересный посты
+
+		block blogs-tabs

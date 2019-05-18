@@ -320,7 +320,7 @@ ul, li{
       height: 16px;
     }
   }
-h1, h2{
+h1, h2, .h1-no-title{
   margin: 0;
   margin-right: 14px;
   font-family: $r-bl;
@@ -469,10 +469,18 @@ h1, h2{
 
   &--double{
     justify-content: space-around;
+    flex-wrap:wrap;
 
     .li-banner-wrap{
       width: 100%;
       max-width: 240px;
+    }
+  }
+
+  &--padded{
+    padding-top: 30px;
+    .li-banner-wrap{
+      margin-bottom: 25px;
     }
   }
 }
