@@ -320,6 +320,36 @@ $(function() {
 		});
 	// end tabs	
 
+	// Accordeon-----------------------------------
+		$('.acordeon-link').click(function(e) {
+			e.preventDefault();
+			var $currentItem = $(this).closest('.acordeon-item');
+			if($currentItem.hasClass('acordeon-item-with-sublist')){
+
+				$currentItem.find('.acordeon-sublist')
+				.stop(true, true)
+				.slideToggle();
+
+				$currentItem.toggleClass('active');
+
+				$currentItem.siblings()
+				.find('.acordeon-sublist')
+				.stop(true, true)
+				.slideUp();
+
+			}else{
+				return;
+			}
+		});
+	// end Accordeon-----------------------------------
+	
+	// .company-about toggler
+		$('.company-about__link').click(function() {
+			$(this).closest('.company-about').toggleClass('active');
+			return false;
+		});
+	// end .company-about toggler
+
 	// jsscrollpane
 		if(document.querySelector('.scroll-pane')){
 			var scrollPane = $('.scroll-pane').jScrollPane({

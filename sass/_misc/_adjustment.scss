@@ -377,6 +377,9 @@ ul, li{
       background-color: #fff;
     }
 
+  &.title-block__count{
+    background-color: #fff;
+  }
   
 }
 .title-block__icon{
@@ -759,5 +762,16 @@ h1, h2, .h1-no-title{
   border: 1px solid #666666;
   border-top: none;
   border-right: none;
+}
+
+.acordeon-item,
+.acordeon-subitem{
+  list-style-type: none;
+}
+.title-upcase-bl{
+  margin-bottom: 12px;
+  font-family: $r-b;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 /* end main styles */
