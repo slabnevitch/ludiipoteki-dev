@@ -1,0 +1,193 @@
+.companies-select{
+	margin-bottom: 26px;
+}
+.companies-form{
+	padding: 12px 15px 18px 18px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: flex-end;
+	background-color: $f4;
+
+	.li-form-label{
+		width: 100%;
+		margin-right: 13px;
+		margin-bottom: 0;
+	}
+	.companies-form__name{
+		max-width: 174px;
+	}
+	.companies-form__sphere{
+		max-width: 262px;
+	}
+	.companies-form__country{
+		max-width: 125px;
+	}
+	.companies-form__location{
+		max-width: 137px;
+	}
+
+}
+.companies-list__header{
+	display: none;
+	.companies-list__sort{
+		flex: 1 1 0;
+		display: block;
+		padding-left: 0;
+	margin: 0 5px;
+	padding-bottom: 11px;
+	text-align: center;
+	
+		&:before{
+			// content: "";
+			// @extend .li-chevron;
+			position: absolute;
+			transform: rotate(-45deg);
+			top: calc(100% - 8px);
+			left: 0;
+			right: 0;
+			margin-top: auto;
+			margin: auto;
+			// bottom: -30px;
+
+		}
+	}
+}
+
+.companies-list__sort{
+	
+	display: inline-block;
+	position: relative;
+	padding-left: 12px;
+	color: $blue;
+	text-transform: uppercase;
+	font-size: 10px;
+	line-height: 13px;
+	text-align: left;
+
+	&:before{
+		content: "";
+		@extend .li-chevron;
+		transform: rotate(-45deg);
+		top: 50%;
+		margin-top: -3px;
+		left: 0;
+
+
+	}
+
+
+	&:hover, &:active{
+		color: $red-hover;
+		text-decoration: none;
+
+		&:before{
+			border-color: $red-hover;
+		}
+	}
+	
+}
+.companies-list{
+	table{
+		width: 100%;
+
+		thead{
+			border-bottom: 1px solid $line;
+		}
+		tbody{
+			tr{
+			
+			
+				td{
+					
+
+					span{
+						color: #7b7b7b;
+					}
+					a{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		tr{
+
+			td, th{
+				text-align: center;
+				vertical-align: middle;
+				padding: 0 15px;
+			}
+
+
+
+
+		}
+		.companies-list__desktop-info,
+		.companies-list__mob-info{
+			td{
+				padding-top: 20px;
+				padding-bottom: 20px;
+
+			}
+			border-bottom: 1px solid $line;
+		}
+		.companies-list__mob-info{
+				display: none;
+				text-align: left;
+
+				td{
+					text-align: left;
+				}
+			}
+		.companies-list__avatar{
+			width: 130px;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.companies-list__img{
+			@extend .li-portrait;
+			width: 130px;
+
+		}
+		.companies-list__title{
+			h2{
+				text-align: left;
+				font-size: 14px;
+				text-transform: none;
+				
+			}
+		}
+		.companies-list__date{
+			width: 170px;
+		}
+		.companies-mob-row-left{
+			.companies-mob-val{
+				margin-left: 5px;
+			}
+		}
+		.companies-mob-row-right{
+			span{
+				display: block;
+			}
+		}
+
+	}
+}
+
+.companies-list__column{
+	float: left;
+	width: 50%;
+}
+.companies-list__column--left{
+	span{
+		display: block;
+	}
+
+}
+.companies-list table .companies-list__column--left .companies-mob-val{
+		margin-left: 0;
+
+}

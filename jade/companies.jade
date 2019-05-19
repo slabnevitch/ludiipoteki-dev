@@ -1,0 +1,157 @@
+extends _misc/main-with-categories
+
+block title
+	| Список компаний
+
+
+block breadcrumb-current
+	li.active
+		a(href="#") Список компаний
+
+block cat-menu
+	include _sections/categories-menu-mini-mob
+
+
+block main
+	.container-fluid
+		.row.m-minus
+			.col-12
+				.title-block
+					h1 Список компаний
+				
+				.companies-select
+					form(action="#").li-form.companies-form
+						label.li-form-label.companies-form__name
+							span.li-form-label-name Название:
+							input.li-form-input(type="text", name="name")
+
+						label.li-form-label.companies-form__sphere
+							span.li-form-label-name Сфера деятельности:
+							select.li-form-select(name="name")
+								option(value="1") Сфера 1
+								option(value="2") Сфера 2
+								option(value="3") Сфера 3
+								option(value="4") Сфера 4
+
+						label.li-form-label.companies-form__country
+							span.li-form-label-name Страна:
+							select.li-form-select(name="name")
+								option(value="1") Россия
+								option(value="2") Украина
+								option(value="3") Берарусь
+
+						label.li-form-label.companies-form__location
+							span.li-form-label-name Город:
+							select.li-form-select(name="name")
+								option(value="1") Москва
+								option(value="2") Киев
+								option(value="3") Минск
+
+						button.button.button-micro.button-l-blue найти
+				
+				.companies-list
+					.companies-list__header
+						//- .companies-list__sort-block
+						a(href="#").companies-list__sort новости
+						//- .companies-list__sort-block
+						a(href="#").companies-list__sort комментарии
+						//- .companies-list__sort-block
+						a(href="#").companies-list__sort блоги
+						//- .companies-list__sort-block
+						a(href="#").companies-list__sort последнее посещение
+					
+					table
+						thead
+							tr
+								th
+								th
+								th
+									a(href="#").companies-list__sort новости
+								th
+									a(href="#").companies-list__sort комментарии
+								th
+									a(href="#").companies-list__sort блоги
+								th
+									a(href="#").companies-list__sort последнее посещение
+
+						tbody
+							- for (var i=0; i < 5; i++)
+								tr.companies-list__desktop-info
+									td.companies-list__avatar
+										.companies-list__img
+											img(src="img/companies/1.jpg", alt="alt")
+									
+									td.companies-list__title
+										h2 Ипотечный Бумеранг
+									td.companies-list__news 
+										span 0
+									td.companies-list__comments
+										span 0
+									td.companies-list__blogs
+										a(href="#").li-link 27
+									td.companies-list__date
+										span 17 марта 2019, 02:15
+
+								tr.companies-list__mob-info
+									td.companies-mob-row-left(colspan="6")
+										.companies-list__column
+											.companies-list__row
+												span.companies-mob-key новости:
+												span.companies-mob-val 0
+											
+											.companies-list__row
+												span.companies-mob-key комментарии:
+												span.companies-mob-val 0
+
+											.companies-list__row
+												span.companies-mob-key блоги:
+												a(href="#").companies-mob-val.li-link 27
+										
+										.companies-list__column.companies-list__column--left
+											.companies-list__row
+												span.companies-mob-key Последнее посещение:
+												span.companies-mob-val.li-link 17 марта 2019, 02:15
+
+								tr.companies-list__desktop-info
+									td.companies-list__avatar
+										.companies-list__img
+											img(src="img/companies/2.jpg", alt="alt")
+									
+									td.companies-list__title
+										h2 Владимирский городской ипотечный фонд
+									td.companies-list__news 
+										a(href="#").li-link 45
+									td.companies-list__comments
+										span 0
+									td.companies-list__blogs
+										a(href="#").li-link 27
+									td.companies-list__date
+										span 17 марта 2019, 02:15
+
+								tr.companies-list__mob-info
+									td.companies-mob-row-left(colspan="6")
+										.companies-list__column
+											.companies-list__row
+												span.companies-mob-key новости:
+												a(href="#").companies-mob-val.li-link 45
+											
+											.companies-list__row
+												span.companies-mob-key комментарии:
+												span.companies-mob-val 0
+
+											.companies-list__row
+												span.companies-mob-key блоги:
+												a(href="#").companies-mob-val.li-link 27
+										
+										.companies-list__column.companies-list__column--left
+											.companies-list__row
+												span.companies-mob-key Последнее посещение:
+												span.companies-mob-val.li-link 17 марта 2019, 02:15
+
+		.row.m-minus
+			.col-12
+				include _includes/pagination
+			
+block sidebar
+	include _sections/categories-menu-mini
+	include _sections/sidebar-permanent

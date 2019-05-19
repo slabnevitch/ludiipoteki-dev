@@ -349,6 +349,21 @@ $(function() {
 			$(this).parent().addClass('hidden');
 		});
 	// end footer cookies close
+
+	// ikSelect
+		$('.li-form-select').ikSelect({
+			autoWidth: false,
+			// customClass: 'prod-sort-select',
+			// ddCustomClass: 'prod-sort-dd',
+			onShow: function (inst) {
+				console.log(inst);
+				var currWidth = $(inst.el).closest('.ik_select').width(),
+				$instanceParent = $(inst.el).parent().parent();
+				
+				$('.ik_select_dropdown').width(currWidth);
+			}
+		});
+	// end ikSelect
 	
 	//Chrome Smooth Scroll
 	try {

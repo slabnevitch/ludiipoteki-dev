@@ -30,6 +30,31 @@
 	.block-card__stat{
 		margin-right: 15px;
 	}
+	.companies-list table .companies-list__avatar{
+		width: 70px;
+	}
+	.companies-list table .companies-list__img{
+		width: 70px;
+		height: 70px;
+	}
+	.companies-form{
+		flex-wrap: wrap;
+
+		.button-micro{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.companies-form .li-form-label{
+		margin-bottom: 8px;
+		margin-right: 0;
+	}
+	.companies-form .companies-form__name,
+	.companies-form .companies-form__sphere,
+	.companies-form .companies-form__country,
+	.companies-form .companies-form__location{
+		max-width: initial;
+	}
 }
 	
 /* Medium Devices, Desktops */
@@ -187,6 +212,14 @@
 	.discussion-form{
 		margin-bottom: 30px;
 	}
+	.companies-list table .companies-list__avatar{
+		width: 130px;
+	}
+	.companies-list table .companies-list__img{
+		width: 130px;
+		height: 130px;
+	}
+
 }
 	
 @media only screen and (max-width : 991px){
@@ -470,6 +503,49 @@
 		display: block;
 		margin-right: 0;
 		max-width: initial;
+	}
+	.companies-list table .companies-list__mob-info{
+		display: table-row;
+		// td{
+		// 	display: none;
+		// }
+		// .companies-mob-row-right,
+		// .companies-mob-row-left{
+		// 	display: table-cell;
+		// }
+	}
+	.companies-list table .companies-list__date,
+	.companies-list table .companies-list__news,
+	.companies-list table .companies-list__comments,
+	.companies-list table .companies-list__blogs,
+	.companies-list table .companies-list__date,
+	{
+		display: none;
+	}
+	.companies-list table thead{
+		display: none;
+	}
+	.companies-list table .companies-list__title{
+		width: 100%;
+	}
+	.companies-list__desktop-info{
+		border-bottom: none;
+	}
+	.companies-list table .companies-list__desktop-info{
+		td{
+			padding-bottom: 0;
+			
+		}
+		border-bottom: none;
+	}
+	.companies-list__header{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
 	}
 	// .header-enter{
 	// 	display: none;

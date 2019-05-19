@@ -1,7 +1,14 @@
-extends _misc/main
+extends _misc/main-with-categories
 
 block title
 	| Новости
+
+block breadcrumb-current
+	li.active
+		a(href="#") Новости
+
+block cat-menu
+	include _sections/categories-menu-mob
 
 block main
 	.container-fluid
