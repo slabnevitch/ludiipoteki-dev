@@ -1,0 +1,169 @@
+extends _misc/main-with-categories
+
+block title
+	| Исследованиe
+
+block breadcrumb-current
+	li
+		a(href="#") Исследования рынка
+
+	li.active
+		a(href="#") Мониторинг ипотечного рынка. Январь 2019 (выпуск #22)
+
+block cat-menu
+	include _sections/categories-menu-mob
+
+block main
+	.container-fluid
+		.row.m-minus
+			.col-12
+				.title-block
+					h2 Исследования рынка
+			
+				.research-card.li-card-block
+					.research-card__img
+						img(src="img/researches/lg.jpg", alt="alt")
+
+					.research-card__content
+						h1 Мониторинг ипотечного рынка. Январь 2019 (выпуск #22)
+						.research-card__columns
+							.company-info__block
+								.company-info__bage Автор
+								a(href="#").li-link ООО «РУСИПОТЕКА»
+
+							.company-info__block
+								.company-info__bage Количество страниц
+								.company-info__descr 28
+
+							.company-info__block
+								.company-info__bage Язык
+								.company-info__descr Русский
+
+							.company-info__block
+								.company-info__bage Дата выхода
+								.company-info__descr 16 февраля 2019
+
+							.company-info__block
+								.company-info__bage Формат
+								.company-info__descr В электронном виде, PDF
+						.research-card__order-block
+							.research-card__price
+								span Стоимость:
+								span.research-card__price-val 7 900 #[span.li-rub руб.]
+							
+							.research-card__buttons
+								a(href="#").button купить
+								a(href="#").button.button-dark-blue скачать демо-версию
+						.blog-share
+							span.blog-share__title поделитесь с друзьями
+							script.
+								(function() {
+								  if (window.pluso)if (typeof window.pluso.start == "function") return;
+								  if (window.ifpluso==undefined) { window.ifpluso = 1;
+								    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+								    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+								    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+								    var h=d[g]('body')[0];
+								    h.appendChild(s);
+								  }})();
+
+							div(class="pluso" data-background="none;" data-options="small,square,line,horizontal,counter,sepcounter=1,theme=14" data-services="vkontakte,facebook,google,odnoklassniki,twitter,linkedin")
+				
+				.research-content
+					.li-tabs.li-tabs--designed.tabs-wrapper
+						ul.tabs__list
+							li.tabs__item.tabs__item--active
+								a.tabs__link(href='#item1') Аннотация
+							li.tabs__item
+								a.tabs__link(href='#item2') Содержание
+							li.tabs__item
+								a.tabs__link(href='#item3') Графики и таблицы
+							li.tabs__item
+								a.tabs__link(href='#item4') Задать вопрос
+
+						ul.tabs__content
+							li#item1.tabs__item
+								.tabs-designed-content Обзор ипотечных кредитных ставок банков Высшей ипотечной лиги на первичном и вторичном рынке жилья. В обзоре представлены ставки 24 банков и Дом.рф по программам с первоначальным взносом 10, 15, 20, 30, 50 процентов. Также представлены список наиболее важных событий, сформированный на основе мониторинга и анализа пресс-релизов банков и комментарии ведущих экспертов. В мониторинг добавлены обзор прессы, публикации экспертов, новые сообщения в блогах на портале ЛюдиИпотеки.рф.
+							
+							li#item2.tabs__item.hidden
+								.tabs-designed-content
+									p Аналитический центр компании Русипотека предлагает вашему вниманию обзор ипотечных ставок банков ТОП-20 банков Высшей ипотечной лиги в рамках проекта «ставки онлайн». Актуальность 20 марта 2019 года
+									
+									
+									.tabs-designed-content__block
+										p Таблица 1. Еженедельный мониторинг ипотечных ставок для клиентов "с улицы"
+										ul.li-list.li-list--not-padded
+											li средняя ставка предложения на вторичном рынке
+											li средняя ставка предложения на вторичном рынке
+											li средняя ставка предложения по рефинансированию кредитов сторонних банков
+									
+									.tabs-designed-content__block
+										p Таблица 2. Еженедельный Индекс Русипотеки в динамике
+										ul.li-list.li-list--not-padded
+											li средняя ставка предложения на вторичном рынке с ПВ 30%
+											li средняя ставка предложения на первичном рынке с ПВ 30%
+											li средняя ставка предложения по рефинансированию кредитов сторонних банков с ПВ 30%
+
+							li#item3.tabs__item.hidden
+								.tabs-designed-content
+									p Аналитический центр компании Русипотека предлагает вашему вниманию обзор ипотечных ставок банков ТОП-20 банков Высшей ипотечной лиги в рамках проекта «ставки онлайн». Актуальность 20 марта 2019 года
+									
+									
+									.tabs-designed-content__block
+										p Таблица 1. Еженедельный мониторинг ипотечных ставок для клиентов "с улицы"
+										ul.li-list.li-list--not-padded
+											li средняя ставка предложения на вторичном рынке
+											li средняя ставка предложения на вторичном рынке
+											li средняя ставка предложения по рефинансированию кредитов сторонних банков
+									
+									.tabs-designed-content__block
+										p Таблица 2. Еженедельный Индекс Русипотеки в динамике
+										ul.li-list.li-list--not-padded
+											li средняя ставка предложения на вторичном рынке с ПВ 30%
+											li средняя ставка предложения на первичном рынке с ПВ 30%
+											li средняя ставка предложения по рефинансированию кредитов сторонних банков с ПВ 30%
+							
+							li#item4.tabs__item.hidden
+								form(action="#").discussion-form.li-form
+									.discussion-form__top
+										label.li-form-label
+											span.li-form-label-name #[span.li-form-required *] Имя и Фамилия:
+											input.li-form-input(type="text", name="name")
+										label.li-form-label
+											span.li-form-label-name #[span.li-form-required *] E-mail:
+											input.li-form-input(type="text", name="pass")
+									label.li-form-label
+										span.li-form-label-name #[span.li-form-required *] Ваш вопрос
+										textarea(name="name", cols="30", rows="10").li-form-area
+
+									.li-form__buttons
+										button.button.button-mini.button-l-blue ОТПРАВИТЬ
+				
+				.research-similar
+					.title-upcase-bl Похожие исследования
+					.li-tiles
+						- for (var i=0; i < 10; i++)
+							.li-tile
+								.li-tile-img
+									img(src="img/similar/1.jpg", alt="alt")
+								.li-tile-content
+									a(href="#").li-tile-title.li-link Пульс рынка. Жилая недвижимость. Москва - Май 2016 год
+									.li-tile-price 15 000 #[span руб.]
+
+							.li-tile
+								.li-tile-img
+									img(src="img/similar/2.jpg", alt="alt")
+								.li-tile-content
+									a(href="#").li-tile-title.li-link Изменение условий банковско- го кредитования. IV квартал 2017 г.
+									.li-tile-price Бесплатно
+
+							.li-tile
+								.li-tile-img
+									img(src="img/similar/3.jpg", alt="alt")
+								.li-tile-content
+									a(href="#").li-tile-title.li-link Обзор рынка новостроек мас- сового сегмента г.Москвы за август 2017 года
+									.li-tile-price 12 000 #[span руб.]
+
+block sidebar
+	include _sections/categories-menu
+	include _sections/sidebar-permanent

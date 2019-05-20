@@ -67,6 +67,17 @@
 			border-left: none;
 		}
 	}
+	.research-item__bottom .company-info__block{
+		width: auto;
+		&:first-child{
+			margin-right: 30px;
+		}
+
+	}
+	.li-tile{
+		width: calc(50% - 40px);
+	}
+	
 }
 	
 /* Medium Devices, Desktops */
@@ -651,6 +662,15 @@
 			}
 
 		}
+	}
+	.li-tiles{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.li-tile{
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	// .header-enter{
 	// 	display: none;

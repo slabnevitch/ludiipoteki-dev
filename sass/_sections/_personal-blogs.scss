@@ -7,42 +7,7 @@
 		max-width: 100%;
 	}
 }
-.li-tabs{
-	.tabs__list{
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		flex-wrap: wrap;
 
-	}
-	.tabs__item{
-		margin-bottom: 1px;
-		list-style-type: none;
-
-		&--active{
-			.tabs__link{
-				background-color: $accent;
-				color: #fff;
-			}
-		}
-	}
-	.tabs__link{
-		display: block;
-		padding: 8px 12px 8px 12px;
-		background-color: #34495E;
-		font-size: 11px;
-		color: #819bb4;
-
-		&:hover, &:active{
-			text-decoration: none;
-			background-color: $accent;
-			color: #fff;
-		}
-		
-	}
-}
 .blogs-previews{
 	margin-bottom: 26px;
 }

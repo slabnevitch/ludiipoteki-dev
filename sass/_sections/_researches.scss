@@ -64,3 +64,140 @@
 
 	}
 }
+.research-card{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: flex-start;
+}
+.research-card__img{
+	width: 270px;
+	height: 383px;
+	position: relative;
+	margin-right: 30px;
+	flex-shrink: 0;
+
+	img{
+		@include absolute-center-old;
+		max-width: 100%;
+		max-height: 100%;
+		bottom: auto;
+	}
+}
+.research-card__content{
+	h1{
+		margin-bottom: 20px;
+		padding-right: 30px;
+		line-height: 25px;
+		color: #141414;
+	}
+	.blog-share{
+		text-align: right;
+
+		.blog-share__title{
+			font-size: 10px;
+		}
+	}
+}
+.research-card__columns{
+	column-count: 2;
+	column-gap: 0;
+	margin-bottom: 34px;
+
+	.company-info__block{
+		margin-bottom: 19px;
+	}
+
+	.company-info__bage{
+		margin-bottom: 2px;
+	}
+}
+.research-card__order-block{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 26px;
+	margin-bottom: 50px;
+}
+.research-card__price{
+	font-size: 14px;
+	font-family: $r-m;
+}
+.research-card__price-val {
+	margin-left: 5px;
+	font-size: 18px;
+	font-family: $r-bl;
+	color: $accent;
+}
+.research-card__buttons{
+	.button-dark-blue{
+		margin-left: 14px;
+	}
+}
+.research-content{
+	padding-top: 28px;
+	.discussion-form{
+		margin-top: 0;
+	}
+}
+.research-similar{
+	padding-top: 30px;
+}
+.li-tiles{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+.li-tile{
+	width: calc(33.33333% - 40px);
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 26px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.li-tile-img{
+	width: 70px;
+	height: 70px;
+	padding: 1px;
+	position: relative;
+	margin-right: 15px;
+	flex-shrink: 0;
+	border: 1px solid $line;
+
+	img{
+		@include absolute-center;
+		max-width: calc(100% - 2px);
+		max-height: calc(100% - 2px);
+	}
+}
+.li-tile-title{
+	display: inline-block;
+	height: 45px;
+	overflow: hidden;
+	margin-bottom: 5px;
+	color: #34495e;
+	line-height: 15px;
+}
+.li-tile-price{
+	font-family: $r-b;
+	color: $accent;
+
+	span{
+		font-family: $r-r;
+	}
+}
