@@ -1,14 +1,14 @@
 extends _misc/main-with-categories
 
 block title
-	| Страница эксперта
+	| Страница компании
 
 
 block breadcrumb-current
 	li
-		a(href="#") Список экспертов
+		a(href="#") Список компаний
 	li.active
-		a(href="#") Александр Савинов
+		a(href="#") Ипотечный бумеранг
 
 block cat-menu
 	include _sections/categories-menu-mini-mob
@@ -27,7 +27,7 @@ block main
 
 				.company-card
 					.li-portrait
-						img(src="img/faces/gordeiko.jpg", alt="alt")
+						img(src="img/companies/1.jpg", alt="alt")
 
 					.company-card__content
 						.company-card__top
@@ -86,11 +86,49 @@ block main
 							a(href="#").l-link Личный блог
 				
 				.company-about
-					a.company-about__link(href="#") Обо мне
+					a.company-about__link(href="#") О компании
 					.company-about__hidden
-						| – успешный предприниматель, создатель и руководитель проекта Программа "Жилищный шаг". Экономическое образование, и несколько лет ведения и изучения бизнеса в различных сферах, принесли опыт и плоды, и дали возможность реализации в сфере проблем жилищного кредитования, в которой я глубоко разбираюсь". На сегодня мой основной проект – «дело жизни», это Программа «Жилищный шаг», в неё я выкладываю всё дущу и силы вместе с коллективом, который был создан мной, и работа в котором занимает большую часть времени, но вместе с тем приносит радость творчества и веру в будущее. 
+						p Рыбным текстом называется текст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель. Иногда текст-«рыба» также используется композиторами при написании музыки. Они напевают его перед тем, как сочинены соответствующие слова. Уже в 16-том веке рыбные тексты имели широкое распространение у печатников. Рыбные тексты также применяются для демонстрации различных видов шрифта и в разработке макетов. Как правило их содержание бессмысленно.
+
+						p По причине своей функции текста-заполнителя для макетов нечитабельность рыбных текстов имеет особое значение, так как человеческое восприятие имеет особенность, распознавать определенные образцы и повторения. В случае произвольного набора букв и длины слов ничто не отвлекает от оценки воздействия и читаемости различных шрифтов, а также от распределения текста на странице (макет или площадь набора). Поэтому большинство рыбных текстов состоят из более или менее произвольного набора слов и слогов. 
+
+						p Таким образом образцы повторения не отвлекают от общей картины, а шрифты имеют лучшую базу сравнения. 
 
 						.height-cover
+
+				.company-services
+					.title-upcase-bl Услуги
+					ul.acordeon-list
+						li.acordeon-item.acordeon-item-with-sublist.company-services__acc-item
+							a.acordeon-link(href="#").company-services__toggle-link Сопровождение ипотечных сделок
+							ul.acordeon-sublist.li-list
+								li.acordeon-subitem Консультации покупателей по ипотечным программам
+									
+								li.acordeon-subitem Подбор ипотечной программы
+
+								li.acordeon-subitem Формирование пакета документов для подачи в банк на одобрение кредита
+
+								li.acordeon-subitem Контроль процесса и сроков аккредитации 
+
+						li.acordeon-item.acordeon-item-with-sublist.company-services__acc-item
+							a.acordeon-link(href="#").company-services__toggle-link Жилищное финансирование
+							ul.acordeon-sublist.li-list
+								li.acordeon-subitem Консультации покупателей по ипотечным программам
+									
+								li.acordeon-subitem Подбор ипотечной программы
+
+								li.acordeon-subitem Формирование пакета документов для подачи в банк на одобрение кредита
+
+								li.acordeon-subitem Контроль процесса и сроков аккредитации 
+
+						li.acordeon-item.acordeon-item-with-sublist.company-services__acc-item
+							a.acordeon-link.company-services__toggle-link(href="#") Сопровождение ипотечных сделок
+							ul.acordeon-sublist.li-list
+								li.acordeon-subitem Консультации покупателей по ипотечным программам
+									
+								li.acordeon-subitem Подбор ипотечной программы
+
+								li.acordeon-subitem Формирование пакета документов для подачи в банк на одобрение кредита
 
 				.company-activity
 					.title-upcase-bl Активность
@@ -141,46 +179,8 @@ block main
 						a(href="#")
 							span.sp-icon.ico-red-burger
 							span все сообщения
-				
-				.company-services
-					.title-upcase-bl Услуги
-					ul.acordeon-list
-						li.acordeon-item.acordeon-item-with-sublist.company-services__acc-item
-							a.acordeon-link(href="#").company-services__toggle-link Сопровождение ипотечных сделок
-							ul.acordeon-sublist.li-list
-								li.acordeon-subitem Консультации покупателей по ипотечным программам
-									
-								li.acordeon-subitem Подбор ипотечной программы
 
-								li.acordeon-subitem Формирование пакета документов для подачи в банк на одобрение кредита
 
-						li.acordeon-item.acordeon-item-with-sublist.company-services__acc-item
-							a.acordeon-link.company-services__toggle-link(href="#") Сопровождение финансирования
-							ul.acordeon-sublist.li-list
-								li.acordeon-subitem Консультации покупателей по ипотечным программам
-									
-								li.acordeon-subitem Подбор ипотечной программы
-
-								li.acordeon-subitem Формирование пакета документов для подачи в банк на одобрение кредита
-				
-				.company-other-staffs
-					.title-upcase-bl Другие сотрудники РУСИПОТЕКА
-					.staffs-persons
-						- for (var i=0; i < 2; i++)
-							.staffs-person
-								.li-portrait
-									img(src="img/faces/gordeiko.jpg", alt="alt")
-								.li-person-name Сергей Гордейко
-
-							.staffs-person
-								.li-portrait
-									img(src="img/faces/vasheluk.jpg", alt="alt")
-								.li-person-name Наталья Ващелюк
-
-						.staffs-person
-								.li-portrait
-									img(src="img/faces/gordeiko.jpg", alt="alt")
-								.li-person-name Сергей Гордейко
 block sidebar
 	include _sections/categories-menu-mini
 	include _sections/sidebar-permanent

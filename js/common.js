@@ -183,6 +183,35 @@ $(function() {
 
 	//end slick
 
+	// staff variable slider
+		 $staffsSlider = $('.staffs-persons');
+
+			var staffsSliderSettings = {
+				slidesToShow: 1,
+				dots: false,
+				mobileFirst: true
+		    };
+
+
+			if(screen.width < 768){
+		    	$staffsSlider.slick(staffsSliderSettings);
+				// $variantsSlider.slick('unslick');
+			}
+
+			$(window).resize(function() {
+				if ($(window).width() > 768) {
+					if ($staffsSlider.hasClass('slick-initialized')) {
+						$staffsSlider.slick('unslick');
+					}
+					return
+				}
+
+				if (!$staffsSlider.hasClass('slick-initialized')) {
+					return $staffsSlider.slick(staffsSliderSettings);
+				}
+			});
+	// end staff variable slider
+
 	// subjects popup
 		var range = document.getElementById('subject-range'),
 			dragger,
@@ -331,6 +360,9 @@ $(function() {
 				.slideToggle();
 
 				$currentItem.toggleClass('active');
+				$currentItem
+					.siblings()
+					.removeClass('active');
 
 				$currentItem.siblings()
 				.find('.acordeon-sublist')

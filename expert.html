@@ -186,7 +186,7 @@
                       <div class="company-card__top">
                         <div class="li-to-friends">
                           <div class="sp-icon ico-plus"></div><a href="#">Добавить в друзья</a>
-                        </div><a href="#" class="button button-micro button-dark-blue">отправить сообщение</a>
+                        </div><a href="#li-message-person-popup" class="button button-micro button-dark-blue to-popup">отправить сообщение</a>
                       </div>
                       <div class="company-card__bottom">
                         <div class="company-card__left">
@@ -276,7 +276,50 @@
                     </div>
                     <div class="company-activity__more"><a href="#"><span class="sp-icon ico-red-burger"></span><span>все сообщения</span></a></div>
                   </div>
-                  <div class="company-services"></div>
+                  <div class="company-services">
+                    <div class="title-upcase-bl">Услуги</div>
+                    <ul class="acordeon-list">
+                      <li class="acordeon-item acordeon-item-with-sublist company-services__acc-item"><a href="#" class="acordeon-link company-services__toggle-link">Сопровождение ипотечных сделок</a>
+                        <ul class="acordeon-sublist li-list">
+                          <li class="acordeon-subitem">Консультации покупателей по ипотечным программам</li>
+                          <li class="acordeon-subitem">Подбор ипотечной программы</li>
+                          <li class="acordeon-subitem">Формирование пакета документов для подачи в банк на одобрение кредита</li>
+                        </ul>
+                      </li>
+                      <li class="acordeon-item acordeon-item-with-sublist company-services__acc-item"><a href="#" class="acordeon-link company-services__toggle-link">Сопровождение финансирования</a>
+                        <ul class="acordeon-sublist li-list">
+                          <li class="acordeon-subitem">Консультации покупателей по ипотечным программам</li>
+                          <li class="acordeon-subitem">Подбор ипотечной программы</li>
+                          <li class="acordeon-subitem">Формирование пакета документов для подачи в банк на одобрение кредита</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="company-other-staffs">
+                    <div class="title-upcase-bl">Другие сотрудники РУСИПОТЕКА</div>
+                    <div class="staffs-persons">
+                      <div class="staffs-person">
+                        <div class="li-portrait"><img src="img/faces/gordeiko.jpg" alt="alt"></div>
+                        <div class="li-person-name">Сергей Гордейко</div>
+                      </div>
+                      <div class="staffs-person">
+                        <div class="li-portrait"><img src="img/faces/vasheluk.jpg" alt="alt"></div>
+                        <div class="li-person-name">Наталья Ващелюк</div>
+                      </div>
+                      <div class="staffs-person">
+                        <div class="li-portrait"><img src="img/faces/gordeiko.jpg" alt="alt"></div>
+                        <div class="li-person-name">Сергей Гордейко</div>
+                      </div>
+                      <div class="staffs-person">
+                        <div class="li-portrait"><img src="img/faces/vasheluk.jpg" alt="alt"></div>
+                        <div class="li-person-name">Наталья Ващелюк</div>
+                      </div>
+                      <div class="staffs-person">
+                        <div class="li-portrait"><img src="img/faces/gordeiko.jpg" alt="alt"></div>
+                        <div class="li-person-name">Сергей Гордейко</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1095,6 +1138,38 @@
           <div class="li-form__buttons text-right">
             <button class="button button-mini button-l-blue">OK</button>
             <button class="button button-mini button-l-blue">ОТМЕНА</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="li-message-person-popup" class="li-popup li-popup-message mfp-hide">
+      <header class="li-popup__header">александр савинов - отправить сообщение</header>
+      <div class="li-popup__body">
+        <form action="#" class="li-form">
+          <label class="li-form-label"><span class="li-form-label-name">Тема сообщения:</span>
+            <input type="text" name="name" class="li-form-input">
+          </label>
+          <label class="li-form-label"><span class="li-form-label-name">Сообщение:</span>
+            <textarea name="name" cols="30" rows="10" class="li-form-area"></textarea>
+          </label>
+          <div class="li-form__buttons text-center">
+            <button class="button button-mini button-l-blue">отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="li-message-company-popup" class="li-popup li-popup-message mfp-hide">
+      <header class="li-popup__header">Ипотечный бумеранг - отправить сообщение</header>
+      <div class="li-popup__body">
+        <form action="#" class="li-form">
+          <label class="li-form-label"><span class="li-form-label-name">Тема сообщения:</span>
+            <input type="text" name="name" class="li-form-input">
+          </label>
+          <label class="li-form-label"><span class="li-form-label-name">Сообщение:</span>
+            <textarea name="name" cols="30" rows="10" class="li-form-area"></textarea>
+          </label>
+          <div class="li-form__buttons text-center">
+            <button class="button button-mini button-l-blue">отправить</button>
           </div>
         </form>
       </div>

@@ -1,0 +1,55 @@
+extends _misc/main-with-categories
+
+block title
+	| Mероприятия
+
+
+block breadcrumb-current
+	li.active
+		a(href="#") Тематические мероприятия
+
+block cat-menu
+	include _sections/categories-menu-mini-mob
+
+
+block main
+	.container-fluid
+		.row.m-minus
+			.col-12
+				.title-block
+					h1 Тематические мероприятия
+				
+				.events-list
+					- for (var i=0; i < 3; i++)
+						.event-row
+							.event-row__header
+								h2 Сочинский Всероссийский жилищный конгресс
+								.announcements-item__date 06 июня 2019
+
+							.event-row__body.li-gray-body
+								.company-info__block
+									.company-info__bage Место проведения
+									.company-info__descr Сочи, отель «Pullman Sochi Centre»
+
+								.company-info__block
+									.company-info__bage Организатор
+									.company-info__descr Бюллетень недвижимости
+
+						.event-row
+							.event-row__header
+								h2 «ЦИФРОВАЯ ИПОТЕКА 2.0 - Экосистемы, маркетплейсы, далее везде»
+								.announcements-item__date 06 июня 2019
+							.event-row__body.li-gray-body
+								.company-info__block
+									.company-info__bage Место проведения
+									.company-info__descr Сочи, отель «Pullman Sochi Centre»
+
+								.company-info__block
+									.company-info__bage Организатор
+									.company-info__descr Бюллетень недвижимости
+
+
+
+block sidebar
+	include _sections/categories-menu-mini
+	include _sections/sidebar-permanent

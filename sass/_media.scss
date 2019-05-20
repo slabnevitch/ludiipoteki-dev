@@ -55,6 +55,9 @@
 	.companies-form .companies-form__location{
 		max-width: initial;
 	}
+	.company-card__bottom{
+		clear: left;
+	}
 }
 	
 /* Medium Devices, Desktops */
@@ -219,6 +222,22 @@
 		width: 130px;
 		height: 130px;
 	}
+	.company-card__bottom{
+		clear: initial;
+	}
+	.company-card__right{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: flex-end;
+
+		.company-card__stat{
+			flex-basis: 0;
+		}
+	}
+
 
 }
 	
@@ -547,6 +566,64 @@
 		justify-content: space-between;
 		align-items: flex-end;
 	}
+	.company-other-staffs{
+		margin-bottom: 50px;
+	}
+	.staffs-person{
+		.li-portrait,
+		.li-person-name{
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+	}
+	.company-card__bottom{
+		clear: left;
+	}
+	.company-card{
+		.li-portrait{
+			margin-bottom: 19px;
+		}
+	}
+	.company-card__top{
+		flex-direction: column;
+	}
+	.li-to-friends{
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+	.company-card__bottom{
+		display: block;
+	}
+	.company-card__left,
+	{
+		margin-bottom: 14px;
+		text-align: center;
+	}
+	.company-card__right{
+		justify-content: center;
+	}
+	.company-card__left .company-card__stat{
+		margin-right: 10px;
+	}
+	.company-info{
+		flex-wrap: wrap;
+	}
+	.company-info__column{
+		width: calc(50% - 30px);
+		flex: auto;
+		margin-bottom: 18px;
+
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+	}
+	.company-activity__item .tabs__link{
+		padding-top: 10px;
+		padding-bottom: 12px;
+	}
 	// .header-enter{
 	// 	display: none;
 	// }
@@ -715,6 +792,10 @@
 			}
 		}
 	}
+	.company-info__column{
+		width: 100%;
+	}
+
 }
 	
 
@@ -770,7 +851,24 @@
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px){
 /**/
-	
+	.company-card__top{
+		.li-to-friends{
+			position: relative;
+			margin-bottom: 30px;
+			padding-left: 28px;
+			padding-right: 35px;
+
+			.sp-icon{
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			a{
+				display: inline-block;
+			}
+		}
+	}
 }
 
 

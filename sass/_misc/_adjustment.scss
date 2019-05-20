@@ -416,7 +416,7 @@ h1, h2, .h1-no-title{
 .li-portrait{
   position: relative;
   width: 100%;
-  max-width: 130px;
+  width: 130px;
   height: 130px;
   img{
     @include absolute-center;
@@ -773,5 +773,33 @@ h1, h2, .h1-no-title{
   font-family: $r-b;
   font-size: 14px;
   text-transform: uppercase;
+}
+.acordeon-sublist{
+  display: none;
+}
+.li-list{
+  padding-left: 23px; 
+  margin-bottom: 10px;  
+  li{
+      position: relative; 
+      padding-left: 12px; 
+      margin-bottom: 3px; 
+      &:before{
+        content: '';
+        display: block; 
+        position: absolute;
+        left: 0;  
+        top: 6px; 
+        width: 5px;
+        height: 5px;  
+        background-color: $blue;
+        border-radius: 50em;  
+      }
+
+  }
+}
+.li-gray-body{
+  padding: 11px 18px;
+  background-color: #f8f8f8;
 }
 /* end main styles */
