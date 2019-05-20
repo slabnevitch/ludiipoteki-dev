@@ -1,0 +1,66 @@
+.researhes-list{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	// margin-left: -22px;
+}
+.research-item{
+	width: 50%;
+	padding-right: 22px;
+
+	.research-item__img{
+		width: 100px;
+		height: 142px;
+	position: relative;
+	margin-right: 20px;
+	float: left;
+
+		img{
+			@include absolute-center;
+		}
+
+	}
+
+	&:nth-child(even){
+		padding-right: 0;
+		padding-left: 22px;
+		border-left: 1px solid $line;
+	}
+}
+.research-item__header{
+	margin-left: 120px;
+	margin-bottom: 4px;
+	.height-covered{
+		max-height: 55px;
+		min-height: 55px;
+	}
+	h2{
+		font-size: 14px;
+		text-transform: none;
+	}
+}
+.research-item__body{
+	.li-person-name{
+		margin-bottom: 10px;
+	}
+}
+.research-item__bottom{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: flex-start;
+
+	.company-info__block{
+		width: 50%;
+		&:first-child{
+			margin-right: 15px;
+		}
+		
+
+	}
+}

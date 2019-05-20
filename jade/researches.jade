@@ -1,0 +1,89 @@
+extends _misc/main-with-categories
+
+block title
+	| Исследования
+
+block breadcrumb-current
+	li.active
+		a(href="#") Исследования рынка
+
+block cat-menu
+	include _sections/categories-menu-mob
+
+block main
+	.container-fluid
+		.row.m-minus
+			.col-12
+				.title-block
+					h1 Исследования рынка
+			
+				.researhes-list
+					// - for (var i=0; i < 20; i++)
+					.research-item.li-card-block
+						.research-item__img
+							img(src="img/researches/sm.jpg", alt="alt")
+
+						.research-item__header
+							.height-covered
+								h2 Информация о выданных ипотечных кредитах гражданам РФ имеющим детей и размере субсидии на возмещение. Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+								.height-cover
+						
+						.research-item__body
+							.research-item__price.li-person-name Бесплатно
+							.research-item__bottom.li-gray-body
+								.company-info__block
+									.company-info__bage Автор
+									a(href="#").li-link ООО «РУСИПОТЕКА»
+
+								.company-info__block
+									.company-info__bage Дата выхода
+									.company-info__descr 17 сентября 2018
+
+					.research-item.li-card-block
+						.research-item__img
+							img(src="img/researches/sm.jpg", alt="alt")
+
+						.research-item__header
+							.height-covered
+								h2 Еженедельный Мониторинг ипотечных ставок. 13 марта 2019
+								.height-cover
+						
+						.research-item__body
+							.research-item__price.li-person-name 7 900 руб.
+							.research-item__bottom.li-gray-body
+								.company-info__block
+									.company-info__bage Автор
+									a(href="#").li-link ООО «РУСИПОТЕКА»
+
+								.company-info__block
+									.company-info__bage Дата выхода
+									.company-info__descr 17 сентября 2018
+
+					.research-item.li-card-block
+						.research-item__img
+							img(src="img/researches/sm.jpg", alt="alt")
+
+						.research-item__header
+							.height-covered
+								h2 Еженедельный Мониторинг ипотечных ставок. 13 марта 2019
+								.height-cover
+						
+						.research-item__body
+							.research-item__price.li-person-name 7 900 руб.
+							.research-item__bottom.li-gray-body
+								.company-info__block
+									.company-info__bage Автор
+									a(href="#").li-link ООО «РУСИПОТЕКА»
+
+								.company-info__block
+									.company-info__bage Дата выхода
+									.company-info__descr 17 сентября 2018
+
+
+					
+			.col-12
+				include _includes/pagination
+
+block sidebar
+	include _sections/categories-menu
+	include _sections/sidebar-permanent

@@ -3901,9 +3901,10 @@ h1, h2, .h1-no-title {
       margin-bottom: 25px; }
 
 .height-covered {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .height-covered:hover, .height-covered:active {
-    max-height: initial; }
+    max-height: initial !important; }
     .height-covered:hover .height-cover, .height-covered:active .height-cover {
       display: none; }
 
@@ -4087,6 +4088,11 @@ h1, h2, .h1-no-title {
 .li-gray-body {
   padding: 11px 18px;
   background-color: #f8f8f8; }
+
+.li-card-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E7E7E7; }
 
 /* end main styles */
 /* HEADER */
@@ -5932,9 +5938,76 @@ h1, h2, .h1-no-title {
   display: -ms-flexbox;
   display: flex; }
   .event-row__body .company-info__block {
-    margin-right: 67px; }
+    margin-right: 67px;
+    max-width: 270px; }
     .event-row__body .company-info__block:last-child {
       margin-right: 0; }
+
+.researhes-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.research-item {
+  width: 50%;
+  padding-right: 22px; }
+  .research-item .research-item__img {
+    width: 100px;
+    height: 142px;
+    position: relative;
+    margin-right: 20px;
+    float: left; }
+    .research-item .research-item__img img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .research-item:nth-child(even) {
+    padding-right: 0;
+    padding-left: 22px;
+    border-left: 1px solid #E7E7E7; }
+
+.research-item__header {
+  margin-left: 120px;
+  margin-bottom: 4px; }
+  .research-item__header .height-covered {
+    max-height: 55px;
+    min-height: 55px; }
+  .research-item__header h2 {
+    font-size: 14px;
+    text-transform: none; }
+
+.research-item__body .li-person-name {
+  margin-bottom: 10px; }
+
+.research-item__bottom {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  .research-item__bottom .company-info__block {
+    width: 50%; }
+    .research-item__bottom .company-info__block:first-child {
+      margin-right: 15px; }
 
 .footer {
   margin-top: 40px; }
@@ -6243,7 +6316,13 @@ h1, h2, .h1-no-title {
   .companies-form .companies-form__location {
     max-width: initial; }
   .company-card__bottom {
-    clear: left; } }
+    clear: left; }
+  .research-item {
+    width: 100%;
+    padding-right: 0; }
+    .research-item:nth-child(even) {
+      padding-left: 0;
+      border-left: none; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -6658,6 +6737,22 @@ h1, h2, .h1-no-title {
   .company-activity__item .tabs__link {
     padding-top: 10px;
     padding-bottom: 12px; }
+  .event-row__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+    .event-row__header .announcements-item__date {
+      margin-left: 0;
+      margin-bottom: 8px; }
+  .event-row__body {
+    display: block; }
+    .event-row__body .company-info__block {
+      max-width: initial;
+      margin-right: 0; }
+      .event-row__body .company-info__block:first-child {
+        margin-bottom: 8px; }
   /*Disable Animation on Mobile Devices*/ }
 
 @media only screen and (max-width: 600px) {
@@ -6748,7 +6843,13 @@ h1, h2, .h1-no-title {
       -ms-transform: none;
       transform: none; }
   .company-info__column {
-    width: 100%; } }
+    width: 100%; }
+  .research-item__body {
+    clear: left; }
+  .research-item__header .height-covered {
+    min-height: 130px;
+    max-height: 130px;
+    margin-bottom: 22px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {

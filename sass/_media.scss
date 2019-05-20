@@ -58,6 +58,15 @@
 	.company-card__bottom{
 		clear: left;
 	}
+	.research-item{
+		width: 100%;
+		padding-right: 0;
+
+		&:nth-child(even){
+			padding-left: 0;
+			border-left: none;
+		}
+	}
 }
 	
 /* Medium Devices, Desktops */
@@ -624,6 +633,25 @@
 		padding-top: 10px;
 		padding-bottom: 12px;
 	}
+	.event-row__header{
+		flex-direction: column-reverse;
+		.announcements-item__date{
+			margin-left: 0;
+			margin-bottom: 8px;
+		}
+	}
+	.event-row__body{
+		display: block;
+		.company-info__block{
+			max-width: initial;
+			margin-right: 0;
+
+			&:first-child{
+				margin-bottom: 8px;
+			}
+
+		}
+	}
 	// .header-enter{
 	// 	display: none;
 	// }
@@ -795,7 +823,14 @@
 	.company-info__column{
 		width: 100%;
 	}
-
+	.research-item__body{
+		clear: left;
+	}
+	.research-item__header .height-covered{
+		min-height: 130px;
+		max-height: 130px;
+		margin-bottom: 22px;
+	}
 }
 	
 

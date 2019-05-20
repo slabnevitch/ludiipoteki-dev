@@ -570,8 +570,9 @@ h1, h2, .h1-no-title{
 }
 .height-covered{
   position: relative;
+  overflow: hidden;
   &:hover, &:active{
-      max-height: initial;
+      max-height: initial !important;
 
       .height-cover{
         display: none;
@@ -801,5 +802,10 @@ h1, h2, .h1-no-title{
 .li-gray-body{
   padding: 11px 18px;
   background-color: #f8f8f8;
+}
+.li-card-block{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $line;
 }
 /* end main styles */
