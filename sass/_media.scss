@@ -271,7 +271,12 @@
 	.research-card__order-block{
 		margin-bottom: 42px;
 	}
-
+	.topic-answer{
+		margin-bottom: 45px;
+	}
+	.topic-cards{
+		margin-bottom: 30px;
+	}
 
 }
 	
@@ -699,6 +704,16 @@
 	.research-card__content .blog-share{
 		text-align: left;
 	}
+	.topic-card{
+		.li-portrait{
+			margin-bottom: 12px;
+		}
+	}
+
+	.topic-card__content{
+		margin-left: 0;
+		clear: left;
+	}
 	// .header-enter{
 	// 	display: none;
 	// }
@@ -877,6 +892,30 @@
 		min-height: 130px;
 		max-height: 130px;
 		margin-bottom: 22px;
+	}
+	.day-theme__slider--short{
+
+		.slick-prev{
+				left: 0;
+			}
+	}
+	.topic-card_bottom{
+		text-align: left;
+
+		.blog-share{
+			margin-left: 0;
+			.blog-share__title{
+				display: block;
+				margin-bottom: 5px;	
+			}
+			.pluso{
+				margin-left: 0;	
+			}
+		} 
+	}
+
+	.topic-card__text{
+		margin-bottom: 7px;	
 	}
 }
 	

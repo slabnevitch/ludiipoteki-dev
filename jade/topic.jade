@@ -1,0 +1,87 @@
+extends _misc/main
+
+block title
+	| Страница темы
+
+block breadcrumb-current
+	li.active
+		a(href="#") Темы дня
+	li.active
+		a(href="#") Ипотечное равновесие и ипотечные каникулы
+
+
+block main
+	.container-fluid
+		.row.m-minus
+			.col-12
+				.title-block.title-block--socials
+					h2 Тема дня
+					include _includes/share
+				
+				.topic-title
+					h1 Ипотечное равновесие и ипотечные каникулы. О понятиях простым языком
+				
+				.topic-cards
+					- for (var i=0; i < 3; i++)
+						.topic-card.li-card-block
+							.li-portrait
+								img(src="img/faces/gordeiko.jpg", alt="alt")
+
+							.topic-card__header
+								.li-person-name.li-person-name--blue Алексей Иванов
+								.li-person-info
+									.li-person-info__role руководитель Аналитического Центра
+									.li-person-info__org Росбанк
+							
+							.topic-card__content
+								p.topic-card__text Отечественное ипотечное кредитование имеет особую специфику, определяемую его полукоммерческим и полусоциальным характером. Решение с помощью коммерческого инструмента не только задач бизнеса, но и социальных задач власти привело к тому, что ипотечное кредитование поддерживалось на самом высоком уровне. Отечественное ипотечное кредитование имеет особую специфику, определяемую его полукоммерческим и полусоциальным характером. Решение с помощью коммерческого инструмента не только задач бизнеса, но и социальных задач власти привело к тому, что ипотечное кредитование поддерживалось на самом высоком уровне
+
+								.topic-card_bottom
+									include _includes/share
+
+
+						.topic-card.li-card-block
+							.li-portrait
+								img(src="img/faces/vasheluk.jpg", alt="alt")
+
+							.topic-card__header
+								.li-person-name.li-person-name--blue Ирина Степанова
+								.li-person-info
+									.li-person-info__role руководитель Аналитического Центра
+									.li-person-info__org Росбанк
+								
+							.topic-card__content
+								p.topic-card__text Отечественное ипотечное кредитование имеет особую специфику, определяемую его полукоммерческим и полусоциальным характером. Решение с помощью коммерческого инструмента не только задач бизнеса, но и социальных задач власти привело к тому, что ипотечное кредитование поддерживалось на самом высоком уровне. Отечественное ипотечное кредитование имеет особую специфику, определяемую его полукоммерческим и полусоциальным характером.
+
+								.topic-card_bottom
+									include _includes/share
+
+					.topic-card.li-card-block
+						.li-portrait
+							img(src="img/faces/gordeiko.jpg", alt="alt")
+
+						.topic-card__header
+							.li-person-name.li-person-name--blue Алексей Иванов
+							.li-person-info
+								.li-person-info__role руководитель Аналитического Центра
+								.li-person-info__org Росбанк
+						
+						.topic-card__content
+							p.topic-card__text Отечественное ипотечное кредитование имеет особую специфику, определяемую его полукоммерческим и полусоциальным характером. Решение с помощью коммерческого инструмента не только задач бизнеса, но и социальных задач власти привело к тому, что ипотечное кредитование поддерживалось на самом высоком уровне. Отечественное ипотечное кредитование имеет особую специфику, определяемую его полукоммерческим и полусоциальным характером. Решение с помощью коммерческого инструмента не только задач бизнеса, но и социальных задач власти привело к тому, что ипотечное кредитование поддерживалось на самом высоком уровне
+
+							.topic-card_bottom
+								include _includes/share
+				
+				.topic-answer
+					.li-popup.topic-answer__form
+						header.li-popup__header написать ответ
+						.li-popup__body
+							form.li-form(action="#")
+								label.li-form-label
+									span.li-form-label-name Сообщение:
+									textarea(name="name", cols="30", rows="10").li-form-area
+
+								.li-form__buttons.text-center
+									button.button.button-mini.button-l-blue отправить
+block sidebar
+	include _sections/sidebar-permanent

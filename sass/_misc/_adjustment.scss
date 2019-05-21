@@ -354,8 +354,19 @@ ul, li{
   position: relative;
   margin-bottom: 10px;
 
+  h1, h2, .h1-no-title{
+    margin-right: 14px;
+  }
+
   &--iconed{
     padding-right: 25px;
+  }
+  &--socials{
+    justify-content: space-between;
+    .blog-share{
+      margin-left: 9px;
+      order: 2;
+    }
   }
 
   &:after{
@@ -413,7 +424,7 @@ ul, li{
   }
 h1, h2, .h1-no-title{
   margin: 0;
-  margin-right: 14px;
+  // margin-right: 14px;
   font-family: $r-bl;
   color: $blue;
   font-size: 19px;
@@ -425,6 +436,7 @@ h1, h2, .h1-no-title{
   width: 100%;
   width: 130px;
   height: 130px;
+  flex-shrink: 0;
   img{
     @include absolute-center;
     // left: 0;
@@ -435,6 +447,10 @@ h1, h2, .h1-no-title{
   font-family: $r-b;
   font-size: 14px;
   color: #141414;
+
+  &--blue{
+    color: $blue;
+  }
 }
 .slick-prev, .slick-next{
   width: 39px;
