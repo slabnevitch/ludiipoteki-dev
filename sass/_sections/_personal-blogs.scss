@@ -91,10 +91,25 @@
 	padding: 4px 8px 4px 5px;
 	background-color: $accent;
 	color: #fff;
+	flex-shrink: 0;
 
 	.sp-icon{
 		margin-right: 7px;
 		vertical-align: middle;
+	}
+
+	&--vert{
+		padding-bottom: 7px;
+		line-height: 11px;
+		text-align: center;
+
+		div{
+			font-size: 13px;
+			font-family: $r-b;
+		}
+		span{
+			font-size: 11px;
+		}
 	}
 }
 .announcements-item_date-val{

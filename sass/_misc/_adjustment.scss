@@ -578,6 +578,7 @@ h1, h2, .h1-no-title{
 .height-covered{
   position: relative;
   overflow: hidden;
+
   &:hover, &:active{
       max-height: initial !important;
 
@@ -595,6 +596,10 @@ h1, h2, .h1-no-title{
   background: -o-linear-gradient(bottom,rgba(255,255,255,0),rgba(255,255,255,1)); /* Opera 11.1 - 12*/
   background: -moz-linear-gradient(bottom,rgba(255,255,255,0),rgba(255,255,255,1)); /* Firefox 3.6 - 15*/
   background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+  
+  &--gray{
+    background: linear-gradient(to bottom, rgba(248, 248, 248, 0), #f8f8f8);
+  }
 }
 
 .toggle-mnu{
@@ -718,11 +723,11 @@ h1, h2, .h1-no-title{
       line-height: 30px;
       font-size: 13px;
       text-align: center;
-      color: #fff;
       background-color: $f4;
       text-decoration: none;
 
       &:hover, &:active{
+        color: #fff;
         background-color: $accent;
       }
       
@@ -730,6 +735,7 @@ h1, h2, .h1-no-title{
 
     &.active{
       a{
+        color: #fff;
         background-color: $accent;
       }
     }
@@ -924,6 +930,46 @@ h1, h2, .h1-no-title{
     p{
       margin-bottom: 0;
     }
+  }
+}
+.li-quote{
+  position: relative;
+  max-height: 111px;
+  overflow: hidden;
+  padding-left: 32px;
+  font-family: $r-m;
+  color: #34495e;
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    @extend .quote;
+  }
+}
+.li-date-line{
+  position: relative;
+  margin: 5px 0;
+  text-align: center;
+
+  span{
+    position: relative;
+    padding: 4px 9px;
+    color: #fff;
+    background-color: #497B9A;
+    z-index: 1;
+  }
+
+
+  &:after{
+    content: '';
+    display: block;
+    @include absolute-center-old;
+    width: 100%;
+    height: 2px;
+    background-color: #497B9A;
   }
 }
 /* end main styles */

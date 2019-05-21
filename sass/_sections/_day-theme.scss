@@ -25,27 +25,6 @@
 		margin-bottom: 13px;
 	}
 }
-.day-theme__quote{
-	position: relative;
-	max-height: 111px;
-	overflow: hidden;
-	padding-left: 32px;
-	font-family: $r-m;
-	color: #34495e;
-
-	&:before{
-		content: '';
-		display: block;
-		position: absolute;
-		left: 0;
-		top: 0;
-		@extend .quote;
-	}
-
-	
-	
-
-}
 
 .day-theme__slider{
 	margin-top: 21px;

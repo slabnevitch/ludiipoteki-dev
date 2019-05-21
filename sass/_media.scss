@@ -77,6 +77,17 @@
 	.li-tile{
 		width: calc(50% - 40px);
 	}
+	.research-card__order-block{
+		display: block;
+		padding-right: 0;
+		margin-bottom: 7px;
+	}
+	.research-card__columns{
+		margin-bottom: 20px;
+	}
+	.research-card__price{
+		margin-bottom: 19px;
+	}
 	
 }
 	
@@ -256,6 +267,9 @@
 		.company-card__stat{
 			flex-basis: 0;
 		}
+	}
+	.research-card__order-block{
+		margin-bottom: 42px;
 	}
 
 
@@ -672,6 +686,19 @@
 		margin-left: 0;
 		margin-right: 0;
 	}
+	.research-card{
+		display: block;
+	}
+	.research-card__img{
+		margin-bottom: 15px;
+	}
+	.research-card__order-block{
+		margin-bottom: 23px;
+		margin-right: 0;
+	}
+	.research-card__content .blog-share{
+		text-align: left;
+	}
 	// .header-enter{
 	// 	display: none;
 	// }
@@ -898,6 +925,25 @@
 	.blog-post-header__bottom{
 		.button{
 			display: inline-table;
+		}
+	}
+	.research-card__content .blog-share .blog-share__title{
+		display: block;
+		margin-bottom: 10px;
+	}
+	.research-card__content .blog-share .pluso{
+		margin-left: 0;
+	}
+}
+@media only screen and (max-width : 375px){
+	.research-card__img{
+		width: 100%;
+		height: auto;
+
+		img{
+			position: relative;
+			transform: none;
+			width: 100%;
 		}
 	}
 }
