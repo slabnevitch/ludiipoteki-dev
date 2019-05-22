@@ -116,7 +116,7 @@
 				}
 			},
 			applyHandlers = function ($menu, o) {
-				var targets = 'li:has(' + o.popUpSelector + ')';
+				var targets = 'li';
 				if ($.fn.hoverIntent && !o.disableHI) {
 					$menu.hoverIntent(over, out, targets);
 				}
@@ -270,7 +270,8 @@
 		onHide: $.noop,
 		onIdle: $.noop,
 		onDestroy: $.noop,
-		onHandleTouch: $.noop
+		onHandleTouch: $.noop,
+		onHover: $.noop
 	};
 
 })(jQuery, window);

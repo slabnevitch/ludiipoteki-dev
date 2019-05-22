@@ -23,46 +23,68 @@ $(function() {
 
 	// superfish
 
-			var headerSF = $('.header-menu').superfish({
-				pathClass:	'current',
-				// speed: 1,
-				speedOut: 1,
-				onInit:  function() {
-					// console.log($(this.context).children('li:first').find('a').text());
-					// console.log($(this));
-					// if(screen.width > 768){
-						$(this).children('li.active').superfish('show');
-						
-					// }
-				},
-				onShow: function() {
-					// console.log(this.context.querySelector('.sf-with-ul'));
-				 	this.context.querySelector('.sf-with-ul').classList.add('opened');
-				 },
-				 onBeforeHide: function() {
-				 	
-				 	$('.sf-with-ul').removeClass('opened');
-				 }
-			});
+	 	var sf, body;
+    var breakpoint = 768,
 
-			$('.header-menu__link').mouseover(function() {
-					// if(screen.width > 768){
-						if($(this).closest('li').find('ul').length == 0){
+		sfOpt = {
+			pathClass:	'current',
+			speed: 1,
+			speedOut: 1,
+			// disableHI: true,
+			onInit:  function() {
+					$(this).children('li.active').superfish('show');
+			},
+			onHover: function() {
+				alert('hover!');
+			},
+			 onHandleTouch: function() {
+					console.log(" onHandleTouch");
+			},
+			onShow: function() {
+				console.log(this);
+				// console.log(this.context.querySelector('.sf-with-ul'));
+			 	this.context.querySelector('.sf-with-ul').classList.add('opened');
+			 	if($(this).closest('li').find('ul').length == 0){
 							
-							headerSF.children('li.active').superfish('hide');
+							$(this.context).closest('.sf-menu').find('li.active').superfish('hide');
 						}
-						
-					// }
-			});
+			 },
+			 onBeforeHide: function() {
+			 	
+			 	$('.sf-with-ul').removeClass('opened');
+			 },
+			 
+			 onIdle: function() {
+			 	console.log(this.context);
 
-			$('.header-menu__link').mouseout(function() {
-					// if(screen.width > 768){
-						headerSF.children('li.active').superfish('show');
-						
-					// }
+			 	if($(this.context).hasClass('active') && screen.width > 768){
 
-			});
+			 		$(this.context).closest('.sf-menu').find('li.active').superfish('show');
+			 	}
+			 	if($(this).closest('li').find('ul').length == 0){
+							
+							sf.children('li.active').superfish('show');
+						}
+			 }
+		};
 
+		body = $('body');
+		sf = $('.header-menu');
+		if(body.width() >= breakpoint) {
+          // enable superfish when the page first loads if we're on desktop
+          sf.superfish(sfOpt);
+        }
+        $(window).resize(function() {
+        	if(body.width() >= breakpoint && !sf.hasClass('sf-js-enabled')) {
+                // you only want SuperFish to be re-enabled once (sf.hasClass)
+                sf.superfish(sfOpt);
+              } else if(body.width() < breakpoint) {
+                // smaller screen, disable SuperFish
+                sf.superfish('destroy');
+              }
+      });
+
+		
 			$('.categories-menu').superfish({
 				pathClass:	'current',
 				onShow: function() {
@@ -80,6 +102,118 @@ $(function() {
 			});
 	// end superfish
 
+	// main-menu-mob
+	//  function menuMobileClick(){
+
+	//  		var $links = $('.header-menu [data-hover]'),
+	//  			_self = this;
+	 		
+	//  		this.init = function() {
+	//  				console.log('this init');
+	//  				this.bindEvents();
+	//  				this.resizeEvent();
+	//  				console.log(this.screenTest());
+	//  		},
+	//  		this.screenTest = function(){
+	//  			if(screen.width > 768){
+	//  				return false;
+	//  			}else{
+	//  				return true;
+	 				
+	//  			}
+	//  		},
+
+	//  		this.resizeEvent = function() {
+	//  			$(window).resize(function() {
+	//  				if(_self.screenTest() == true){
+	//  					_self.bindEvents();
+	//  				}else{
+ // 						_self.unbindEvents();
+	//  				}
+
+	//  			});
+	//  		},
+
+	//  		this.bindEvents = function() {
+	//  			if(this.screenTest() == true){
+	//  				console.log('bindEvents');
+	//  				$links.on('click', this.touchHover);
+	//  			}
+	//  		},
+
+	//  		this.touchHover = function(e) {
+	//  				e.preventDefault();
+					
+	// 				var $this = $(this);
+	// 				var onHover = $this.attr('data-hover');
+	// 				var linkHref = $this.attr('href');
+	// 				var $parent = $this.closest('li');
+
+	// 				$parent.find('ul').slideDown(150);
+	// 				$parent.siblings().find('ul').slideUp(150);
+	// 				$parent.siblings().find('.header-menu__link')
+	// 					.removeClass('opened');
+
+	// 				$this.toggleClass('opened');
+
+	// 				if (linkHref && $this.hasClass(onHover)) {
+	// 					location.href = linkHref;
+	// 					return false;
+	// 				}
+	// 				$this.toggleClass(onHover);
+	// 				$this
+	// 				.closest('li')
+	// 				.siblings()
+	// 				.find('[data-hover]')
+	// 				.removeClass(onHover);
+
+	//  		},
+
+	//  		this.unbindEvents = function() {
+	//  			$links.unbind('click');
+	//  		}
+	// }
+
+	//  var menuClickOnMobile = new menuMobileClick();
+	//  menuClickOnMobile.init();
+
+		var touchHover = function() {
+			if(screen.width < 768){
+				$('.header-menu--mob a[data-hover]').click(function(e){
+					e.preventDefault();
+					var $this = $(this);
+					var onHover = $this.attr('data-hover');
+					var linkHref = $this.attr('href');
+					var $parent = $this.closest('li');
+
+					$parent.find('ul').slideDown(150);
+					$parent.siblings().find('ul').slideUp(150);
+					$parent.siblings().find('.header-menu__link')
+						.removeClass('opened');
+
+					$this.toggleClass('opened');
+
+					if (linkHref && $this.hasClass(onHover)) {
+						location.href = linkHref;
+						return false;
+					}
+					$this.toggleClass(onHover);
+					$this
+					.closest('li')
+					.siblings()
+					.find('[data-hover]')
+					.removeClass(onHover);
+
+				});
+				
+			}
+		};
+
+		
+			touchHover();
+		
+	// end main-menu-mob
+	
 	// magnific-popup
 		$('.to-popup').magnificPopup({
 		type: 'inline',
@@ -419,8 +553,8 @@ $(function() {
 			// ddCustomClass: 'prod-sort-dd',
 			onShow: function (inst) {
 				console.log(inst);
-				var currWidth = $(inst.el).closest('.ik_select').width(),
-				$instanceParent = $(inst.el).parent().parent();
+				var currWidth = $(inst.el).closest('.ik_select').find('.ik_select_link').innerWidth() + 4;
+				// $instanceParent = $(inst.el).parent().parent();
 				
 				$('.ik_select_dropdown').width(currWidth);
 			}

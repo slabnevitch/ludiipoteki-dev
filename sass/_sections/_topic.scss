@@ -49,13 +49,16 @@
 	display: inline-block;
 	vertical-align: top;
 }
+.li-person-info__role{
+	margin-right: 8px;
+}
 .li-person-info__org{
 
 	&:before{
 		content: '';
 		display: inline-block;
 		vertical-align: middle;
-		margin: 0 8px;
+		margin-right: 8px;
 		width: 6px;
 		height: 6px;
 		border-radius: 50em;

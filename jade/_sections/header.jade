@@ -92,11 +92,12 @@ header.header
 					.header-bottom__inner
 						- var subs = ['Ипотека и строительство', 'Секьюритизация', 'Законодательство', 'Новости компаний', 'Бизнес и финансы', 'Зарубежные новости'];
 						
-						ul.header-menu.sf-menu.sf-navbar
+						ul.header-menu.header-menu--desk.sf-menu.sf-navbar
 							li.active
-								a(href="http://pripyat.com").header-menu__link
+								a(href="http://pripyat.com" data-hover="hover-on-link").header-menu__link
 									span.header-menu__val новости
 									span.header-menu__count 53
+									.sp-icon.ico-mob-menu-chev
 
 								ul
 									each item in subs
@@ -104,40 +105,46 @@ header.header
 											a(href="#").header-menu__sublink= item
 
 							li
-								a(href="http://pripyat.com").header-menu__link
+								a(href="http://pripyat.com" data-hover="hover-on-link").header-menu__link
 									span.header-menu__val Блоги
 									span.header-menu__count 53
+									.sp-icon.ico-mob-menu-chev
 
 								ul
-									each item in subs
-										li
-											a(href="#").header-menu__sublink= item
+									li
+										a(href="#").header-menu__sublink Блоги
+									li
+										a(href="#").header-menu__sublink Корпоративные блоги
 
 							li
 								a(href="http://pripyat.com").header-menu__link
 									span.header-menu__val Магазин исследований
 									span.header-menu__count 700
+									.sp-icon.ico-mob-menu-chev
 
-								ul
-									each item in subs
-										li
-											a(href="#").header-menu__sublink= item
+								//- ul
+								//- 	each item in subs
+								//- 		li
+								//- 			a(href="#").header-menu__sublink= item
 
 
 							li
-								a(href="http://pripyat.com").header-menu__link
+								a(href="http://pripyat.com" data-hover="hover-on-link").header-menu__link
 									span.header-menu__val Эксперты
 									span.header-menu__count 911
+									.sp-icon.ico-mob-menu-chev
 
 								ul
-									each item in subs
-										li
-											a(href="#").header-menu__sublink= item
+									li
+										a(href="#").header-menu__sublink Эксперты 1
+									li
+										a(href="#").header-menu__sublink Эксперты 2
 
 							li
-								a(href="http://pripyat.com").header-menu__link
+								a(href="http://pripyat.com" data-hover="hover-on-link").header-menu__link
 									span.header-menu__val Компании
 									span.header-menu__count 248
+									.sp-icon.ico-mob-menu-chev
 
 								ul
 									each item in subs
@@ -147,5 +154,70 @@ header.header
 								a(href="http://pripyat.com").header-menu__link
 									span.header-menu__val Мероприятия
 									span.header-menu__count 2
+									.sp-icon.ico-mob-menu-chev
+					
+						ul.header-menu.header-menu--mob.sf-menu.sf-navbar
+							li.active
+								a(href="http://pripyat.com" data-hover="hover-on-link").header-menu__link
+									span.header-menu__val новости
+									span.header-menu__count 53
+									.sp-icon.ico-mob-menu-chev
+
+								ul
+									each item in subs
+										li
+											a(href="#").header-menu__sublink= item
+
+							li
+								a(href="http://pripyat.com" data-hover="hover-on-link").header-menu__link
+									span.header-menu__val Блоги
+									span.header-menu__count 53
+									.sp-icon.ico-mob-menu-chev
+
+								ul
+									li
+										a(href="#").header-menu__sublink Блоги
+									li
+										a(href="#").header-menu__sublink Корпоративные блоги
+
+							li
+								a(href="http://pripyat.com").header-menu__link
+									span.header-menu__val Магазин исследований
+									span.header-menu__count 700
+									.sp-icon.ico-mob-menu-chev
+
+								//- ul
+								//- 	each item in subs
+								//- 		li
+								//- 			a(href="#").header-menu__sublink= item
+
+
+							li
+								a(href="http://pripyat.com" data-hover="hover-on-link").header-menu__link
+									span.header-menu__val Эксперты
+									span.header-menu__count 911
+									.sp-icon.ico-mob-menu-chev
+
+								ul
+									li
+										a(href="#").header-menu__sublink Эксперты 1
+									li
+										a(href="#").header-menu__sublink Эксперты 2
+
+							li
+								a(href="http://pripyat.com" data-hover="hover-on-link").header-menu__link
+									span.header-menu__val Компании
+									span.header-menu__count 248
+									.sp-icon.ico-mob-menu-chev
+
+								ul
+									each item in subs
+										li
+											a(href="#").header-menu__sublink= item
+							li
+								a(href="http://pripyat.com").header-menu__link
+									span.header-menu__val Мероприятия
+									span.header-menu__count 2
+									.sp-icon.ico-mob-menu-chev
 
 						a(href="#").button.button-green.add-news добавить свою новость

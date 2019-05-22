@@ -26,21 +26,26 @@
 .news-row__text,
 .news-row__info{
 	display: table-cell;
+	vertical-align: top;
 }
 .news-row__pict{
-	width: 45px;
-	height: 45px;
+	div{
+		width: 45px;
+		height: 45px;
+		margin-right: 14px;
 
-	position: relative;
+		position: relative;
+		
+	}
 
 	img{
+		display: block;
 		@include absolute-center;
 		top: 0;
 		transform: translate(-50%, 0);
 	}
 }
 .news-row__text{
-	padding-left: 14px;
 	color: $blue;
 }
 .news-row__info{

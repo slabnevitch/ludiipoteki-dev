@@ -147,6 +147,11 @@
 				}
 
 			}
+			&.on{
+				span{
+					background-color: transparent;
+				}
+			}
 		}
 		span{
 			vertical-align: middle;
