@@ -6810,27 +6810,6 @@ h1, h2, .h1-no-title {
     display: none; }
   .news-items {
     height: 417px; }
-  .sidebar-multi-wrap {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start; }
-    .sidebar-multi-wrap--for-buttons .sidebar-iconed-title {
-      width: 270px;
-      padding-right: 15px; }
-    .sidebar-multi-wrap--for-buttons .sidebar-company {
-      margin-left: 15px;
-      width: 270px; }
   .footer-top__columns {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -6894,7 +6873,40 @@ h1, h2, .h1-no-title {
 
 @media only screen and (max-width: 991px) {
   .blog-post-discussion {
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+  .sidebar-multi-wrap {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .sidebar-multi-wrap--for-buttons .sidebar-iconed-title {
+      width: 270px;
+      padding-right: 15px; }
+    .sidebar-multi-wrap--for-buttons .sidebar-company {
+      margin-left: 15px;
+      width: 270px; }
+  .header-menu .sfHover ul {
+    display: -webkit-flex !important;
+    display: -moz-flex !important;
+    display: -ms-flex !important;
+    display: -o-flex !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
