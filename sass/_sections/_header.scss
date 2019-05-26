@@ -335,10 +335,13 @@
 		&:hover, &:active
 		{
 			text-decoration: none;
-			background-color: $gray;
+			background-color: #1B3A4E;
 
 			.header-menu__link{
 				color: $blue;
+			}
+			.header-menu__val{
+				color: #fff;
 			}
 
 			&:before{

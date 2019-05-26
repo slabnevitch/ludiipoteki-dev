@@ -1,0 +1,35 @@
+.li-popup.li-popup-enter#li-enter-popup.mfp-hide
+	header.li-popup__header АВТОРИЗАЦИЯ
+	.li-popup__body
+		form.li-form(action="#")
+			label.li-form-label
+				span.li-form-label-name E-mail:
+				input.li-form-input(type="text", name="name")
+			label.li-form-label
+				span.li-form-label-name Пароль:
+				input.li-form-input(type="text", name="pass")
+
+			.li-form__reg
+				a(href="#") Забыли пароль
+				a(href="#") Подать заявку на регистрацию
+
+			.li-form__socials
+				p Войти через социальную сеть (для комментариев)
+				ul.li-form__socials-list
+					li
+						a(href="#").sp-icon.enter-fb
+					li
+						a(href="#").sp-icon.enter-vk
+
+					li
+						a(href="#").sp-icon.enter-twi
+					li
+						a(href="#").sp-icon.enter-in
+					li
+						a(href="#").sp-icon.enter-ok
+					li
+						a(href="#").sp-icon.enter-mw
+
+			.li-form__buttons
+				button.button.button-mini.button-l-blue ОТПРАВИТЬ
+				button.button.button-mini.button-l-blue ОТМЕНА

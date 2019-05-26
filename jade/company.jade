@@ -19,7 +19,7 @@ block main
 		.row.m-minus
 			.col-12
 				.title-block.title-block--iconed
-					h2 Александр Савинов
+					h2 ипотечный бумеранг
 					.title-block__icons.title-block__count
 						.blogs-previews__views.title-block__count
 							.ico-eye
@@ -35,7 +35,7 @@ block main
 								.sp-icon.ico-plus
 								a(href="#") Добавить в друзья
 
-							a(href="#li-message-person-popup").button.button-micro.button-dark-blue.to-popup отправить сообщение
+							a(href="#li-message-company-popup").button.button-micro.button-dark-blue.to-popup отправить сообщение
 
 						.company-card__bottom
 							.company-card__left
@@ -184,3 +184,8 @@ block main
 block sidebar
 	include _sections/categories-menu-mini
 	include _sections/sidebar-permanent
+
+block page-popups
+	include _includes/popup-enter
+	include _includes/popup-subject
+	include _includes/popup-message-company

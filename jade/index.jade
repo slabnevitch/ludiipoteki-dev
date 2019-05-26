@@ -11,9 +11,9 @@ block main
 			.col-12
 				.day-theme
 					.title-block
-						h2 ТЕМА ДНЯ - ЭКСПЕРТНОЕ МНЕНИЕ
+						.h1-no-title ТЕМА ДНЯ - ЭКСПЕРТНОЕ МНЕНИЕ
 
-					p.day-theme__text В Госдуму внесли законопроект об «ипотечных каникулах», который предполагает предоставление льготного периода ипотечни- кам, оказавшимся в трудной жизненной ситуации. Насколько эффективным будет такое решение проблемы?
+					a(href="#").day-theme__text В Госдуму внесли законопроект об «ипотечных каникулах», который предполагает предоставление льготного периода ипотечни- кам, оказавшимся в трудной жизненной ситуации. Насколько эффективным будет такое решение проблемы?
 
 					.day-theme__slider
 						- for (var i=0; i < 6; i++)
@@ -126,7 +126,7 @@ block main
 									.ico-calendar.sp-icon
 									.announcements-item_date-val 08 апреля 2019
 
-							.announcements-item__title Сочинский Всероссийский жилищный конгресс
+							a(href="#").li-link-blue.announcements-item__title Сочинский Всероссийский жилищный конгресс
 							
 							p.announcements-item__text Место: Сочи, отель «Pullman Sochi Centre»
 							p.announcements-item__text Организатор: Бюллетень недвижимости
@@ -137,7 +137,7 @@ block main
 									.ico-calendar.sp-icon
 									.announcements-item_date-val 06 июня 2019
 
-							.announcements-item__title Премия Рекорды рынка недвижимости - 2019
+							a(href="#").li-link-blue.announcements-item__title Премия Рекорды рынка недвижимости - 2019
 							
 							p.announcements-item__text Место: Москва, Triumph Event Hall
 							p.announcements-item__text Организатор: Московский Бизнес Клуб
@@ -148,7 +148,7 @@ block main
 									.ico-calendar.sp-icon
 									.announcements-item_date-val 08 апреля 2019
 
-							.announcements-item__title Сочинский Всероссийский жилищный конгресс
+							a(href="#").li-link-blue.announcements-item__title Сочинский Всероссийский жилищный конгресс
 							
 							p.announcements-item__text Место: Сочи, отель «Pullman Sochi Centre»
 							p.announcements-item__text Организатор: Бюллетень недвижимости
@@ -157,3 +157,8 @@ block main
 
 block sidebar
 	include _sections/sidebar-permanent
+
+block page-popups
+	include _includes/popup-enter
+	include _includes/popup-email
+	include _includes/popup-subject

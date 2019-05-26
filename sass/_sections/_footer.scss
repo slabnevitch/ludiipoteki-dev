@@ -4,10 +4,23 @@
 .footer-top__wrapper{
 	padding-top: 30px;
 	position: relative;
-	border-top: 2px solid $line;
+	// border-top: 2px solid $line;
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		left: 15px;
+		top: 0;
+		width: calc(100% - 30px);
+		height: 2px;
+		background-color: $line;
+
+	}
 }
 .footer-top__columns{
 	justify-content: space-between;
+	position: relative;
+
 }
 .footer-cookies{
 	width: 190px;
@@ -58,6 +71,12 @@
 		a{
 			font-size: 13px;
 			color: $text-light-blue;
+
+			&:hover, &:active{
+				color: #7c7c7c;
+				text-decoration: none;
+			}
+			
 		}
 
 		&:last-child{
@@ -125,6 +144,12 @@
 		color: $blue;
 	}
 }
+.footer-bottom__inner{
+	justify-content: space-between;
+}
 .footer-statistic{
-	text-align: right;
+	img{
+		margin: 0 1px;
+		vertical-align: middle;
+	}
 }

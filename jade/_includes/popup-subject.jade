@@ -1,0 +1,62 @@
+.li-popup.li-popup-subject#li-subject-popup.mfp-hide
+	header.li-popup__header Выбор новостей по сюжету
+	.li-popup__body.tabs-wrapper
+		ul.subjects-slider.tabs__list
+			li.tabs__item.tabs__item--active.subjects-slide
+				a.tabs__link(href='#item1') новости рынка кредитования
+			li.tabs__item.subjects-slide
+				a.tabs__link(href='#item2') новости рынка банков
+			li.tabs__item.subjects-slide
+				a.tabs__link(href='#item3') новости законодательства
+			li.tabs__item.subjects-slide
+				a.tabs__link(href='#item4') Оценочная компания
+			li.tabs__item.subjects-slide
+				a.tabs__link(href='#item5') Кредитный брокер
+			li.tabs__item.subjects-slide
+				a.tabs__link(href='#item6') Корпоративные новости
+
+		.subject-range#subject-range
+
+		ul.tabs__content.subject-content#subject-content
+			- var news = ['Новости БайкалБанк', 'Новости Абсолют Банк', 'Новости Абсолют Банк', 'Новости АК БАРС Банк', 'Новости БайкалБанк', 'Новости БайкалБанк', 'Новости Балтинвестбанк', 'Новости Банк "Русь"', 'Новости Банк "Аверс"', 'Корпоративные новости'];
+
+			li#item1.tabs__item.subject-content-item
+				- for (var i=0; i < 3; i++)
+					each item in news
+						label
+							input(type="checkbox")
+							span= item
+
+			li#item2.tabs__item.hidden.subject-content-item
+				- for (var i=0; i < 2; i++)
+					each item in news
+						label
+							input(type="checkbox")
+							span= item
+			li#item3.tabs__item.hidden.subject-content-item
+				- for (var i=0; i < 4; i++)
+					each item in news
+						label
+							input(type="checkbox")
+							span= item
+			li#item4.tabs__item.hidden.subject-content-item
+				- for (var i=0; i < 5; i++)
+					each item in news
+						label
+							input(type="checkbox")
+							span= item
+			li#item5.tabs__item.hidden.subject-content-item
+				- for (var i=0; i < 1; i++)
+					each item in news
+						label
+							input(type="checkbox")
+							span= item
+			li#item6.tabs__item.hidden.subject-content-item
+				- for (var i=0; i < 3; i++)
+					each item in news
+						label
+							input(type="checkbox")
+							span= item
+	.li-popup-subject__footer.text-right
+		a(href="#") сбросить выбор
+		a(href="#").button.button-mini.button-l-blue применить

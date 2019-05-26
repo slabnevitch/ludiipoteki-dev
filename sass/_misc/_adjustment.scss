@@ -428,11 +428,18 @@ h1, h2, .h1-no-title{
   font-family: $r-bl;
   color: $blue;
   font-size: 19px;
+  font-weight: normal;
   text-transform: uppercase;
   // flex-shrink: 0;
 }
+// @-moz-document url-prefix(){
+//   h1, h2, .h1-no-title{
+//     font-family: $r-m;
+//   }
+// }
 .li-portrait{
   position: relative;
+  display: block;
   width: 100%;
   width: 130px;
   height: 130px;
@@ -444,6 +451,7 @@ h1, h2, .h1-no-title{
   }
 }
 .li-person-name{
+  display: block;
   font-family: $r-b;
   font-size: 14px;
   color: #141414;
@@ -779,6 +787,14 @@ h1, h2, .h1-no-title{
     color: $accent-hover;
     text-decoration: none;
   }
+
+  &-blue{
+    &:hover, &:active{
+      color: $blue;
+
+    }
+  }
+
 }
 
 
@@ -951,6 +967,7 @@ h1, h2, .h1-no-title{
 .li-quote{
   position: relative;
   max-height: 111px;
+  min-height: 111px;
   overflow: hidden;
   padding-left: 32px;
   font-family: $r-m;

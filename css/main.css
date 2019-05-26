@@ -3937,10 +3937,12 @@ h1, h2, .h1-no-title {
   font-family: "RobotoBlack", sans-serif;
   color: #23485F;
   font-size: 19px;
+  font-weight: normal;
   text-transform: uppercase; }
 
 .li-portrait, .companies-list table .companies-list__img {
   position: relative;
+  display: block;
   width: 100%;
   width: 130px;
   height: 130px;
@@ -3959,6 +3961,7 @@ h1, h2, .h1-no-title {
     transform: translate(-50%, -50%); }
 
 .li-person-name {
+  display: block;
   font-family: "RobotoBold", sans-serif;
   font-size: 14px;
   color: #141414; }
@@ -4229,6 +4232,8 @@ h1, h2, .h1-no-title {
   .li-link:hover, .li-link:active {
     color: #9B0C0F;
     text-decoration: none; }
+  .li-link-blue:hover, .li-link-blue:active {
+    color: #23485F; }
 
 .li-chevron, .companies-list__sort:before, .company-about__link:after, .company-services__toggle-link:before {
   position: absolute;
@@ -4360,6 +4365,7 @@ h1, h2, .h1-no-title {
 .li-quote {
   position: relative;
   max-height: 111px;
+  min-height: 111px;
   overflow: hidden;
   padding-left: 32px;
   font-family: "RobotoMedium", sans-serif;
@@ -4681,9 +4687,11 @@ h1, h2, .h1-no-title {
       background-color: #C71015; }
     .header-menu .header-menu__link:hover, .header-menu .header-menu__link:active {
       text-decoration: none;
-      background-color: #F4F4F4; }
+      background-color: #1B3A4E; }
       .header-menu .header-menu__link:hover .header-menu__link, .header-menu .header-menu__link:active .header-menu__link {
         color: #23485F; }
+      .header-menu .header-menu__link:hover .header-menu__val, .header-menu .header-menu__link:active .header-menu__val {
+        color: #fff; }
       .header-menu .header-menu__link:hover:before, .header-menu .header-menu__link:active:before {
         display: block; }
     .header-menu .header-menu__link.opened .ico-mob-menu-chev {
@@ -4883,6 +4891,7 @@ h1, h2, .h1-no-title {
   margin-right: 15px; }
 
 .announcements-item__title {
+  display: block;
   margin-bottom: 11px;
   font-size: 14px;
   font-family: "RobotoBold", sans-serif;
@@ -4988,6 +4997,8 @@ h1, h2, .h1-no-title {
     top: 14px;
     right: 0;
     opacity: .5; }
+  .news-item--important .news-item__text {
+    color: #da383f; }
 
 .news-item__title {
   margin-bottom: 8px;
@@ -5003,8 +5014,7 @@ h1, h2, .h1-no-title {
     display: inline-block;
     margin-right: 4px; }
   .news-item__text:hover, .news-item__text:active {
-    color: #da383f;
-    text-decoration: none; }
+    color: #34495e; }
 
 .jspDrag {
   width: 6px;
@@ -5084,6 +5094,7 @@ h1, h2, .h1-no-title {
     bottom: -11px; }
 
 .sidebar-analitcs__slide-title {
+  display: block;
   margin-bottom: 14px;
   font-size: 14px;
   font-family: "RobotoBold", sans-serif;
@@ -6595,14 +6606,24 @@ h1, h2, .h1-no-title {
 
 .footer-top__wrapper {
   padding-top: 30px;
-  position: relative;
-  border-top: 2px solid #E7E7E7; }
+  position: relative; }
+  .footer-top__wrapper:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+    height: 2px;
+    background-color: #E7E7E7; }
 
 .footer-top__columns {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: relative; }
 
 .footer-cookies {
   width: 190px;
@@ -6644,6 +6665,9 @@ h1, h2, .h1-no-title {
   .footer-column__menu li a {
     font-size: 13px;
     color: #9f9f9f; }
+    .footer-column__menu li a:hover, .footer-column__menu li a:active {
+      color: #7c7c7c;
+      text-decoration: none; }
   .footer-column__menu li:last-child {
     margin-bottom: 0; }
 
@@ -6693,8 +6717,15 @@ h1, h2, .h1-no-title {
 .footer-social-link span {
   color: #23485F; }
 
-.footer-statistic {
-  text-align: right; }
+.footer-bottom__inner {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.footer-statistic img {
+  margin: 0 1px;
+  vertical-align: middle; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
