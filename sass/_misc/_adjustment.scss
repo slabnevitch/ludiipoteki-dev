@@ -694,7 +694,7 @@ h3{
   overflow: hidden;
 
   &:hover, &:active{
-      max-height: initial !important;
+      max-height: none !important;
 
       .height-cover{
         display: none;

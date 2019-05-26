@@ -146,6 +146,7 @@
 .blog-card__content{
 	line-height: 15px;
 	max-height: 46px;
+	min-height: 46px;
 	overflow: hidden;
 
 	// .height-cover{
@@ -154,7 +155,8 @@
 }
 .blog-card__rating{
 	flex-shrink: 0;
-	margin-left: 30px;
+	padding-left: 30px;
+	margin-left: auto;
 
 	span{
 		display: inline-block;
