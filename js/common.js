@@ -452,19 +452,32 @@ $(function() {
 	// end footer cookies close
 
 	// ikSelect
-		$('.li-form-select').ikSelect({
-			autoWidth: false,
-			// customClass: 'prod-sort-select',
-			// ddCustomClass: 'prod-sort-dd',
-			onShow: function (inst) {
-				console.log(inst);
-				var currWidth = $(inst.el).closest('.ik_select').find('.ik_select_link').innerWidth() + 4;
-				// $instanceParent = $(inst.el).parent().parent();
+		// $('.li-form-select').ikSelect({
+		// 	autoWidth: false,
+		// 	// customClass: 'prod-sort-select',
+		// 	// ddCustomClass: 'prod-sort-dd',
+		// 	onShow: function (inst) {
+		// 		console.log(inst);
+		// 		var currWidth = $(inst.el).closest('.ik_select').find('.ik_select_link').innerWidth() + 4;
+		// 		// $instanceParent = $(inst.el).parent().parent();
 				
-				$('.ik_select_dropdown').width(currWidth);
-			}
-		});
+		// 		$('.ik_select_dropdown').width(currWidth);
+		// 	}
+		// });
 	// end ikSelect
+
+	// selectmenu
+		$( ".li-form-select" ).selectmenu({
+			// width: $(this).closest('.mich-form-label').width()
+		});
+	// end selectmenu
+
+	// blog-post message form toggle
+		$('.blog-post-discussion__header .button').click(function() {
+			$('#post-page-form').removeClass('hidden');
+			return false;
+		});
+	// end blog-post message form toggle
 	
 	//Chrome Smooth Scroll
 	try {

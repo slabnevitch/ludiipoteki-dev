@@ -10,12 +10,18 @@
 	.header-top__menu:not(.header-top__menu--reg){
 		margin-right: 73px;
 	}
+	.header-top__menu:not(.header-top__menu--reg){
+		margin-right: 73px;
+	}
 	.header-top__menu--reg{
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
+	}
+	.header-top__menu--icons:not(.header-top__menu--reg){
+		margin-right: 0;
 	}
 }
 .header-top{

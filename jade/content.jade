@@ -1,0 +1,88 @@
+extends _misc/main-with-categories
+
+block title
+	| контент
+
+
+block breadcrumb-current
+	li.active
+		a(href="#") контент
+
+block main
+	.container-fluid
+		.row.m-minus
+			.col-12
+				.title-block.title-block--iconed
+					h1 контент (н1)
+					.title-block__icons
+						a(href="#").title-block__icon.title-block__icon--rss
+							i.icon-rss
+				
+				p.li-paragraph Аналитический центр компании ООО «РУСИПОТЕКА» предлагает вашему вниманию обзор ипотечных ставок ТОП-20 банков Высшей ипотечной лиги на 13 марта 2019 года
+
+				h2 Ипотека и строительство (Н2)
+				p.li-paragraph Центр компании ООО «РУСИПОТЕКА» предлагает вашему вниманию обзор ипотечных ставок ТОП-20 банков Высшей ипотечной лиги в рамках проекта «ставки онлайн». Актуальность 13 марта 2019 года.
+
+				h3 Законодательство (н3)
+				p.li-paragraph Метриум: В феврале спрос на новостройки Москвы вырос на 34%. Увеличилось и количество ипотечных сделок, несмотря на рост ставок по кредитам. Увеличилось и количество ипотечных сделок, несмотря на рост ставок по кредитам
+
+				ul.li-list
+					li средняя ставка предложения на вторичном рынке
+					li средняя ставка предложения на первичном рынке
+					li средняя ставка предложения по рефинансированию кредитов сторонних банков
+
+				ol.li-list.li-list-numbered
+					li средняя ставка предложения на вторичном рынке
+					li средняя ставка предложения на первичном рынке
+					li средняя ставка предложения по рефинансированию кредитов сторонних банков
+
+				.li-quote Метриум: В феврале спрос на новостройки Москвы вырос на 34%. Увеличилось и количество ипотечных сделок, несмотря на рост ставок по кредитам. Увеличилось и количество ипотечных сделок, несмотря на рост ставок по кредитам
+
+				.content-form
+					form(action="#").li-form.li-form--colored
+						label.li-form-label.li-form-label--std-width
+							span.li-form-label-name #[span.li-form-required *] Имя:
+							input.li-form-input(type="text", name="name")
+						
+						label.li-form-label.li-form-label--std-width
+							span.li-form-label-name Страна:
+							select.li-form-select(name="name")
+								option(value="1") Россия
+								option(value="2") Украина
+								option(value="3") Берарусь
+
+				.content-buttons
+					a(href="#").button регистрация эксперта
+					a(href="#").button.button-dark-blue регистрация компании
+
+				.conntent-table
+					table.li-table
+						thead
+							tr
+								th(rowspan="2") Этап
+								th(colspan="2") Принципиальные итоги
+							tr
+								th Для клиентов
+								th Для кредиторов
+						tbody
+							tr
+								td
+									p Этап I: Сервисная цифровизация.
+									p Суть: Расширение.
+									p Реализация: Внедрение внутренних и внешних сервисов.
+								td
+									ol.li-list-numbered
+										li Получение сервисов (банк и недвижимость) дома.
+										li Получение ипотечных сервисов не в банке.
+										li Получение сервисов по недвижимости в банке.
+								td
+									ol.li-list-numbered
+										li Получение сервисов (банк и недвижимость) дома.
+										li Получение ипотечных сервисов не в банке.
+										li Получение сервисов по недвижимости в банке.
+block sidebar
+	include _sections/sidebar-permanent
+
+block page-popups
+	include _includes/popup-enter
+	include _includes/popup-subject

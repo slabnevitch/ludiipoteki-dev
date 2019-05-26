@@ -27,6 +27,7 @@
 	text-align: center;
 	font-size: 18px;
 	color: $blue;
+	font-family: $r-m;
 }
 .blogs-step__val{
 	width: calc(100% - 41px);
@@ -65,6 +66,12 @@
 		font-size: 14px;
 		text-transform: none;
 	}
+}
+.blog-card__title{
+	display: block;
+	font-size: 14px;
+	margin-bottom: 8px;
+	font-family: $r-bl;
 }
 .blog-card__descr{
 	margin-bottom: 0;
@@ -232,6 +239,12 @@
 
  .blog-rating__handler{
  	margin-left: 10px;
+
+ 	.ico-blog-dislike{
+ 		position: relative;
+ 		top: 2px;
+
+ 	}
  }
 .blog-rating__likes-count{
 	margin-left: 7px;
