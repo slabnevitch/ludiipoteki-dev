@@ -59,6 +59,16 @@
 		padding: 10px 10px 12px 15px;
 
 	}
+	.subject-content{
+		height: 452px;
+		overflow: auto;
+
+	}
+	.subject-content-item{
+		label{
+			margin-bottom: 2px;
+		}
+	}
 }
 .subjects-slider{
 	margin-top: 10px;

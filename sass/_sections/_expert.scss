@@ -125,6 +125,10 @@
 	font-size: 11px;
 	color: $b7;
 }
+.company-info__descr{
+	font-size: 13px;
+	font-family: $r-m;
+}
 .personal-link{
 	.sp-icon, a{
 		vertical-align: middle;
@@ -149,6 +153,9 @@
 		}
 
 	}
+}
+.company-services{
+	margin-top: 15px;
 }
 .company-about__hidden{
 	position: relative;

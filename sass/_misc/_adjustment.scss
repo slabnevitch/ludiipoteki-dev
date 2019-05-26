@@ -423,6 +423,13 @@ ul, li{
     margin-right: 14px;
   }
 
+  h2{
+    font-family: $r-bl;
+    color: $blue;
+    font-size: 19px;
+    text-transform: uppercase;
+  }
+
   &--iconed{
     padding-right: 25px;
   }

@@ -21,9 +21,14 @@
 		}
 		
 	}
+	h2{
+		display: table-cell;
+		vertical-align: top;
+		font-size: 12px;
+		font-family: $r-r;
+	}
 }
 .news-row__pict,
-.news-row__text,
 .news-row__info{
 	display: table-cell;
 	vertical-align: top;

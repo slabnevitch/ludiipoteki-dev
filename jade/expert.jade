@@ -19,7 +19,7 @@ block main
 		.row.m-minus
 			.col-12
 				.title-block.title-block--iconed
-					h2 Александр Савинов
+					h1 Александр Савинов
 					.title-block__icons.title-block__count
 						.blogs-previews__views.title-block__count
 							.ico-eye
@@ -167,17 +167,17 @@ block main
 					.title-upcase-bl Другие сотрудники РУСИПОТЕКА
 					.staffs-persons
 						- for (var i=0; i < 2; i++)
-							.staffs-person
+							a(href="#").staffs-person
 								.li-portrait
 									img(src="img/faces/gordeiko.jpg", alt="alt")
 								.li-person-name Сергей Гордейко
 
-							.staffs-person
+							a(href="#").staffs-person
 								.li-portrait
 									img(src="img/faces/vasheluk.jpg", alt="alt")
 								.li-person-name Наталья Ващелюк
 
-						.staffs-person
+						a(href="#").staffs-person
 								.li-portrait
 									img(src="img/faces/gordeiko.jpg", alt="alt")
 								.li-person-name Сергей Гордейко

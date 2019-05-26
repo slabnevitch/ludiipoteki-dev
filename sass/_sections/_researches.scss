@@ -121,11 +121,12 @@
 	display: -o-flex;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	// justify-content: space-between;
 	padding-right: 26px;
 	margin-bottom: 50px;
 }
 .research-card__price{
+	width: 40%;
 	font-size: 14px;
 	font-family: $r-m;
 }
@@ -136,6 +137,8 @@
 	color: $accent;
 }
 .research-card__buttons{
+	width: 60%;
+	margin-left: 30px;
 	.button-dark-blue{
 		margin-left: 14px;
 	}

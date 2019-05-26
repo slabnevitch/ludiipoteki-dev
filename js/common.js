@@ -478,6 +478,12 @@ $(function() {
 			return false;
 		});
 	// end blog-post message form toggle
+
+	// .topic-answer__form toggle
+		$('.topic-answer__form .li-popup__header .chev-top').click(function(e) {
+				$(this).parent().next().toggleClass('hidden');
+			});
+	// end .topic-answer__form toggle
 	
 	//Chrome Smooth Scroll
 	try {

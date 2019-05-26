@@ -78,11 +78,11 @@ block main
 							- for (var i=0; i < 5; i++)
 								tr.companies-list__desktop-info
 									td.companies-list__avatar
-										.companies-list__img
+										a(href="#").companies-list__img
 											img(src="img/companies/1.jpg", alt="alt")
 									
 									td.companies-list__title
-										h2 Ипотечный Бумеранг
+										h2 #[a(href="#").li-link.li-link-blue Ипотечный Бумеранг]
 									td.companies-list__news 
 										span 0
 									td.companies-list__comments
@@ -118,7 +118,7 @@ block main
 											img(src="img/companies/2.jpg", alt="alt")
 									
 									td.companies-list__title
-										h2 Владимирский городской ипотечный фонд
+										h2 #[a(href="#").li-link.li-link-blue Владимирский городской ипотечный фонд]
 									td.companies-list__news 
 										a(href="#").li-link 45
 									td.companies-list__comments
