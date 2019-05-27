@@ -1186,4 +1186,15 @@ h3{
     }
   }
 }
+.li-blog-avatar{
+  width: 54px;
+  height: 54px;
+  position: relative;
+  margin-right: 28px;
+  flex-shrink: 0;
+
+ .li-blog-avatar__img{
+    @include absolute-center;
+  }
+}
 /* end main styles */

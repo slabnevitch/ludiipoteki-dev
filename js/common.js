@@ -83,7 +83,6 @@ $(function() {
 	// main-menu-mob
 
 		var touchHover = function() {
-			if(screen.width < 768){
 				$('.header-menu--mob a[data-hover]').click(function(e){
 					e.preventDefault();
 					var $this = $(this);
@@ -110,8 +109,6 @@ $(function() {
 					.removeClass(onHover);
 
 				});
-				
-			}
 		};
 
 		

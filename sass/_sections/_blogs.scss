@@ -363,17 +363,7 @@
 
 	
 }
-.blog-post-discussion__avatar{
-	width: 54px;
-	height: 54px;
-	position: relative;
-	margin-right: 28px;
-	flex-shrink: 0;
 
-	img{
-		@include absolute-center;
-	}
-}
 .blog-post-discussion__content{
 	flex: 1 1 auto;
 }

@@ -346,9 +346,7 @@
 			.header-menu__link{
 				color: $blue;
 			}
-			.header-menu__val{
-				color: #fff;
-			}
+			
 
 			&:before{
 				display: block;
@@ -372,7 +370,17 @@
 		
 	}
 
-
+	&--desk{
+		.header-menu__link{
+			&:hover, &:active, &:focus{
+				.header-menu__val{
+					color: #fff;
+				}
+				
+			}
+			
+		}
+	}
 }
 .add-news{
 	padding-top: 0;
