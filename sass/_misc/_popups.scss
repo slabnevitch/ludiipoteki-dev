@@ -59,11 +59,11 @@
 		padding: 10px 10px 12px 15px;
 
 	}
-	.subject-content{
-		height: 452px;
-		overflow: auto;
+	// .subject-content{
+	// 	height: 452px;
+	// 	overflow: auto;
 
-	}
+	// }
 	.subject-content-item{
 		label{
 			margin-bottom: 2px;
@@ -204,5 +204,10 @@
 .li-popup-message{
 	.li-form-area{
 		margin-bottom: 10px;
+	}
+}
+.li-news-subjects{
+	.mfp-container:before{
+		vertical-align: top;
 	}
 }

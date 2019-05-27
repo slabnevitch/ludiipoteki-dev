@@ -169,11 +169,17 @@
 		// }
 		
 	}
-	.header-menu .header-menu__sublink{
+	.header-menu--desk .header-menu__sublink{
 		padding-top: 5px;
 		padding-bottom: 5px;
-		white-space: pre-line;
 		text-align: center;
+		// white-space: pre-line;
+	}
+	.header-menu--desk > li > ul > li{
+		// float: none;
+		// flex: 0 0 auto;
+		// margin-right: 5px;
+		// outline: 1px solid red;
 	}
 
 	.right-sidebar{
@@ -301,14 +307,14 @@
 	.sidebar-banner img{
 		max-width: 240px;
 	}
-	.header-menu .sfHover ul{
-		display: -webkit-flex !important;
-		display: -moz-flex !important;
-		display: -ms-flex !important;
-		display: -o-flex !important;
-		display: flex !important;
-		align-items: flex-start;
-	}
+	// .header-menu .sfHover ul{
+	// 	display: -webkit-flex !important;
+	// 	display: -moz-flex !important;
+	// 	display: -ms-flex !important;
+	// 	display: -o-flex !important;
+	// 	display: flex !important;
+	// 	align-items: flex-start;
+	// }
 }
 	
 /* Small Devices, Tablets */

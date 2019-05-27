@@ -336,7 +336,7 @@ $(function() {
 				type: 'inline',
 				preloader: false,
 				focus: '#name',
-
+				mainClass: 'li-news-subjects',
 				// When elemened is focused, some mobile browsers in some cases zoom in
 				// It looks not nice, so we disable it:
 				callbacks: {
@@ -471,7 +471,10 @@ $(function() {
 
 	// blog-post message form toggle
 		$('.blog-post-discussion__header .button').click(function() {
-			$('#post-page-form').removeClass('hidden');
+			var $targetForm = $('#post-page-form');
+			$targetForm.removeClass('hidden');
+			$('html, body').animate({scrollTop: $targetForm.offset().top}, 600);
+			
 			return false;
 		});
 	// end blog-post message form toggle
