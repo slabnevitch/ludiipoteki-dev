@@ -138,20 +138,20 @@ block main
 					.li-tabs.tabs-wrapper
 						ul.tabs__list.mnu-standart-style-reset
 							li.tabs__item.company-activity__item.tabs__item--active
-								a.tabs__link(href='#item1')
+								a.tabs__link(href="#" data-tab="1")
 									span Сообщений в блоге
 									span.activity-count 69
 							li.tabs__item.company-activity__item
-								a.tabs__link(href='#item2')
+								a.tabs__link(href="#" data-tab="2")
 									span Размещенных новостей
 									span.activity-count 0
 							li.tabs__item.company-activity__item
-								a.tabs__link(href='#item3')
+								a.tabs__link(href="#" data-tab="3")
 									span Оставленных комментариев
 									span.activity-count 60
 
 						ul.tabs__content.mnu-standart-style-reset
-							li#item1.tabs__item
+							li.tabs__item(data-tab="1")
 								.company-block
 									h2 
 										a(href="#").li-link.li-link-blue Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Всеми, дал.
@@ -176,9 +176,9 @@ block main
 									
 									.blog-row__date 28 августа 2015, 01:53
 							
-							li#item2.tabs__item.hidden 2
+							li.tabs__item.hidden(href="#" data-tab="2") 2
 	
-							li#item3.tabs__item.hidden 3
+							li.tabs__item.hidden(href="#" data-tab="3") 3
 					
 					.company-activity__more
 						a(href="#")

@@ -43,26 +43,26 @@ block main
 					.li-tabs.tabs-wrapper
 						ul.tabs__list.mnu-standart-style-reset
 							li.tabs__item.tabs__item--active
-								a.tabs__link(href='#item1') Актуальные
+								a.tabs__link(href="#" data-tab="1") Актуальные
 							li.tabs__item
-								a.tabs__link(href='#item2') Новые
+								a.tabs__link(href="#" data-tab="2") Новые
 							li.tabs__item
-								a.tabs__link(href='#item3') Читаемые
+								a.tabs__link(href="#" data-tab="3") Читаемые
 							li.tabs__item
-								a.tabs__link(href='#item4') Обсуждаемые
+								a.tabs__link(href="#" data-tab="4") Обсуждаемые
 
 						ul.tabs__content.mnu-standart-style-reset
-							li#item1.tabs__item
+							li.tabs__item(data-tab="1")
 								.personal-blogs__content
 									include _includes/personal-blogs-items
 							
-							li#item2.tabs__item.hidden
+							li.tabs__item.hidden(data-tab="2")
 								.personal-blogs__content
 									include _includes/personal-blogs-items
-							li#item3.tabs__item.hidden
+							li.tabs__item.hidden(data-tab="3")
 								.personal-blogs__content
 									include _includes/personal-blogs-items
-							li#item4.tabs__item.hidden
+							li.tabs__item.hidden(data-tab="4")
 								.personal-blogs__content
 									include _includes/personal-blogs-items
 
@@ -80,26 +80,26 @@ block main
 					.li-tabs.tabs-wrapper
 						ul.tabs__list.mnu-standart-style-reset
 							li.tabs__item.tabs__item--active
-								a.tabs__link(href='#item1') Актуальные
+								a.tabs__link(href="#" data-tab="1") Актуальные
 							li.tabs__item
-								a.tabs__link(href='#item2') Новые
+								a.tabs__link(href="#" data-tab="2") Новые
 							li.tabs__item
-								a.tabs__link(href='#item3') Читаемые
+								a.tabs__link(href="#" data-tab="3") Читаемые
 							li.tabs__item
-								a.tabs__link(href='#item4') Обсуждаемые
+								a.tabs__link(href="#" data-tab="4") Обсуждаемые
 
 						ul.tabs__content.mnu-standart-style-reset
-							li#item1.tabs__item
+							li.tabs__item(data-tab="1")
 								.personal-blogs__content
 									include _includes/corporative-blogs-items
 							
-							li#item2.tabs__item.hidden
+							li.tabs__item.hidden(data-tab="2")
 								.personal-blogs__content
 									include _includes/corporative-blogs-items
-							li#item3.tabs__item.hidden
+							li.tabs__item.hidden(data-tab="3")
 								.personal-blogs__content
 									include _includes/corporative-blogs-items
-							li#item4.tabs__item.hidden
+							li.tabs__item.hidden(data-tab="4")
 								.personal-blogs__content
 									include _includes/corporative-blogs-items
 

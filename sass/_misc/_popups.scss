@@ -73,6 +73,14 @@
 .subjects-slider{
 	margin-top: 10px;
 	margin-bottom: 20px;
+	padding-left: 0;
+
+	li{
+		&:before{
+			display: none;
+			padding-left: 0;
+		}
+	}
 	
 	.slick-prev{
 		left: 0;

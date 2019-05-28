@@ -7,13 +7,11 @@ $(function() {
 			$th.toggleClass("on");
 			
 			if($th.closest('.header-top').length > 0){
-				console.log('header-topo');
 				$(".header-top__menu--text").stop(true, true).slideToggle(150);
 				
 			}
 
 			if($th.closest('.categories-menu-block--mob').length > 0){
-				console.log('cat-menu');
 				$(".categories-menu-block--mob .categories-menu").stop(true, true).fadeToggle(150);
 				
 			}
@@ -45,7 +43,6 @@ $(function() {
 			 },
 			 
 			 onIdle: function() {
-			 	console.log(this.context);
 
 			 	if($(this.context).hasClass('active') && screen.width > 768){
 
@@ -66,15 +63,13 @@ $(function() {
 			$('.categories-menu').superfish({
 				pathClass:	'current',
 				onShow: function() {
-					console.log(this.context.classList);
 					if(this.context.classList.contains('categories-menu__item-sub')){
 				 		this.context.querySelector('.categories-menu__sub li .sf-with-ul').classList.add('opened');
 					}
-					// console.log(this.context.querySelector('.categories-menu__sub li .sf-with-ul').classList);
+					
 				 },
 				 onBeforeHide: function() {
-				 	
-					console.log("before hide");
+
 				 	$('.sf-with-ul').removeClass('opened');
 				 }
 			});
@@ -286,11 +281,10 @@ $(function() {
 			  });
 
 			  	dragger.on('update', function(){
-					console.log('update');
 					var handle = document.querySelector('.subject-range .noUi-handle'),
 			   			handlePosition = handle.getAttribute('aria-valuenow'),
 			   			noUiOrigin = document.querySelector('.noUi-origin');
-		   			console.log('update');
+
 		   			if(handlePosition == '0.0'){
 		   				handle.setAttribute('style', 'left: 0');
 		   			}
@@ -298,14 +292,14 @@ $(function() {
 				});
 
 			  	dragger.on('set', function(){
-			  		console.log(this.get());
+
 			   		$('.subjects-slider').slick('slickGoTo', this.get() - 1);
 
 			   		var handle = document.querySelector('.subject-range .noUi-handle'),
 			   			handlePosition = handle.getAttribute('aria-valuenow'),
 			   			noUiOrigin = document.querySelector('.noUi-origin'),
 			   			handleWidth = handle.offsetWidth;
-		   			console.log('set' + handleWidth);
+
 		   			if(handlePosition == '0.0'){
 		   				handle.setAttribute('style', 'left: 0');
 		   			}
@@ -316,14 +310,14 @@ $(function() {
 				});
 
 				dragger.on('end', function(){
-					console.log('end')
+
 				});
 
 				
 			});
 
 			$('.subjects-slider').on('afterChange',function(e,slick,currentSlide){
-			  // console.log('current skide ' + currentSlide);
+
 			  range.noUiSlider.set(currentSlide+1);
 			  subjectsTabsHandling(currentSlide);
 			});
@@ -373,15 +367,18 @@ $(function() {
 			e.preventDefault();
 			var $th = $(this),
 				$tabsWrapper = $th.closest('.tabs-wrapper'),
-				$href = $th.attr('href'),
+				$data = $th.attr('data-tab'),
 				$parent = $th.parent();
+
 			$parent.addClass('tabs__item--active')
-					.siblings()
-					.removeClass('tabs__item--active');
+				.siblings()
+				.removeClass('tabs__item--active');
 							
-			$tabsWrapper.find($href).removeClass('hidden')
-					.siblings()
-					.addClass('hidden');
+			$tabsWrapper
+				.find('.tabs__content .tabs__item[data-tab='+$data+']')
+				.removeClass('hidden')
+				.siblings()
+				.addClass('hidden');
 		});
 	// end tabs	
 
@@ -426,7 +423,6 @@ $(function() {
 			});
 
 			var scrollPaneApi = scrollPane.data('jsp');
-			console.log(scrollPaneApi);
 
 			$(window).resize(function() {
 				scrollPaneApi.reinitialise();
@@ -447,21 +443,6 @@ $(function() {
 			$(this).parent().addClass('hidden');
 		});
 	// end footer cookies close
-
-	// ikSelect
-		// $('.li-form-select').ikSelect({
-		// 	autoWidth: false,
-		// 	// customClass: 'prod-sort-select',
-		// 	// ddCustomClass: 'prod-sort-dd',
-		// 	onShow: function (inst) {
-		// 		console.log(inst);
-		// 		var currWidth = $(inst.el).closest('.ik_select').find('.ik_select_link').innerWidth() + 4;
-		// 		// $instanceParent = $(inst.el).parent().parent();
-				
-		// 		$('.ik_select_dropdown').width(currWidth);
-		// 	}
-		// });
-	// end ikSelect
 
 	// selectmenu
 		$( ".li-form-select" ).selectmenu({

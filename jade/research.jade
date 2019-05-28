@@ -73,19 +73,19 @@ block main
 					.li-tabs.li-tabs--designed.tabs-wrapper
 						ul.tabs__list.mnu-standart-style-reset
 							li.tabs__item.tabs__item--active
-								a.tabs__link(href='#item1') Аннотация
+								a.tabs__link(href="#" data-tab="1") Аннотация
 							li.tabs__item
-								a.tabs__link(href='#item2') Содержание
+								a.tabs__link(href="#" data-tab="2") Содержание
 							li.tabs__item
-								a.tabs__link(href='#item3') Графики и таблицы
+								a.tabs__link(href="#" data-tab="3") Графики и таблицы
 							li.tabs__item
-								a.tabs__link(href='#item4') Задать вопрос
+								a.tabs__link(href="#" data-tab="4") Задать вопрос
 
 						ul.tabs__content
-							li#item1.tabs__item
+							li.tabs__item(data-tab="1")
 								.tabs-designed-content Обзор ипотечных кредитных ставок банков Высшей ипотечной лиги на первичном и вторичном рынке жилья. В обзоре представлены ставки 24 банков и Дом.рф по программам с первоначальным взносом 10, 15, 20, 30, 50 процентов. Также представлены список наиболее важных событий, сформированный на основе мониторинга и анализа пресс-релизов банков и комментарии ведущих экспертов. В мониторинг добавлены обзор прессы, публикации экспертов, новые сообщения в блогах на портале ЛюдиИпотеки.рф.
 							
-							li#item2.tabs__item.hidden
+							li.tabs__item.hidden(data-tab="2")
 								.tabs-designed-content
 									p Аналитический центр компании Русипотека предлагает вашему вниманию обзор ипотечных ставок банков ТОП-20 банков Высшей ипотечной лиги в рамках проекта «ставки онлайн». Актуальность 20 марта 2019 года
 									
@@ -104,7 +104,7 @@ block main
 											li средняя ставка предложения на первичном рынке с ПВ 30%
 											li средняя ставка предложения по рефинансированию кредитов сторонних банков с ПВ 30%
 
-							li#item3.tabs__item.hidden
+							li.tabs__item.hidden(data-tab="3")
 								.tabs-designed-content
 									p Аналитический центр компании Русипотека предлагает вашему вниманию обзор ипотечных ставок банков ТОП-20 банков Высшей ипотечной лиги в рамках проекта «ставки онлайн». Актуальность 20 марта 2019 года
 									
@@ -123,7 +123,7 @@ block main
 											li средняя ставка предложения на первичном рынке с ПВ 30%
 											li средняя ставка предложения по рефинансированию кредитов сторонних банков с ПВ 30%
 							
-							li#item4.tabs__item.hidden
+							li.tabs__item.hidden(data-tab="4")
 								form(action="#").discussion-form.li-form
 									.discussion-form__top
 										label.li-form-label
