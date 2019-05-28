@@ -96,13 +96,20 @@
 
 		thead{
 			border-bottom: 1px solid $line;
+			background-color: transparent;
+			border-right: none;
+
+			th{
+				border-left: none;
+    		border-bottom: none;
+			}
 		}
 		tbody{
 			tr{
 			
 			
 				td{
-					
+					border: none;
 
 					span{
 						color: #7b7b7b;

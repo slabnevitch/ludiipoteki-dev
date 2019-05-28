@@ -46,12 +46,17 @@
 .header-socials{
 
 	margin-right: auto;
-
+	ul{
+		margin-bottom: 0;
+	}
 	li{
 		display: inline-block;
 		vertical-align: middle;
 		list-style-type: none;
 		margin-right: 3px;
+		&:before{
+			display: none;
+		}
 		a{
 			display: block;
 			width: 30px;
@@ -87,6 +92,7 @@
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	margin-bottom: 0;
 
 	&--text{
 		margin-right: 132px;
@@ -153,6 +159,9 @@
 				background-color: $accent;
 			}
 
+		}
+		&:before{
+			display: none;
 		}
 	}
 }
@@ -259,7 +268,7 @@
 	background-color: $blue;
 }
 .header-menu{
-
+	margin-bottom: 0;
 	font-size: 0;
 
 	&--mob{
@@ -282,6 +291,9 @@
 					display: block;
 				}
 			}
+		}
+		&:before{
+			display: none;
 		}
 	}
 	a{

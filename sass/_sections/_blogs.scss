@@ -149,9 +149,9 @@
 	min-height: 46px;
 	overflow: hidden;
 
-	// .height-cover{
-	// 	background: linear-gradient(to bottom, rgba(#F8F8F8,0), rgba(#F8F8F8,1));
-	// }
+	.height-cover{
+		height: 8px;
+	}
 }
 .blog-card__rating{
 	flex-shrink: 0;

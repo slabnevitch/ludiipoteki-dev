@@ -335,6 +335,7 @@ body{
 .ui-menu .ui-menu-item-wrapper{
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 10px;
   color: #696969;
   border: none;
 }
@@ -360,6 +361,16 @@ a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
 .ui-button:hover .ui-icon{
   background-image: none;
   @extend .ico-chev-selects;
+}
+.ui-menu{
+  padding-left: 0;
+
+  li{
+    padding-left: 0;
+    &:before{
+      display: none;
+    }
+  }
 }
 // body input:focus:required:invalid,
 // body textarea:focus:required:invalid{
@@ -600,6 +611,9 @@ h3{
     background-color: $blue;
     }
   }
+  &:before{
+    display: none;
+  }
 }
 .slick-dots li button {
   width: 7px;
@@ -779,10 +793,12 @@ h3{
 .breadcrumbs{
   margin-top: 5px;
   padding-bottom: 7px;
+  padding-left: 0;
   border-bottom: 1px dashed $line;
 
   li{
     position: relative;
+    padding-left: 0;
     list-style-type: none;
     display: inline-block;
     vertical-align: middle;
@@ -794,6 +810,9 @@ h3{
       display: inline-block;
       margin: 0 8px;
       vertical-align: middle;
+    }
+    &:before{
+      display: none;
     }
 
     a{
@@ -913,48 +932,48 @@ h3{
 .acordeon-sublist{
   display: none;
 }
-.li-list{
-  padding-left: 12px; 
-  margin-bottom: 15px;  
-  li{
-      position: relative; 
-      padding-left: 12px; 
-      // margin-bottom: 3px; 
-      list-style-type: none;
-      &:before{
-        content: '';
-        display: block; 
-        position: absolute;
-        left: 0;  
-        top: 7px; 
-        width: 5px;
-        height: 5px;  
-        background-color: $blue;
-        border-radius: 50em;  
-      }
+// .li-list{
+//   padding-left: 12px; 
+//   margin-bottom: 15px;  
+//   li{
+//       position: relative; 
+//       padding-left: 12px; 
+//       // margin-bottom: 3px; 
+//       list-style-type: none;
+//       &:before{
+//         content: '';
+//         display: block; 
+//         position: absolute;
+//         left: 0;  
+//         top: 7px; 
+//         width: 5px;
+//         height: 5px;  
+//         background-color: $blue;
+//         border-radius: 50em;  
+//       }
 
-  }
+//   }
 
-  &--not-padded{
-    padding-left: 0;
-  }
-  &-numbered{
-        counter-reset: list;
-        padding-left: 12px; 
-    li{
-      list-style-type: none; 
-      &:before{
-        counter-increment: list;
-        content: counter(list) ". ";
-        width: 0;
-        height: 0;
-        top: 0;
-        font-family: $r-b;
-        background-color: transparent;
-      }
-    }
-  }
-}
+//   &--not-padded{
+//     padding-left: 0;
+//   }
+//   &-numbered{
+//         counter-reset: list;
+//         padding-left: 12px; 
+//     li{
+//       list-style-type: none; 
+//       &:before{
+//         counter-increment: list;
+//         content: counter(list) ". ";
+//         width: 0;
+//         height: 0;
+//         top: 0;
+//         font-family: $r-b;
+//         background-color: transparent;
+//       }
+//     }
+//   }
+// }
 .li-gray-body{
   padding: 11px 18px;
   background-color: #f8f8f8;
@@ -1122,5 +1141,18 @@ h3{
  .li-blog-avatar__img{
     @include absolute-center;
   }
+}
+.mnu-standart-style-reset{
+  padding-left: 0;
+  margin-bottom: 0;
+
+  li{
+    padding-left: 0;
+    
+    &:before{
+        display: none;
+      }
+  }
+
 }
 /* end main styles */

@@ -5488,6 +5488,7 @@ body {
 .ui-menu .ui-menu-item-wrapper {
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 10px;
   color: #696969;
   border: none; }
 
@@ -5515,6 +5516,13 @@ a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
 .ui-button:active .ui-icon,
 .ui-button:hover .ui-icon {
   background-image: none; }
+
+.ui-menu {
+  padding-left: 0; }
+  .ui-menu li {
+    padding-left: 0; }
+    .ui-menu li:before {
+      display: none; }
 
 input {
   outline: none; }
@@ -5955,6 +5963,8 @@ h3 {
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     background-color: #23485F; }
+  .slick-dots li:before {
+    display: none; }
 
 .slick-dots li button {
   width: 7px;
@@ -6106,9 +6116,11 @@ h3 {
 .breadcrumbs {
   margin-top: 5px;
   padding-bottom: 7px;
+  padding-left: 0;
   border-bottom: 1px dashed #E7E7E7; }
   .breadcrumbs li {
     position: relative;
+    padding-left: 0;
     list-style-type: none;
     display: inline-block;
     vertical-align: middle; }
@@ -6117,6 +6129,8 @@ h3 {
       display: inline-block;
       margin: 0 8px;
       vertical-align: middle; }
+    .breadcrumbs li:before {
+      display: none; }
     .breadcrumbs li a {
       color: #23485F;
       font-family: "RobotoMedium", sans-serif;
@@ -6208,40 +6222,6 @@ h3 {
 
 .acordeon-sublist {
   display: none; }
-
-.li-list {
-  padding-left: 12px;
-  margin-bottom: 15px; }
-  .li-list li {
-    position: relative;
-    padding-left: 12px;
-    list-style-type: none; }
-    .li-list li:before {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 7px;
-      width: 5px;
-      height: 5px;
-      background-color: #23485F;
-      -webkit-border-radius: 50em;
-      border-radius: 50em; }
-  .li-list--not-padded {
-    padding-left: 0; }
-  .li-list-numbered {
-    counter-reset: list;
-    padding-left: 12px; }
-    .li-list-numbered li {
-      list-style-type: none; }
-      .li-list-numbered li:before {
-        counter-increment: list;
-        content: counter(list) ". ";
-        width: 0;
-        height: 0;
-        top: 0;
-        font-family: "RobotoBold", sans-serif;
-        background-color: transparent; }
 
 .li-gray-body {
   padding: 11px 18px;
@@ -6381,6 +6361,14 @@ h3 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
 
+.mnu-standart-style-reset {
+  padding-left: 0;
+  margin-bottom: 0; }
+  .mnu-standart-style-reset li {
+    padding-left: 0; }
+    .mnu-standart-style-reset li:before {
+      display: none; }
+
 /* end main styles */
 /* HEADER */
 .header-reg .header-enter {
@@ -6434,11 +6422,15 @@ h3 {
 
 .header-socials {
   margin-right: auto; }
+  .header-socials ul {
+    margin-bottom: 0; }
   .header-socials li {
     display: inline-block;
     vertical-align: middle;
     list-style-type: none;
     margin-right: 3px; }
+    .header-socials li:before {
+      display: none; }
     .header-socials li a {
       display: block;
       width: 30px;
@@ -6472,7 +6464,8 @@ h3 {
   display: -o-flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 0; }
   .header-top__menu--text {
     margin-right: 132px; }
   .header-top__menu--reg {
@@ -6517,6 +6510,8 @@ h3 {
         width: 100%;
         height: 2px;
         background-color: #C71015; }
+    .header-top__menu li:before {
+      display: none; }
 
 .header-enter {
   padding-top: 0;
@@ -6620,6 +6615,7 @@ h3 {
   background-color: #23485F; }
 
 .header-menu {
+  margin-bottom: 0;
   font-size: 0; }
   .header-menu--mob {
     display: none; }
@@ -6633,6 +6629,8 @@ h3 {
         color: #23485F; }
       .header-menu li.active .header-menu__link:before {
         display: block; }
+    .header-menu li:before {
+      display: none; }
   .header-menu a {
     font-size: 12px;
     display: block; }
@@ -7366,6 +7364,8 @@ h3 {
   max-height: 46px;
   min-height: 46px;
   overflow: hidden; }
+  .blog-card__content .height-cover {
+    height: 8px; }
 
 .blog-card__rating {
   -webkit-flex-shrink: 0;
@@ -7873,11 +7873,18 @@ h3 {
 .companies-list table {
   width: 100%; }
   .companies-list table thead {
-    border-bottom: 1px solid #E7E7E7; }
-  .companies-list table tbody tr td span {
-    color: #7b7b7b; }
-  .companies-list table tbody tr td a:not(.li-link-blue) {
-    text-decoration: underline; }
+    border-bottom: 1px solid #E7E7E7;
+    background-color: transparent;
+    border-right: none; }
+    .companies-list table thead th {
+      border-left: none;
+      border-bottom: none; }
+  .companies-list table tbody tr td {
+    border: none; }
+    .companies-list table tbody tr td span {
+      color: #7b7b7b; }
+    .companies-list table tbody tr td a:not(.li-link-blue) {
+      text-decoration: underline; }
   .companies-list table tr td, .companies-list table tr th {
     text-align: center;
     vertical-align: middle;
@@ -8388,6 +8395,14 @@ h3 {
   padding-top: 28px; }
   .research-content .discussion-form {
     margin-top: 0; }
+  .research-content .tabs__content {
+    padding-left: 0;
+    margin-bottom: 0; }
+    .research-content .tabs__content .tabs__item {
+      padding-left: 0;
+      list-style-type: none; }
+      .research-content .tabs__content .tabs__item:before {
+        display: none; }
 
 .research-similar {
   padding-top: 30px; }
@@ -8614,6 +8629,41 @@ p {
     .content-form .li-form .li-form-label:last-child {
       margin-right: 0; }
 
+ul {
+  padding-left: 12px;
+  margin-bottom: 15px; }
+  ul li {
+    position: relative;
+    padding-left: 12px;
+    list-style-type: none; }
+    ul li:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 5px;
+      height: 5px;
+      background-color: #23485F;
+      -webkit-border-radius: 50em;
+      border-radius: 50em; }
+
+ol {
+  counter-reset: list;
+  padding-left: 12px;
+  padding-left: 12px;
+  margin-bottom: 15px; }
+  ol li {
+    list-style-type: none; }
+    ol li:before {
+      counter-increment: list;
+      content: counter(list) ". ";
+      width: 0;
+      height: 0;
+      top: 0;
+      font-family: "RobotoBold", sans-serif;
+      background-color: transparent; }
+
 blockquote {
   position: relative;
   margin-top: 27px;
@@ -8652,9 +8702,7 @@ table thead {
     font-weight: normal;
     border-left: 1px solid #fff;
     border-bottom: 1px solid #fff; }
-    table thead th:first-child {
-      border-left: none; }
-    table thead th.bolded {
+    table thead th span {
       font-family: "RobotoBold", sans-serif; }
 
 table tbody {

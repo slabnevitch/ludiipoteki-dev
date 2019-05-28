@@ -148,6 +148,20 @@
 	.discussion-form{
 		margin-top: 0;
 	}
+
+	.tabs__content{
+		padding-left: 0;
+		margin-bottom: 0;
+
+		.tabs__item{
+			padding-left: 0;
+			list-style-type: none;
+
+			&:before{
+				display: none;
+			}
+		}
+	}
 }
 .research-similar{
 	padding-top: 30px;
