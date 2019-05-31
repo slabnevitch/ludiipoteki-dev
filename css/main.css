@@ -413,7 +413,7 @@ html {
   max-width: 320px; }
   @media (min-width: 375px) {
     .container {
-      max-width: 540px; } }
+      max-width: 530px; } }
   @media (min-width: 576px) {
     .container {
       max-width: 540px; } }
@@ -8897,6 +8897,7 @@ h3 {
     min-height: 55px; }
   .research-item__header h2 {
     font-size: 14px;
+    line-height: 19px;
     text-transform: none; }
 
 .research-item__body .li-person-name {
@@ -9004,8 +9005,8 @@ h3 {
 .research-card__buttons {
   width: 60%;
   margin-left: 30px; }
-  .research-card__buttons .button-dark-blue {
-    margin-left: 14px; }
+  .research-card__buttons .button:first-child {
+    margin-right: 14px; }
 
 .research-content {
   padding-top: 28px; }
@@ -9149,7 +9150,7 @@ h3 {
   margin-right: 16px; }
 
 .topic-card__content {
-  margin-left: 142px; }
+  margin-left: 146px; }
 
 .topic-title h1 {
   margin-top: 20px;
@@ -9601,8 +9602,6 @@ table {
     padding-top: 40px; }
   .right-sidebar .categories-menu-block {
     display: none; }
-  .discussion-form {
-    margin-bottom: 30px; }
   .companies-list table .companies-list__avatar {
     width: 130px; }
   .companies-list table .companies-list__img {
@@ -9641,7 +9640,11 @@ table {
   .news-row {
     padding-right: 0; }
   .news-row .ico-telegram-mini {
-    top: 0; } }
+    top: 0; }
+  .company-other-staffs {
+    margin-bottom: 20px; }
+  .events-list {
+    margin-bottom: 37px; } }
 
 @media only screen and (max-width: 991px) {
   .blog-post-discussion {
@@ -10018,6 +10021,8 @@ table {
     margin-bottom: 7px; }
   .footer-statistic {
     text-align: left; }
+  .topic-card__header .li-person-name {
+    margin-bottom: 10px; }
   /*Disable Animation on Mobile Devices*/ }
 
 @media only screen and (max-width: 600px) {
@@ -10190,11 +10195,7 @@ table {
   .blog-card__rating {
     right: auto;
     left: 0;
-    padding-left: 146px; } }
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/
+    padding-left: 146px; }
   .company-card__top .li-to-friends {
     position: relative;
     margin-bottom: 30px;
@@ -10208,7 +10209,27 @@ table {
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
     .company-card__top .li-to-friends a {
-      display: inline-block; } }
+      display: inline-block; }
+  .company-card__top .button {
+    font-family: "RobotoRegular", sans-serif; }
+  .staffs-persons .slick-prev,
+  .staffs-persons .slick-next {
+    width: 30px;
+    height: 30px; }
+  .staffs-persons .slick-prev {
+    left: 10px; }
+  .staffs-persons .slick-next {
+    right: 10px; }
+  .research-content .li-tabs .tabs__link {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .li-person-info__role, .li-person-info__org {
+    display: inline; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */

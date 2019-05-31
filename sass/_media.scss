@@ -233,9 +233,9 @@
 			display: none;
 		}
 	}
-	.discussion-form{
-		margin-bottom: 30px;
-	}
+	// .discussion-form{
+	// 	margin-bottom: 30px;
+	// }
 	.companies-list table .companies-list__avatar{
 		width: 130px;
 	}
@@ -294,6 +294,12 @@
 	}
 	.news-row .ico-telegram-mini {
 		top: 0;
+	}
+	.company-other-staffs{
+		margin-bottom: 20px;
+	}
+	.events-list{
+		margin-bottom: 37px;
 	}
 }
 	
@@ -811,6 +817,10 @@
 	.footer-statistic{
 		text-align: left;
 	}
+	.topic-card__header .li-person-name {
+		margin-bottom: 10px;
+	}
+
 	/*Disable Animation on Mobile Devices*/
 // 	.animated{
 
@@ -1088,12 +1098,6 @@
 		left: 0;
 		padding-left: 146px;
 	}
-}
-		
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px){
-/**/
 	.company-card__top{
 		.li-to-friends{
 			position: relative;
@@ -1111,7 +1115,42 @@
 				display: inline-block;
 			}
 		}
+
+		.button{
+			font-family: $r-r;
+		}
 	}
+	.staffs-persons{
+		.slick-prev,
+		.slick-next{
+			width: 30px;
+			height: 30px;
+		}
+		.slick-prev{
+			left: 10px;
+		}
+		.slick-next{
+			right: 10px;
+		}
+	}
+	.research-content{
+		.li-tabs .tabs__link{
+			font-size: 14px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+	
+	.li-person-info__role, .li-person-info__org{
+		display: inline;
+	}
+}
+		
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){
+/**/
+	
 }
 
 
