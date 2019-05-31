@@ -451,7 +451,15 @@ $(function() {
 	// end selectmenu
 
 	// blog-post message form toggle
-		$('.blog-post-discussion__header .button').click(function() {
+		$('.scroll-to-comments').click(function() {
+			var $targetElem = $('.blog-post-discussion__header');
+			// $targetElem.removeClass('hidden');
+			$('html, body').animate({scrollTop: $targetElem.offset().top}, 600);
+			
+			return false;
+		});
+
+		$('.scroll-to-comments-form').click(function() {
 			var $targetForm = $('#post-page-form');
 			$targetForm.removeClass('hidden');
 			$('html, body').animate({scrollTop: $targetForm.offset().top}, 600);

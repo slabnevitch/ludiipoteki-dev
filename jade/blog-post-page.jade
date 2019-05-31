@@ -22,7 +22,7 @@ block main
 							li#item1.tabs__item
 								include _sections/blog-card
 
-								.li-banners-wrapper.li-banners-wrapper--double.li-banners-wrapper--padded
+								.li-banners-wrapper.li-banners-wrapper--double.li-banners-wrapper--tripple.li-banners-wrapper--padded
 									.li-banner-wrap
 										img(src="img/banners/double-1.jpg", alt="alt")
 									.li-banner-wrap
@@ -71,7 +71,7 @@ block main
 														.ico-quote-mini
 														a(href="#").blogs-previews__comments-conunt 0
 											
-											a(href="#").button.button-micro.button-dark-blue комментарии 
+											a(href="#").button.button-micro.button-dark-blue.scroll-to-comments комментарии 
 												span (2)											
 
 									.blog-post__body
@@ -111,7 +111,7 @@ block main
 									.blog-post-discussion
 										.blog-post-discussion__header
 											.blog-post-discussion__title Обсуждения
-											a(href="#").button.button-micro.button-dark-blue.discussion-form-toggle комментировать
+											a(href="#").button.button-micro.button-dark-blue.discussion-form-toggle.scroll-to-comments-form комментировать
 										
 										.blog-post-discussion__body
 											- for (var i=0; i < 2; i++)

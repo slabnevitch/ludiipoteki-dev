@@ -451,6 +451,11 @@ ul, li{
       order: 2;
     }
   }
+  &--bl{
+    h1, h2{
+      color: #141414;
+    }
+  }
 
   &:after{
     content: '';
@@ -694,6 +699,9 @@ h3{
       width: 100%;
       max-width: 240px;
     }
+  }
+  &--tripple{
+    
   }
 
   &--padded{

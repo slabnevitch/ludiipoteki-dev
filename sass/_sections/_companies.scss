@@ -93,6 +93,8 @@
 .companies-list{
 	table{
 		width: 100%;
+		max-width: none;
+		margin-bottom: 0;
 
 		thead{
 			border-bottom: 1px solid $line;
@@ -172,6 +174,7 @@
 			width: 170px;
 		}
 		.companies-mob-row-left{
+			padding-left: 0;
 			.companies-mob-val{
 				margin-left: 5px;
 			}
@@ -198,4 +201,7 @@
 .companies-list table .companies-list__column--left .companies-mob-val{
 		margin-left: 0;
 
+}
+.companies-mob-val{
+	font-size: 11px;
 }

@@ -51,7 +51,7 @@
 .company-card__stat{
 	display: inline-block;
 	vertical-align: middle;
-	text-align: center;
+	// text-align: center;
 	line-height: 15px;
 
 	span{
@@ -77,6 +77,7 @@
 .company-card__right{
 	.company-card__stat{
 		margin-right: 20px;
+		text-align: center;
 		div{
 			color: #f34e38;
 		}

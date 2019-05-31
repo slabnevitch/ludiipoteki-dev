@@ -65,6 +65,7 @@
 		margin-bottom: 8px;
 		font-size: 14px;
 		text-transform: none;
+		color: $blue;
 	}
 }
 .blog-card__title{
@@ -152,6 +153,10 @@
 	.height-cover{
 		height: 8px;
 	}
+	&:hover, &:active{
+		max-height: none;
+	}
+	
 }
 .blog-card__rating{
 	flex-shrink: 0;
@@ -251,6 +256,7 @@
 .blog-rating__likes-count{
 	margin-left: 7px;
 	margin-right: 7px;
+	font-family: $r-b;
 }
 .blog-row__tags{
 	display: -webkit-flex;

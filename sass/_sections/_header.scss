@@ -350,7 +350,7 @@
 		}
 
 
-		&:hover, &:active
+		&:hover, &:active,
 		{
 			text-decoration: none;
 			background-color: #1B3A4E;
@@ -389,6 +389,16 @@
 					color: #fff;
 				}
 				
+			}
+			
+		}
+	}
+	&--mob{
+		.header-menu__link{
+			&.opened{
+				&:before{
+					display: block;
+				}
 			}
 			
 		}
