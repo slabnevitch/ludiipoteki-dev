@@ -7022,6 +7022,8 @@ h3 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
+  .header-top-inner .toggle-mnu {
+    margin-right: 5px; }
 
 .header-socials {
   margin-right: auto; }
@@ -7294,6 +7296,12 @@ h3 {
     color: #fff; }
   .header-menu--mob .header-menu__link.opened:before {
     display: block; }
+  .header-menu--mob .header-menu__link .icon-chev-wrapper {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    left: 0;
+    top: 0; }
 
 .add-news {
   padding-top: 0;
@@ -7353,6 +7361,17 @@ h3 {
     margin-bottom: 15px; }
   .header-right-mob .news-subscribe {
     display: none; }
+
+.cat-menu-wrap .header-menu {
+  background-color: #eaeaea; }
+  .cat-menu-wrap .header-menu li ul {
+    display: none; }
+
+.cat-menu-wrap .sf-menu li {
+  background: transparent; }
+
+.cat-menu-wrap .sf-navbar:before {
+  display: none; }
 
 /*END OF HEADER */
 .day-theme {
@@ -10180,7 +10199,9 @@ table {
     font-size: 10px;
     line-height: normal; }
   .companies-list table td, .companies-list table th {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .header-top-inner .toggle-mnu {
+    margin-right: 0; } }
 
 @media only screen and (max-width: 375px) {
   .research-card__img {

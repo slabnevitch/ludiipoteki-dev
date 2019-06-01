@@ -29,6 +29,9 @@ header.header
 							a(href="#")
 								.sp-icon.home
 					
+					a(href="#").toggle-mnu
+						span
+							
 					ul.header-top__menu.header-top__menu--text.header-top__menu--not-autor.mnu-standart-style-reset
 						li
 							a(href="#") О нас
@@ -56,9 +59,6 @@ header.header
 								a(href="#") Настройки
 							li
 								a(href="") Выход
-
-					a(href="#").toggle-mnu
-						span
 
 	.header-middle
 		.container
@@ -161,7 +161,8 @@ header.header
 								a(href="#" data-hover="hover-on-link").header-menu__link
 									span.header-menu__val новости
 									span.header-menu__count 53
-									.sp-icon.ico-mob-menu-chev
+									span.icon-chev-wrapper
+										.sp-icon.ico-mob-menu-chev
 
 								ul
 									each item in subs
@@ -172,7 +173,8 @@ header.header
 								a(href="#" data-hover="hover-on-link").header-menu__link
 									span.header-menu__val Блоги
 									span.header-menu__count 53
-									.sp-icon.ico-mob-menu-chev
+									span.icon-chev-wrapper
+										.sp-icon.ico-mob-menu-chev
 
 								ul
 									li
@@ -184,7 +186,8 @@ header.header
 								a(href="#").header-menu__link
 									span.header-menu__val Магазин исследований
 									span.header-menu__count 700
-									.sp-icon.ico-mob-menu-chev
+									span.icon-chev-wrapper
+										.sp-icon.ico-mob-menu-chev
 
 								//- ul
 								//- 	each item in subs
@@ -196,7 +199,8 @@ header.header
 								a(href="#" data-hover="hover-on-link").header-menu__link
 									span.header-menu__val Эксперты
 									span.header-menu__count 911
-									.sp-icon.ico-mob-menu-chev
+									span.icon-chev-wrapper
+										.sp-icon.ico-mob-menu-chev
 
 								ul
 									li
@@ -208,7 +212,8 @@ header.header
 								a(href="#" data-hover="hover-on-link").header-menu__link
 									span.header-menu__val Компании
 									span.header-menu__count 248
-									.sp-icon.ico-mob-menu-chev
+									span.icon-chev-wrapper
+										.sp-icon.ico-mob-menu-chev
 
 								ul
 									each item in subs
@@ -218,6 +223,7 @@ header.header
 								a(href="#").header-menu__link
 									span.header-menu__val Мероприятия
 									span.header-menu__count 2
-									.sp-icon.ico-mob-menu-chev
+									span.icon-chev-wrapper
+										.sp-icon.ico-mob-menu-chev
 
 						a(href="#").button.button-green.add-news добавить свою новость

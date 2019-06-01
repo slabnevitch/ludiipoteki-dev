@@ -1,0 +1,24 @@
+.categories-menu-block
+	//- .categories-menu-block--mob
+	
+	ul.header-menu.header-menu--mob.mnu-standart-style-reset
+		- var cats = ['Весь каталог', 'Экономика и финансы', 'Банковский сектор', 'Строительство и недвижимость', 'Обзоры законодательства', 'Потребительские товары и услуги', 'Авторы исследований'];
+
+		- var subcats = ['Корпоративные новости', 'Финансовые и банковские новости', 'Рынок жилья и кредитных ставок'];
+
+		each cat in cats
+			li
+				a(href="http://google.com" data-hover="hover-on-link").header-menu__link
+					span.header-menu__val= cat
+					span.icon-chev-wrapper
+						.sp-icon.ico-mob-menu-chev
+				
+				ul.categories-menu__sub
+					each cat in cats
+						li.categories-menu__item-sub
+							a(href="http://google.com" data-hover="hover-on-link").header-menu__sublink= cat
+
+							ul
+								each item in subcats
+									li
+										a(href="#")= item
