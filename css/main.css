@@ -7251,6 +7251,8 @@ h3 {
       left: 11px;
       top: 50%;
       margin-top: -2px; }
+    .header-menu .header-menu__link .icon-chev-wrapper {
+      display: none; }
     .header-menu .header-menu__link span {
       display: block;
       padding: 0;
@@ -9809,6 +9811,8 @@ table {
     margin-top: 30px; }
     .news-block .news-subscribe {
       display: none; }
+  .header-menu .header-menu__link[data-hover="hover-on-link"] .icon-chev-wrapper {
+    display: block; }
   .header-menu .header-menu__link[data-hover="hover-on-link"] .ico-mob-menu-chev {
     display: block; }
   .announcements-item {

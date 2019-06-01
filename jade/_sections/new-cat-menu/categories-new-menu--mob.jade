@@ -16,9 +16,12 @@
 				ul.categories-menu__sub
 					each cat in cats
 						li.categories-menu__item-sub
-							a(href="http://google.com" data-hover="hover-on-link").header-menu__sublink= cat
+							a(href="http://google.com" data-hover="hover-on-link").header-menu__sublink
+								span= cat
+								span.icon-chev-wrapper
+									.sp-icon.ico-mob-menu-chev
 
 							ul
 								each item in subcats
 									li
-										a(href="#")= item
+										a(href="http://google.com")= item

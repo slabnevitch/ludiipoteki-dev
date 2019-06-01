@@ -508,6 +508,9 @@
 	// .sf-arrows .sf-with-ul:after{
 	// 	display: block;
 	// }
+	.header-menu .header-menu__link[data-hover="hover-on-link"] .icon-chev-wrapper{
+		display: block;
+	}
 	.header-menu .header-menu__link[data-hover="hover-on-link"] .ico-mob-menu-chev{
 		display: block;
 	}
