@@ -83,7 +83,7 @@ $(function() {
 					var $parent = $this.closest('li');
 
 					$parent.find('ul').first().slideDown(150);
-					$parent.siblings().find('ul').first().slideUp(150);
+					$parent.siblings().find('ul').slideUp(150);
 					$parent.siblings().find('.header-menu__link')
 						.removeClass('opened');
 
@@ -113,7 +113,7 @@ $(function() {
 			console.log($parentLi.find('a').first().text());
 
 			$parentLi.find('ul').first().slideToggle(150);
-			$parentLi.siblings().find('ul').first().slideUp(150);
+			$parentLi.siblings().find('ul').slideUp(150);
 			$parentLi.find('.header-menu__link').toggleClass('opened');
 			$parentLi.siblings().find('.header-menu__link').removeClass('opened');
 
