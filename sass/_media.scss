@@ -823,6 +823,15 @@
 	.topic-card__header .li-person-name {
 		margin-bottom: 10px;
 	}
+	.header-top__menu li a{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.header-top__menu-wrap .toggle-mnu{
+		margin-left: 5px;
+		margin-right: 10px;
+	}
+
 
 	/*Disable Animation on Mobile Devices*/
 // 	.animated{
@@ -1150,6 +1159,14 @@
 	.li-person-info__role, .li-person-info__org{
 		display: inline;
 	}
+	.header-socials{
+		margin-right: 5px;
+	}
+	.header-top__menu-wrap .toggle-mnu{
+
+		margin-right: 0;
+	}
+
 }
 		
 

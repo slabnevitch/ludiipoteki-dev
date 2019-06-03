@@ -6678,7 +6678,6 @@ h3 {
   display: block;
   width: 19px;
   height: 12px;
-  margin-left: 5px;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0; }
@@ -6998,8 +6997,24 @@ h3 {
 .header-reg .header-top__menu--icons:not(.header-top__menu--reg) {
   margin-right: 0; }
 
+.header-reg .header-top {
+  background-color: #F4F4F4; }
+  .header-reg .header-top__menu-wrap {
+    position: relative;
+    height: 45px; }
+    .header-reg .header-top__menu-wrap .toggle-mnu {
+      margin-left: 10px;
+      margin-right: 10px; }
+
 .header-top {
   background-color: #F4F4F4; }
+  .header-top__menu-wrap {
+    position: relative;
+    height: 45px; }
+    .header-top__menu-wrap .toggle-mnu {
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-right: 15px; }
 
 .header-authorized {
   display: -webkit-flex;
@@ -7022,8 +7037,6 @@ h3 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
-  .header-top-inner .toggle-mnu {
-    margin-right: 5px; }
 
 .header-socials {
   margin-right: auto; }
@@ -7038,13 +7051,15 @@ h3 {
       display: none; }
     .header-socials li a {
       display: block;
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
       -webkit-border-radius: 50em;
       border-radius: 50em;
       position: relative;
       background-color: #CECECE; }
       .header-socials li a i {
+        display: block;
+        text-align: center;
         display: block;
         max-width: 100%;
         max-height: 100%;
@@ -7056,7 +7071,7 @@ h3 {
         transform: translate(-50%, -50%);
         font-family: fontello;
         color: #fff;
-        font-size: 15px; }
+        font-size: 14px; }
     .header-socials li.header-rss a {
       background-color: #FF6600; }
     .header-socials li.header-gplus a i {
@@ -10049,6 +10064,12 @@ table {
     text-align: left; }
   .topic-card__header .li-person-name {
     margin-bottom: 10px; }
+  .header-top__menu li a {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .header-top__menu-wrap .toggle-mnu {
+    margin-left: 5px;
+    margin-right: 10px; }
   /*Disable Animation on Mobile Devices*/ }
 
 @media only screen and (max-width: 600px) {
@@ -10253,7 +10274,11 @@ table {
     padding-left: 15px;
     padding-right: 15px; }
   .li-person-info__role, .li-person-info__org {
-    display: inline; } }
+    display: inline; }
+  .header-socials {
+    margin-right: 5px; }
+  .header-top__menu-wrap .toggle-mnu {
+    margin-right: 0; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
