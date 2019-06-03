@@ -108,7 +108,7 @@ $(function() {
 		
 		$('.header-menu--mob .icon-chev-wrapper').click(function(e) {
 			e.stopPropagation();
-			alert(e.isPropagationStopped());
+			// alert(e.isPropagationStopped());
 			var $parentLi = $(this).closest('li');
 			console.log($parentLi.find('a').first().text());
 

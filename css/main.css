@@ -8993,7 +8993,10 @@ h3 {
   column-gap: 0;
   margin-bottom: 34px; }
   .research-card__columns .company-info__block {
-    margin-bottom: 19px; }
+    margin-bottom: 19px;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid; }
   .research-card__columns .company-info__bage {
     margin-bottom: 2px; }
 
