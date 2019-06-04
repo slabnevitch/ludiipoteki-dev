@@ -200,7 +200,7 @@
 	}
 	.footer-cookies{
 		top: auto;
-		bottom: -12px;
+		bottom: -27px;
 	}
 	.footer-socials-links{
 		display: -wfebkit-flex;
@@ -277,6 +277,7 @@
 		margin-bottom: 30px;
 	}
 	.footer-statistic{
+		margin-top: -8px;	
 		text-align: right;
 	}
 	.li-banners-wrapper--tripple{
@@ -305,6 +306,22 @@
 	.news-item__title{
 		margin-bottom: 3px;
 	}
+	.footer-middle{
+		padding: 18px 0;
+	}
+	.footer-cookies span{
+		margin-bottom: 0;
+	}
+	.footer-column{
+		margin-bottom: 16px;	
+	}
+	.footer-bottom__menu li{
+		margin-bottom: 0;	
+	}
+	.footer-copyright{
+		margin-top: 21px;	
+	}
+
 }
 	
 @media only screen and (max-width : 991px){
@@ -345,14 +362,11 @@
 	.sidebar-block{
 		margin-bottom: 0;
 	}
-	// .header-menu .sfHover ul{
-	// 	display: -webkit-flex !important;
-	// 	display: -moz-flex !important;
-	// 	display: -ms-flex !important;
-	// 	display: -o-flex !important;
-	// 	display: flex !important;
-	// 	align-items: flex-start;
-	// }
+	.cat-menu-wrap{
+		.header-menu--mob{
+			display: block;	
+		}
+	}
 }
 	
 /* Small Devices, Tablets */
@@ -838,7 +852,7 @@
 		padding-right: 10px;
 	}
 	.header-top__menu-wrap .toggle-mnu{
-		margin-left: 5px;
+		margin-left: 8px;
 		margin-right: 10px;
 	}
 	.header-reg .header-top__menu-wrap{
@@ -966,7 +980,7 @@
 		}
 	}
 	.footer-socials-links{
-		margin-bottom: 75px;
+		margin-bottom: 26px;
 	}
 	.footer-cookies{
 		bottom: -75px;
@@ -1058,6 +1072,13 @@
 			&:after{
 				display: none;
 			}
+			.title-block__icons{
+				top: 40%;
+			}
+		}
+
+		.personal-blogs__bottom{
+			margin-top: 7px;
 		}
 	}
 	.announcements-item{
@@ -1069,7 +1090,7 @@
 
 	}
 	.news-block{
-		margin-top: 0;
+		margin-top: -8px;
 	}
 	.day-theme__slider{
 		.slick-prev,
@@ -1079,6 +1100,21 @@
 	}
 	.day-theme{
 		margin-bottom: 30px;
+	}
+	.footer-column{
+		margin-bottom: 20px;	
+	}
+	.footer-top__columns{
+		margin-bottom: 9px;	
+	}
+	.footer-statistic img{
+		margin-left: 0;	
+		margin-right: 3px;	
+
+		&:last-child{
+			margin-right: 0;	
+		}
+
 	}
 }
 	
@@ -1222,6 +1258,18 @@
 	.header-reg .header-top .toggle-mnu{
 		// margin-right: 0;
 		margin-left: 4px;
+	}
+	.footer-cookies{
+		right: 29px;
+		bottom: -55px;	
+	}
+	.footer-bottom__menu li{
+				margin-bottom: 7px;	
+			line-height: 13px;	
+
+	}
+	.footer-copyright{
+		margin-top: 14px;	
 	}
 
 }
