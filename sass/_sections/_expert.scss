@@ -27,7 +27,7 @@
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: space-between;
 	background-color: #f8f8f8;
 }
@@ -161,6 +161,15 @@
 }
 .company-services{
 	margin-top: 15px;
+
+	ul{
+		.acordeon-item{
+			padding-left: 0;
+			&:before{
+				display: none;
+			}
+		}
+	}
 }
 .company-about__hidden{
 	position: relative;

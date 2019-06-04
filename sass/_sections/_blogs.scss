@@ -30,7 +30,9 @@
 	font-family: $r-m;
 }
 .blogs-step__val{
-	width: calc(100% - 41px);
+	br{
+		display: none;
+	}
 }
 .blog-card{
 	position: relative;
@@ -171,6 +173,7 @@
 		&.blog-rating-count{
 			padding: 7px 11px;
 			margin-left: 8px;
+			line-height: 12px;
 			background-color: #597DA3;
 			font-family: $r-b;
 			color: #fff;
@@ -336,7 +339,7 @@
 	}
 }
 .blog-post-discussion{
-	padding-top: 18px;
+	padding-top: 24px;
 }
 .blog-post-discussion__header{
 	display: -webkit-flex;

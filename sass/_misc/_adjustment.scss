@@ -16,6 +16,11 @@ body{
 .sp-icon{
 	display: inline-block;
 }
+.icon-vkontakte{
+  &:before{
+    margin-left: 0; 
+  }
+}
 // .right-sidebar{
 //   margin-top: 30px;
 // }
@@ -798,6 +803,7 @@ h3{
 }
 
 .breadcrumbs{
+  margin-bottom: 0;
   margin-top: 5px;
   padding-bottom: 7px;
   padding-left: 0;
@@ -848,10 +854,11 @@ h3{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 17px 0;
+  padding: 27px 0;
 }
 .li-pagination__list{
   li{
+    margin: 0 4px;
     list-style-type: none;
     display: inline-block;
     vertical-align: middle;
