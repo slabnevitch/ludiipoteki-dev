@@ -194,9 +194,7 @@
 		height: 417px;
 	}
 	
-	.footer-top__columns{
-		justify-content: flex-start;
-	}
+	
 	.footer-column--vk{
 		display: none;
 	}
@@ -205,7 +203,7 @@
 		bottom: -12px;
 	}
 	.footer-socials-links{
-		display: -webkit-flex;
+		display: -wfebkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
 		display: -o-flex;
@@ -301,6 +299,12 @@
 	.events-list{
 		margin-bottom: 37px;
 	}
+	.news-block{
+		margin-bottom: 18px;
+	}
+	.news-item__title{
+		margin-bottom: 3px;
+	}
 }
 	
 @media only screen and (max-width : 991px){
@@ -332,8 +336,14 @@
 
 		}
 	}
+	.sidebar-banner{
+		margin-top: 33px;
+	}
 	.sidebar-banner img{
 		max-width: 240px;
+	}
+	.sidebar-block{
+		margin-bottom: 0;
 	}
 	// .header-menu .sfHover ul{
 	// 	display: -webkit-flex !important;
@@ -831,8 +841,15 @@
 		margin-left: 5px;
 		margin-right: 10px;
 	}
-
-
+	.header-reg .header-top__menu-wrap{
+		position: static;
+	}
+	.footer-top__columns{
+		justify-content: flex-start;
+	}
+	.footer-column{
+		width: calc(50% - 30px);
+	}
 	/*Disable Animation on Mobile Devices*/
 // 	.animated{
 
@@ -916,9 +933,13 @@
 	}
 	.sidebar-multi-wrap{
 		display: block;
+		margin-bottom: 12px;
 
 		&--for-buttons{
 			// display: block;
+			#subjects-open{
+				margin-bottom: 22px;
+			}
 
 			.sidebar-iconed-title{
 				width: auto;
@@ -926,12 +947,16 @@
 
 
 			}
+
 			.sidebar-company{
 				margin-left: 0;
 				width: auto;
 			}
 
 		}
+	}
+	.sidebar-informer{
+		margin-bottom: 11px;
 	}
 	.footer-top__wrapper{
 		.m-minus{
@@ -1026,6 +1051,34 @@
 
 	.topic-card__text{
 		margin-bottom: 7px;	
+	}
+	.announcements{
+		margin-bottom: 35px;
+		.title-block{
+			&:after{
+				display: none;
+			}
+		}
+	}
+	.announcements-item{
+		margin-bottom: 25px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+	}
+	.news-block{
+		margin-top: 0;
+	}
+	.day-theme__slider{
+		.slick-prev,
+		.slick-next{
+			top: 67px;
+		}
+	}
+	.day-theme{
+		margin-bottom: 30px;
 	}
 }
 	
@@ -1166,6 +1219,10 @@
 
 		margin-right: 0;
 	}
+	.header-reg .header-top .toggle-mnu{
+		// margin-right: 0;
+		margin-left: 4px;
+	}
 
 }
 		
@@ -1194,6 +1251,13 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 769px){
 	/**/
+	
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
 	.header-top__menu--not-autor{
 		display: -webkit-flex !important;
 		display: -moz-flex !important;
@@ -1202,11 +1266,7 @@
 		display: flex !important;
 		// flex-direction: column;
 	}
-
 }
-
-
-/* Medium Devices, Desktops */
 @media only screen and (min-width : 992px){
 	/**/
 	.header-top__menu--author{

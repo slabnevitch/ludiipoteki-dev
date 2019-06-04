@@ -7510,7 +7510,7 @@ h3 {
   margin-right: -15px; }
 
 .announcements-item {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   width: -webkit-calc(33.33333% - 30px);
   width: calc(33.33333% - 30px);
   margin-left: 15px;
@@ -7560,7 +7560,7 @@ h3 {
 /* end personal-blogs */
 /* news-block */
 .news-block .more-container {
-  margin-top: 17px; }
+  margin-top: 10px; }
 
 .news-subscribe {
   padding: 8px 10px 13px 10px;
@@ -9612,22 +9612,18 @@ table {
     display: none; }
   .news-items {
     height: 417px; }
-  .footer-top__columns {
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start; }
   .footer-column--vk {
     display: none; }
   .footer-cookies {
     top: auto;
     bottom: -12px; }
   .footer-socials-links {
-    display: -webkit-flex;
+    display: -wfebkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
   .blog-card__rating span.blog-rating-count {
@@ -9683,7 +9679,11 @@ table {
   .company-other-staffs {
     margin-bottom: 20px; }
   .events-list {
-    margin-bottom: 37px; } }
+    margin-bottom: 37px; }
+  .news-block {
+    margin-bottom: 18px; }
+  .news-item__title {
+    margin-bottom: 3px; } }
 
 @media only screen and (max-width: 991px) {
   .blog-post-discussion {
@@ -9709,8 +9709,12 @@ table {
     .sidebar-multi-wrap--for-buttons .sidebar-company {
       margin-left: 15px;
       width: 270px; }
+  .sidebar-banner {
+    margin-top: 33px; }
   .sidebar-banner img {
-    max-width: 240px; } }
+    max-width: 240px; }
+  .sidebar-block {
+    margin-bottom: 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -10070,6 +10074,16 @@ table {
   .header-top__menu-wrap .toggle-mnu {
     margin-left: 5px;
     margin-right: 10px; }
+  .header-reg .header-top__menu-wrap {
+    position: static; }
+  .footer-top__columns {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .footer-column {
+    width: -webkit-calc(50% - 30px);
+    width: calc(50% - 30px); }
   /*Disable Animation on Mobile Devices*/ }
 
 @media only screen and (max-width: 600px) {
@@ -10110,13 +10124,18 @@ table {
   .blogs-previews__item-info {
     text-align: center; }
   .sidebar-multi-wrap {
-    display: block; }
+    display: block;
+    margin-bottom: 12px; }
+    .sidebar-multi-wrap--for-buttons #subjects-open {
+      margin-bottom: 22px; }
     .sidebar-multi-wrap--for-buttons .sidebar-iconed-title {
       width: auto;
       padding-right: 0; }
     .sidebar-multi-wrap--for-buttons .sidebar-company {
       margin-left: 0;
       width: auto; }
+  .sidebar-informer {
+    margin-bottom: 11px; }
   .footer-top__wrapper .m-minus {
     margin-left: 0;
     margin-right: 0; }
@@ -10177,7 +10196,22 @@ table {
       .topic-card_bottom .blog-share .pluso {
         margin-left: 0; }
   .topic-card__text {
-    margin-bottom: 7px; } }
+    margin-bottom: 7px; }
+  .announcements {
+    margin-bottom: 35px; }
+    .announcements .title-block:after {
+      display: none; }
+  .announcements-item {
+    margin-bottom: 25px; }
+    .announcements-item:last-child {
+      margin-bottom: 0; }
+  .news-block {
+    margin-top: 0; }
+  .day-theme__slider .slick-prev,
+  .day-theme__slider .slick-next {
+    top: 67px; }
+  .day-theme {
+    margin-bottom: 30px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -10278,7 +10312,9 @@ table {
   .header-socials {
     margin-right: 5px; }
   .header-top__menu-wrap .toggle-mnu {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .header-reg .header-top .toggle-mnu {
+    margin-left: 4px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
@@ -10295,7 +10331,10 @@ table {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 769px) {
-  /**/
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
   .header-top__menu--not-autor {
     display: -webkit-flex !important;
     display: -moz-flex !important;
@@ -10305,7 +10344,6 @@ table {
     display: -ms-flexbox !important;
     display: flex !important; } }
 
-/* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   /**/
   .header-top__menu--author {
