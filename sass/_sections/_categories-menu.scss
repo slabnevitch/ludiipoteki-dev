@@ -125,12 +125,15 @@
 .categories-menu-block--mob{
 	display: none;
 	position: relative;
-	padding-top: 20px;
+	padding-top: 5px;
 	max-width: 270px;
 	text-align: right;
 	
 	.sidebar-standart-title{
 		display: inline-block;
+		padding-top: 5px;
+		padding-bottom: 6px;
+		font-size: 13px;
 
 		.toggle-mnu{
 			display: inline-block;

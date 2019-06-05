@@ -8343,11 +8343,14 @@ h3 {
 .categories-menu-block--mob {
   display: none;
   position: relative;
-  padding-top: 20px;
+  padding-top: 5px;
   max-width: 270px;
   text-align: right; }
   .categories-menu-block--mob .sidebar-standart-title {
-    display: inline-block; }
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    font-size: 13px; }
     .categories-menu-block--mob .sidebar-standart-title .toggle-mnu {
       display: inline-block;
       margin-right: 12px;
@@ -9473,13 +9476,12 @@ table {
   margin-left: 15px;
   margin-right: 15px; }
 
-.footer-copyright {
-  margin-top: 13px; }
-  .footer-copyright div:first-child {
-    color: #fff;
-    font-size: 11px; }
-  .footer-copyright div:last-child {
-    color: #819bb4; }
+.footer-copyright div:first-child {
+  color: #fff;
+  font-size: 11px; }
+
+.footer-copyright div:last-child {
+  color: #819bb4; }
 
 .footer-socials-links {
   display: none;
@@ -9499,7 +9501,11 @@ table {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .footer-statistic img {
   margin: 0 1px;
@@ -9645,8 +9651,7 @@ table {
   .blog-card__descr {
     line-height: 16px; }
   .categories-menu-block--mob {
-    display: block;
-    padding-top: 40px; }
+    display: block; }
   .right-sidebar .categories-menu-block {
     display: none; }
   .companies-list table .companies-list__avatar {
@@ -9705,6 +9710,11 @@ table {
     margin-bottom: 16px; }
   .footer-bottom__menu li {
     margin-bottom: 0; }
+  .footer-bottom__inner {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
   .footer-copyright {
     margin-top: 21px; }
   .cat-menu-wrap .header-menu li {
@@ -9943,8 +9953,6 @@ table {
     top: 20px; }
   .li-pagination__prev span, .li-pagination__next span {
     display: none; }
-  .categories-menu-block--mob {
-    padding-top: 20px; }
   .blog-post-header {
     position: relative;
     padding-bottom: 82px; }
@@ -10289,7 +10297,7 @@ table {
     .announcements-item:last-child {
       margin-bottom: 0; }
   .news-block {
-    margin-top: -8px; }
+    margin-top: 4px; }
   .day-theme__slider .slick-prev,
   .day-theme__slider .slick-next {
     top: 67px; }

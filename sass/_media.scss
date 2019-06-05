@@ -224,7 +224,7 @@
 	// }
 	.categories-menu-block--mob{
 		display: block;
-		padding-top: 40px;
+		// padding-top: 40px;
 	}
 	.right-sidebar{
 		.categories-menu-block{
@@ -317,6 +317,9 @@
 	}
 	.footer-bottom__menu li{
 		margin-bottom: 0;	
+	}
+	.footer-bottom__inner{
+		align-items: flex-start;
 	}
 	.footer-copyright{
 		margin-top: 21px;	
@@ -652,9 +655,7 @@
 	.li-pagination__prev span, .li-pagination__next span{
 		display: none;
 	}
-	.categories-menu-block--mob{
-		padding-top: 20px;
-	}
+
 	.blog-post-header{
 		position: relative;
 		padding-bottom: 82px;
@@ -1187,7 +1188,7 @@
 
 	}
 	.news-block{
-		margin-top: -8px;
+		margin-top: 4px;
 	}
 	.day-theme__slider{
 		.slick-prev,

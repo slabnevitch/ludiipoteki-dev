@@ -122,7 +122,7 @@
 	margin-right: 15px;
 }
 .footer-copyright{
-	margin-top: 13px;
+	// margin-top: 13px;
 	div{
 		&:first-child{
 			color: #fff;
@@ -152,6 +152,7 @@
 }
 .footer-bottom__inner{
 	justify-content: space-between;
+	align-items: center;
 }
 .footer-statistic{
 	img{
