@@ -64,7 +64,9 @@
 
 	&:first-child{
 		padding-top: 0;
-		
+		.ico-telegram-mini{
+			top: 0;
+		}
 	}
 
 	&:last-child{
